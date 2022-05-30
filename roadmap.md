@@ -13,4 +13,19 @@ Once the installation has completed, you may use IDLE to write and run Python co
 - Exception handling.
 - Functions, modules & Imports.
 
+## 2. OOPs Concepts, Built-in Data Structures, and Other Stuff
+
+This section will be a bit tough especially if you don’t know about object-oriented programming concepts. Take the help of some resources which we have mentioned and with some practice, you will be able to understand the concepts. 
+
+These concepts will be widely used in making complex applications so understand these topics very well. It may take 1 – 1.5 weeks to learn.
+
+- Object oriented programming in Python
+- Lists & List functions
+- Regular Expressions
+- List comprehension
+- List slicing
+- String formatting
+- Lambdas
+- List, Dictionaries & Tuples
+
 Source : [Geeks for Geeks](https://www.geeksforgeeks.org/best-way-to-start-learning-python-a-complete-roadmap/)
