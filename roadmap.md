@@ -49,6 +49,7 @@ Flask is one of the easiest microframework to learn in Python. If you wish to de
 
 _Learning Flask will take 1 – 1.5 weeks._
 
+---
 
 ## 4. For Building Desktop Applications
 
@@ -68,4 +69,26 @@ PyQt is one of the most powerful cross-platform GUI library owned by Nokia. It c
 
 It can be used to create desktop applications also it supports platforms like Android, iOS, Linux & Raspberry Pi.
 
+---
+## 5. For Data Analysis
+
+Numpy, Pandas, Seaborn, Bokeh, SciPy, Matplotlib these libraries are good for data analysis. These libraries are helpful for those who want to become data analysts/ data scientists. Learning Numpy or Pandas will take around 1 week.
+
+### Numpy: 
+It is an array-processing package and provides high-performance array object. It is widely used for scientific computing with Python and provides essential features.
+### Pandas: 
+Pandas is also a very good open-source library that is used for data analysis. It provides high-level data structures (such as DataFrame) and a vast variety of tools for analysis. It also can translate complex operations in a few commands. Using this library, data manipulation becomes a much easier task.
+
+---
+
+## 6. For Machine Learning:
+
+### TensorFlow: 
+Most popular deep learning library developed by Google. It is a computational framework used to express algorithms that involve numerous Tensor operations.
+### Scikit-Learn: 
+A machine learning library for Python, designed to work with numerical libraries such as SciPy & NumPy.
+### PyTorch: 
+It can handle dynamic computation graphs on the go. It also provides easy to use API.
+
 Source : [Geeks for Geeks](https://www.geeksforgeeks.org/best-way-to-start-learning-python-a-complete-roadmap/)
+
