@@ -49,4 +49,23 @@ Flask is one of the easiest microframework to learn in Python. If you wish to de
 
 _Learning Flask will take 1 – 1.5 weeks._
 
+
+## 4. For Building Desktop Applications
+
+Tkinter, PyQT, Kivy, WxPython or PyGUI libraries are very good for building desktop-based applications.
+
+### Tkinter:
+
+Tkinter is open source library and it allows you to build desktop GUI applications using Python. Learning Tkinter is simple and provides a graphical interface. It will take around 1 week to learn Tkinter.
+
+
+### PyQT: 
+
+PyQt is one of the most powerful cross-platform GUI library owned by Nokia. It combines Python programming and the Qt library. It can be used to design graphical user interfaces for a desktop application.
+
+
+### Kivy: 
+
+It can be used to create desktop applications also it supports platforms like Android, iOS, Linux & Raspberry Pi.
+
 Source : [Geeks for Geeks](https://www.geeksforgeeks.org/best-way-to-start-learning-python-a-complete-roadmap/)
