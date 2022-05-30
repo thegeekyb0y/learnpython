@@ -92,3 +92,4 @@ It can handle dynamic computation graphs on the go. It also provides easy to use
 
 Source : [Geeks for Geeks](https://www.geeksforgeeks.org/best-way-to-start-learning-python-a-complete-roadmap/)
 
+> [Redirect to Main Page](https://github.com/thegeekyb0/learnpython)
