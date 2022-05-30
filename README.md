@@ -11,4 +11,4 @@ People from different disciplines use Python for a variety of different tasks, s
 | Suggested Code Editor  | [Sublime Text](http://www.sublimetext.com/) or [VS Code](code.visualstudio.com)  |
 | Suggested IDE  |[Pycharm](https://www.jetbrains.com/pycharm/) and [Pydev](http://pydev.org/)  |
 
-- **Basic Roadmap** : <a href='https://github.com/thegeekyb0y/learnpython/blob/c14bc8ad90e394e25d42818795a1a2e1e0d70958/roadmap.md' target="_blank">Click Here</a>
+- **Basic Roadmap** : <a href='https://github.com/thegeekyb0y/learnpython/blob/5115d0ef2eec79355f9c58a5af3fc67f1e5ea090/roadmap.md' target="_blank">Click Here</a>
