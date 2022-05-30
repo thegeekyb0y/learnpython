@@ -1,5 +1,5 @@
 # Learn Python 
-Python is a high-level, interpreted scripting language, highly used for automation and backend purposes.
+Python is a high-level, interpreted scripting language, highly used for automation and backend purposes.People from different disciplines use Python for a variety of different tasks, such as data analysis and visualization, artificial intelligence and Machine Learning, automation, etc
 
 | Info  | Link|
 | ------------- | ------------- |
@@ -9,4 +9,4 @@ Python is a high-level, interpreted scripting language, highly used for automati
 | Suggested Code Editor  | [Sublime Text](http://www.sublimetext.com/) or [VS Code](code.visualstudio.com)  |
 | Suggested IDE  |[Pycharm](https://www.jetbrains.com/pycharm/) and [Pydev](http://pydev.org/)  |
 
-- **Basic Roadmap** : <a href='https://github.com/thegeekyb0y/learnpython/blob/c14bc8ad90e394e25d42818795a1a2e1e0d70958/roadmap.md' target='_blank'>Click Here</a>
+> **Basic Roadmap** : <a href='https://github.com/thegeekyb0y/learnpython/blob/c14bc8ad90e394e25d42818795a1a2e1e0d70958/roadmap.md' target="_blank">Click Here</a>
