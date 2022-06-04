@@ -40,6 +40,20 @@ automation, etc.
 
 ---
 
+## Python Playlists on Youtube 
+
+| Info                                   | Link                                                                                                     |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Telusko                                | [Click Here](https://youtube.com/playlist?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3)                       |
+| CS Dojo                                | [Click Here](https://youtube.com/playlist?list=PLBZBJbE_rGRWeh5mIBhD-hhDwSEDxogDg)                       |
+| Edureka                                | [Click Here](https://youtube.com/playlist?list=PL9ooVrP1hQOHY-BeYrKHDrHKphsJOyRyu)                       |
+| Code with Harry                        | [Click Here](https://youtube.com/playlist?list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME)                       |
+| Geeky Shows                            | [Click Here](https://www.youtube.com/playlist?list=PLbGui_ZYuhigZkqrHbI_ZkPBrIr5Rsd5L)                   |
+| Corey Schafer                          | [Click Here](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)                   |
+| Freecodecamp                           | [Click Here](https://www.youtube.com/playlist?list=PLWKjhJtqVAbnqBxcdjVGgT3uVR10bzTEB)                   |
+
+---
+
 ## Cheatsheets 🗒️
 
 |Info                                          | Link                                                                                                |
@@ -53,20 +67,6 @@ automation, etc.
 | Programming with Mosh Python Cheatsheet      | [Click here](https://programmingwithmosh.com/wp-content/uploads/2019/02/Python-Cheat-Sheet.pdf)     |
 | Finxter Python Cheatsheet                    | [Click Here](https://blog.finxter.com/python-cheat-sheets/)                                         |
 | Python Cheatsheet by Websitesetup            | [Click Here](https://websitesetup.org/wp-content/uploads/2021/04/Python-cheat-sheet-April-2021.pdf) |
-
----
-
-## Python Playlists on Youtube 
-
-| Info                                   | Link                                                                                                     |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Telusko                                | [Click Here](https://youtube.com/playlist?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3)                       |
-| CS Dojo                                | [Click Here](https://youtube.com/playlist?list=PLBZBJbE_rGRWeh5mIBhD-hhDwSEDxogDg)                       |
-| Edureka                                | [Click Here](https://youtube.com/playlist?list=PL9ooVrP1hQOHY-BeYrKHDrHKphsJOyRyu)                       |
-| Code with Harry                        | [Click Here](https://youtube.com/playlist?list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME)                       |
-| Geeky Shows                            | [Click Here](https://www.youtube.com/playlist?list=PLbGui_ZYuhigZkqrHbI_ZkPBrIr5Rsd5L)                   |
-| Corey Schafer                          | [Click Here](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)                   |
-| Freecodecamp                           | [Click Here](https://www.youtube.com/playlist?list=PLWKjhJtqVAbnqBxcdjVGgT3uVR10bzTEB)                   |
 
 ---
 
