@@ -7,7 +7,7 @@ automation, etc.
 
 ---
 
-## Official Links 🔗
+## General 🔗
 | Info                   | Link                                                                            |
 | ---------------------- | ------------------------------------------------------------------------------- |
 | Official Site          | [Python.org](https://python.org)                                                |
