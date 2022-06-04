@@ -23,7 +23,7 @@ automation, etc.
 
 | Info                              | Link                                                                                                          |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-|**Basic Roadmap**                  | <a href='./roadmap.md' target="_blank">Click Here</a>                                                         |
+| **Basic Roadmap**                  | <a href='./roadmap.md' target="_blank">Click Here</a>                                                         |
 | **Complete Notes**                | [Python Notes](https://github.com/thegeekyb0y/learnpython/blob/main/Python%20Notes%20(goalkicker).pdf)        |   
 | **Python Libraries & Frameworks** | [Awesome Python](https://github.com/vinta/awesome-python)                                                     |
 
@@ -82,3 +82,5 @@ You can also simply open an [issue](https://github.com/thegeekyb0y/learnpython/i
 ## Connect with Me 🤝
 
 [Instagram](https://www.instagram.com/thegeekyb0y) | [Twitter](https://www.twitter.com/thegeekyb0y) | [Linkedin](https://www.linkedin.com/in/adityacodes)
+
+![visitors](https://page-views.glitch.me/badge?page_id=thegeekyb0y/learnpython)
