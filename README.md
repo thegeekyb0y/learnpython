@@ -53,6 +53,7 @@ automation, etc.
 | CS Dojo                                | [Click Here](https://youtube.com/playlist?list=PLBZBJbE_rGRWeh5mIBhD-hhDwSEDxogDg)                     |
 | Edureka                                | [Click Here](https://youtube.com/playlist?list=PL9ooVrP1hQOHY-BeYrKHDrHKphsJOyRyu)                     |
 | Code with Harry                        | [Click Here](https://youtube.com/playlist?list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME)                     |
-
-
+| Geeky Shows                            | [Click Here](https://www.youtube.com/playlist?list=PLbGui_ZYuhigZkqrHbI_ZkPBrIr5Rsd5L)                 |
+| Corey Schafer                          | [Click Here](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)                 |
+| Freecodecamp                           | [Click Here](https://www.youtube.com/playlist?list=PLWKjhJtqVAbnqBxcdjVGgT3uVR10bzTEB)                 |
 
