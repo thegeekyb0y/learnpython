@@ -24,3 +24,12 @@ automation, etc.
 |**Basic Roadmap**                  | <a href='./roadmap.md' target="_blank">Click Here</a>                                                  |
 | **Complete Notes**                | [Python Notes](https://github.com/thegeekyb0y/learnpython/blob/main/Python%20Notes%20(goalkicker).pdf) |
 | **Python Libraries & Frameworks** | [Awesome Python](https://github.com/vinta/awesome-python)                                              |
+
+## Cheatsheets 🗒️
+|Info                                          | Link
+|--------------------------------------------- | ----------------------------------------------------------------------------------------------------|
+| Data Camp Cheat Sheets                       | [Click Here](https://www.datacamp.com/community/data-science-cheatsheets)                           |
+| Python 3 Cheat Sheet                         | [Click Here](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-english.pdf)         |
+| Scientific Python Cheat Sheet                | [Click Here](https://ipgp.github.io/scientific_python_cheat_sheet/)                                 |
+| Comprehensive Python Cheatsheet              | [Click Here](https://gto76.github.io/python-cheatsheet/)                                            |
+| Python Cheat Sheet for Beginners and Experts | [Click Here](https://sinxloud.com/python-cheat-sheet-beginner-advanced/)                            |
