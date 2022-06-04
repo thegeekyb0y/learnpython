@@ -40,4 +40,10 @@ automation, etc.
 | Finxter Python Cheatsheet                    | [Click Here](https://blog.finxter.com/python-cheat-sheets/)                                         |
 | Python Cheatsheet by Websitesetup            | [Click Here](https://websitesetup.org/wp-content/uploads/2021/04/Python-cheat-sheet-April-2021.pdf) |
 
+## Python Playlists on Youtube 
+1. Playlist : Code with Harry (Hindi) (https://youtube.com/playlist?list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME)
+2. Playlist : Telusko (https://youtube.com/playlist?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3)
+3. Playlist : CS Dojo (https://youtube.com/playlist?list=PLBZBJbE_rGRWeh5mIBhD-hhDwSEDxogDg) 
+4. Playlist : Edureka (https://youtube.com/playlist?list=PL9ooVrP1hQOHY-BeYrKHDrHKphsJOyRyu)
+
 
