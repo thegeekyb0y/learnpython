@@ -57,7 +57,9 @@ automation, etc.
 | Corey Schafer                          | [Click Here](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)                 |
 | Freecodecamp                           | [Click Here](https://www.youtube.com/playlist?list=PLWKjhJtqVAbnqBxcdjVGgT3uVR10bzTEB)                 |
 
-# Other Github Repositories
+---
+
+## Other Github Repositories
 
 | Info                                   | Link                                                                                                   |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------ |
