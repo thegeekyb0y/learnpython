@@ -23,7 +23,7 @@ automation, etc.
 
 | Info                              | Link                                                                                                          |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| **Basic Roadmap**                  | <a href='./roadmap.md' target="_blank">Click Here</a>                                                         |
+| **Basic Roadmap**                 | <a href='./roadmap.md' target="_blank">Click Here</a>                                                         |
 | **Complete Notes**                | [Python Notes](https://github.com/thegeekyb0y/learnpython/blob/main/Python%20Notes%20(goalkicker).pdf)        |   
 | **Python Libraries & Frameworks** | [Awesome Python](https://github.com/vinta/awesome-python)                                                     |
 
@@ -72,10 +72,11 @@ automation, etc.
 
 ---
 
+
 ## Contribution 💡
 
-If you have a suggestion that would make this repository better or want to add more resources, please fork the repo and [create a pull request.](https://github.com/thegeekyb0y/learnpython/issues/new) 
-You can also simply open an [issue](https://github.com/thegeekyb0y/learnpython/issues/new) with the tag "enhancement". 
+- If you have a suggestion that would make this repository better or want to add more resources, please fork the repo and [create a pull request.](https://github.com/thegeekyb0y/learnpython/issues/new) 
+- You can also simply open an [issue](https://github.com/thegeekyb0y/learnpython/issues/new) with the tag "enhancement". 
 
 ---
 
