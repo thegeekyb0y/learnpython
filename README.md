@@ -25,6 +25,8 @@ automation, etc.
 | **Complete Notes**                | [Python Notes](https://github.com/thegeekyb0y/learnpython/blob/main/Python%20Notes%20(goalkicker).pdf) |
 | **Python Libraries & Frameworks** | [Awesome Python](https://github.com/vinta/awesome-python)                                              |
 
+---
+
 ## Cheatsheets 🗒️
 |Info                                          | Link
 |--------------------------------------------- | ----------------------------------------------------------------------------------------------------|
@@ -33,3 +35,9 @@ automation, etc.
 | Scientific Python Cheat Sheet                | [Click Here](https://ipgp.github.io/scientific_python_cheat_sheet/)                                 |
 | Comprehensive Python Cheatsheet              | [Click Here](https://gto76.github.io/python-cheatsheet/)                                            |
 | Python Cheat Sheet for Beginners and Experts | [Click Here](https://sinxloud.com/python-cheat-sheet-beginner-advanced/)                            |
+| Gto76 Python Cheatsheet                      | [Click here](https://www.pythoncheatsheet.org/)|
+| Programming with Mosh Python Cheatsheet      | [Click here]((https://programmingwithmosh.com/wp-content/uploads/2019/02/Python-Cheat-Sheet.pdf))
+| Finxter Python Cheatsheet                    | [Click Here](https://blog.finxter.com/python-cheat-sheets/)
+| Python Cheatsheet by Websitesetup            | [Click Here](https://websitesetup.org/wp-content/uploads/2021/04/Python-cheat-sheet-April-2021.pdf)
+
+
