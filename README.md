@@ -28,6 +28,17 @@ automation, etc.
 | **Python Libraries & Frameworks** | [Awesome Python](https://github.com/vinta/awesome-python)                                                     |
 
 ---
+## Top Youtube Creators 
+| Channel Name                           | Link                                                                                                     |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Geeky Shows                            | [Click Here](https://www.youtube.com/user/GeekyShow1)                                                    |
+| Code with Harry                        | [Click Here](https://www.youtube.com/c/CodeWithHarry)                                                    |
+| Corey Schafer                          | [Click Here](https://www.youtube.com/c/Coreyms)                                                          |
+| Telusko                                | [Click Here](https://www.youtube.com/c/Telusko)                                                          |
+| Freecodecamp                           | [Click Here](https://www.youtube.com/c/Freecodecamp)                                                     |
+| CS Dojo                                | [Click Here](https://www.youtube.com/c/CSDojo)                                                           |
+
+---
 
 ## Cheatsheets 🗒️
 
@@ -71,16 +82,6 @@ automation, etc.
 | Python Reference                       | [Click Here](https://github.com/rasbt/python_reference)                                                  |
 
 ---
-
-## Top Youtube Creators 
-| Channel Name                           | Link                                                                                                     |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Geeky Shows                            | [Click Here](https://www.youtube.com/user/GeekyShow1)                                                    |
-| Code with Harry                        | [Click Here](https://www.youtube.com/c/CodeWithHarry)                                                    |
-| Corey Schafer                          | [Click Here](https://www.youtube.com/c/Coreyms)                                                          |
-| Telusko                                | [Click Here](https://www.youtube.com/c/Telusko)                                                          |
-| Freecodecamp                           | [Click Here](https://www.youtube.com/c/Freecodecamp)                                                     |
-| CS Dojo                                | [Click Here](https://www.youtube.com/c/CSDojo)                                                           |
 
 ## Contribution 💡
 
