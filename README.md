@@ -70,3 +70,7 @@ automation, etc.
 | Python-Exercises                       | [Click Here](https://github.com/zhiwehu/Python-programming-exercises)                                    |  
 | Python Reference                       | [Click Here](https://github.com/rasbt/python_reference)                                                  |
 
+## Contribution 💡
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. 
+You can also simply open an issue with the tag "enhancement". 
