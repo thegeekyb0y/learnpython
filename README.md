@@ -12,4 +12,4 @@ People from different disciplines use Python for a variety of different tasks, s
 | Suggested IDE          | [Pycharm](https://www.jetbrains.com/pycharm/) and [Pydev](http://pydev.org/)    |
 
 - **Basic Roadmap** : <a href='./roadmap.md' target="_blank">Click Here</a>
-- **Proper Notes** : 
+- **Complete Notes** : [Python Notes](https://github.com/thegeekyb0y/learnpython/blob/main/Python%20Notes%20(goalkicker).pdf)
