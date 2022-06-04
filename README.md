@@ -61,10 +61,10 @@ automation, etc.
 
 | Info                                   | Link                                                                                                   |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| The Algorithms                      | [Click Here](https://github.com/TheAlgorithms/Python)
-| Awesome - Python |[Click Here](https://github.com/vinta/awesome-python)
-| TensorFlow |      [Click Here](https://github.com/tensorflow/tensorflow)
-| Project Based Learning | [Click Here](https://github.com/tuvtran/project-based-learning#python)
-| Python-Exercises | [Click Here](https://github.com/zhiwehu/Python-programming-exercises)
-| Python Reference | [Click Here](https://github.com/rasbt/python_reference)
+| The Algorithms                         | [Click Here](https://github.com/TheAlgorithms/Python)                                                  |
+| Awesome - Python                       | [Click Here](https://github.com/vinta/awesome-python)                                                  |
+| TensorFlow                             | [Click Here](https://github.com/tensorflow/tensorflow)                                                 |
+| Project Based Learning                 | [Click Here](https://github.com/tuvtran/project-based-learning#python)                                 | 
+| Python-Exercises                       | [Click Here](https://github.com/zhiwehu/Python-programming-exercises)                                  |
+| Python Reference                       | [Click Here](https://github.com/rasbt/python_reference)                                                |
 
