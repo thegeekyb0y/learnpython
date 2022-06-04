@@ -8,6 +8,7 @@ automation, etc.
 ---
 
 ## General 🔗
+
 | Info                   | Link                                                                            |
 | ---------------------- | ------------------------------------------------------------------------------- |
 | Official Site          | [Python.org](https://python.org)                                                |
@@ -19,6 +20,7 @@ automation, etc.
 ---
 
 ## Basic Resources 🔗
+
 | Info                              | Link                                                                                                   |
 | --------------------------------- | ------------------------------------------------------------------------------------------------------ |
 |**Basic Roadmap**                  | <a href='./roadmap.md' target="_blank">Click Here</a>                                                  |
@@ -28,6 +30,7 @@ automation, etc.
 ---
 
 ## Cheatsheets 🗒️
+
 |Info                                          | Link
 |--------------------------------------------- | ----------------------------------------------------------------------------------------------------|
 | Data Camp Cheat Sheets                       | [Click Here](https://www.datacamp.com/community/data-science-cheatsheets)                           |
@@ -43,12 +46,13 @@ automation, etc.
 ---
 
 ## Python Playlists on Youtube 
+
 | Info                                   | Link                                                                                                   |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| Telusko                                | [Click Here](https://youtube.com/playlist?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3)                                |
-| CS Dojo                                | [Click Here](https://youtube.com/playlist?list=PLBZBJbE_rGRWeh5mIBhD-hhDwSEDxogDg)                                |
-| Edureka                                | [Click Here](https://youtube.com/playlist?list=PL9ooVrP1hQOHY-BeYrKHDrHKphsJOyRyu)                                |
-| Code with Harry                        | [Click Here](https://youtube.com/playlist?list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME)                                |
+| Telusko                                | [Click Here](https://youtube.com/playlist?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3)                     |
+| CS Dojo                                | [Click Here](https://youtube.com/playlist?list=PLBZBJbE_rGRWeh5mIBhD-hhDwSEDxogDg)                     |
+| Edureka                                | [Click Here](https://youtube.com/playlist?list=PL9ooVrP1hQOHY-BeYrKHDrHKphsJOyRyu)                     |
+| Code with Harry                        | [Click Here](https://youtube.com/playlist?list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME)                     |
 
 
 
