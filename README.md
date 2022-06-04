@@ -19,8 +19,8 @@ automation, etc.
 ---
 
 ## Basic Resources 🔗
-| Info                              | Link                                                                            |
-| --------------------------------- | ------------------------------------------------------------------------------- |
-|**Basic Roadmap**                  | <a href='./roadmap.md' target="_blank">Click Here</a>
-| **Complete Notes**                | [Python Notes](https://github.com/thegeekyb0y/learnpython/blob/main/Python%20Notes%20(goalkicker).pdf)
-| **Python Libraries & Frameworks** | [Awesome Python](https://github.com/vinta/awesome-python)
+| Info                              | Link                                                                                                   |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------ |
+|**Basic Roadmap**                  | <a href='./roadmap.md' target="_blank">Click Here</a>                                                  |
+| **Complete Notes**                | [Python Notes](https://github.com/thegeekyb0y/learnpython/blob/main/Python%20Notes%20(goalkicker).pdf) |
+| **Python Libraries & Frameworks** | [Awesome Python](https://github.com/vinta/awesome-python)                                              |
