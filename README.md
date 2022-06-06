@@ -96,4 +96,4 @@ automation, etc.
 
 ![visitors](https://page-views.glitch.me/badge?page_id=thegeekyb0y/learnpython)
 
-More coming soon.... Stay tuned.
+More coming soon
