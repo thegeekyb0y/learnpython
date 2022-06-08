@@ -87,13 +87,12 @@ automation, etc.
 
 | Info                                   | Link                                                                                                     |
 | -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Python in Plane English                | [Click Here](https://python.plainenglish.io/)                                                            |
-| Towards Data Science                   | [Click Here](https://towardsdatascience.com/tagged/python)                                               |
 | Learn Python                           | [Click Here](https://learnpython.com/blog/)                                                              |
 | Geeks for Geeks                        | [Click Here](https://www.geeksforgeeks.org/python-programming-language/)                                 |
+| W3schools Documentation                | [Click Here](https://www.w3schools.com/python/)                                                          |
+| Towards Data Science                   | [Click Here](https://towardsdatascience.com/tagged/python)                                               |
+| Python in Plane English                | [Click Here](https://python.plainenglish.io/)                                                            |
 | Python Programming Tutorials           | [Click Here](https://pythonprogramming.net/)
-| W3schools Documentation                | [Click Here](https://www.w3schools.com/python/)
-
 
 ## Contribution 💡
 
