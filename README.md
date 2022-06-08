@@ -92,7 +92,9 @@ automation, etc.
 | W3schools Documentation                | [Click Here](https://www.w3schools.com/python/)                                                          |
 | Towards Data Science                   | [Click Here](https://towardsdatascience.com/tagged/python)                                               |
 | Python in Plane English                | [Click Here](https://python.plainenglish.io/)                                                            |
-| Python Programming Tutorials           | [Click Here](https://pythonprogramming.net/)
+| Python Programming Tutorials           | [Click Here](https://pythonprogramming.net/)                                                             |
+
+---
 
 ## Contribution 💡
 
