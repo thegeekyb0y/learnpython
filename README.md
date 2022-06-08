@@ -28,6 +28,7 @@ automation, etc.
 | **Python Libraries & Frameworks** | [Awesome Python](https://github.com/vinta/awesome-python)                                                     |
 
 ---
+
 ## Top Youtube Creators 
 | Channel Name                           | Link                                                                                                     |
 | -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
@@ -54,6 +55,18 @@ automation, etc.
 
 ---
 
+## Top Blogs 
+
+| Info                                   | Link                                                                                                     |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Learn Python                           | [Click Here](https://learnpython.com/blog/)                                                              |
+| Geeks for Geeks                        | [Click Here](https://www.geeksforgeeks.org/python-programming-language/)                                 |
+| W3schools Documentation                | [Click Here](https://www.w3schools.com/python/)                                                          |
+| Towards Data Science                   | [Click Here](https://towardsdatascience.com/tagged/python)                                               |
+| Python in Plane English                | [Click Here](https://python.plainenglish.io/)                                                            |
+| Python Programming Tutorials           | [Click Here](https://pythonprogramming.net/)                                                             |
+
+---
 ## Cheatsheets 🗒️
 
 |Info                                          | Link                                                                                                |
@@ -80,19 +93,6 @@ automation, etc.
 | Project Based Learning                 | [Click Here](https://github.com/tuvtran/project-based-learning#python)                                   | 
 | Python-Exercises                       | [Click Here](https://github.com/zhiwehu/Python-programming-exercises)                                    |  
 | Python Reference                       | [Click Here](https://github.com/rasbt/python_reference)                                                  |
-
----
-
-## Top Blogs 
-
-| Info                                   | Link                                                                                                     |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Learn Python                           | [Click Here](https://learnpython.com/blog/)                                                              |
-| Geeks for Geeks                        | [Click Here](https://www.geeksforgeeks.org/python-programming-language/)                                 |
-| W3schools Documentation                | [Click Here](https://www.w3schools.com/python/)                                                          |
-| Towards Data Science                   | [Click Here](https://towardsdatascience.com/tagged/python)                                               |
-| Python in Plane English                | [Click Here](https://python.plainenglish.io/)                                                            |
-| Python Programming Tutorials           | [Click Here](https://pythonprogramming.net/)                                                             |
 
 ---
 
