@@ -9,23 +9,23 @@ automation, etc.
 
 ## General 🔗
 
-| Info                   | Link                                                                                                                   |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------- | 
-| Official Site          | [Python.org](https://python.org)                                                                                       |
-| Official Documentation | [Python Docs](https://docs.python.org)                                                                                 |
-| Quick Start guide      | [Click here](https://www.python.org/about/gettingstarted/)                                                             | 
-| Suggested Code Editor  | [Sublime Text](http://www.sublimetext.com/) or [VS Code](code.visualstudio.com)                                        |
-| Suggested IDE          | [Pycharm](https://www.jetbrains.com/pycharm/) and [Pydev](http://pydev.org/)                                           |
+| Info                               | Link                                                                                                         |
+| ---------------------------------- | ------------------------------------------------------------------------------------------------------------ | 
+| Official Site                      | [Python.org](https://python.org)                                                                             |
+| Official Documentation             | [Python Docs](https://docs.python.org)                                                                       |
+| Quick Start guide                  | [Click here](https://www.python.org/about/gettingstarted/)                                                   | 
+| Suggested Code Editor              | [Sublime Text](http://www.sublimetext.com/) or [VS Code](code.visualstudio.com)                              |
+| Suggested IDE                      | [Pycharm](https://www.jetbrains.com/pycharm/) and [Pydev](http://pydev.org/)                                 |
 
 ---
 
 ## Basic Resources 🔗
 
-| Info                              | Link                                                                                                          |
-| --------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| **Basic Roadmap**                 | <a href='./roadmap.md' target="_blank">Click Here</a>                                                         |
-| **Complete Notes**                | [Python Notes](https://github.com/thegeekyb0y/learnpython/blob/main/Python%20Notes%20(goalkicker).pdf)        |   
-| **Python Libraries & Frameworks** | [Awesome Python](https://github.com/vinta/awesome-python)                                                     |
+| Info                               | Link                                                                                                          |
+| ---------------------------------  | ------------------------------------------------------------------------------------------------------------- |
+| **Basic Roadmap**                  | <a href='./roadmap.md' target="_blank">Click Here</a>                                                         |
+| **Complete Notes**                 | [Python Notes](https://github.com/thegeekyb0y/learnpython/blob/main/Python%20Notes%20(goalkicker).pdf)        |   
+| **Python Libraries & Frameworks**  | [Awesome Python](https://github.com/vinta/awesome-python)                                                     |
 
 ---
 
@@ -65,6 +65,7 @@ automation, etc.
 | Matt Harrison                          | [Click Here](https://twitter.com/__mharrison__)                                                          |
 | Aditya Tiwari                          | [Click Here](https://twitter.com/thegeekyb0y)                                                            |
 | Real Python                            | [Click Here](https://twitter.com/realpython)                                                             |
+| Trey Hunner                            | [Click Here](https://twitter.com/treyhunner)                                                             |
 
 ## Top Blogs 
 
@@ -96,14 +97,14 @@ automation, etc.
 
 ## Other Github Repositories
 
-| Info                                   | Link                                                                                                     |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| The Algorithms                         | [Click Here](https://github.com/TheAlgorithms/Python)                                                    |
-| Awesome - Python                       | [Click Here](https://github.com/vinta/awesome-python)                                                    |
-| TensorFlow                             | [Click Here](https://github.com/tensorflow/tensorflow)                                                   |
-| Project Based Learning                 | [Click Here](https://github.com/tuvtran/project-based-learning#python)                                   | 
-| Python-Exercises                       | [Click Here](https://github.com/zhiwehu/Python-programming-exercises)                                    |  
-| Python Reference                       | [Click Here](https://github.com/rasbt/python_reference)                                                  |
+| Info                                          | Link                                                                                               |
+| --------------------------------------        | -------------------------------------------------------------------------------------------------- |
+| The Algorithms                                | [Click Here](https://github.com/TheAlgorithms/Python)                                              |
+| Awesome - Python                              | [Click Here](https://github.com/vinta/awesome-python)                                              |
+| TensorFlow                                    | [Click Here](https://github.com/tensorflow/tensorflow)                                             |
+| Project Based Learning                        | [Click Here](https://github.com/tuvtran/project-based-learning#python)                             | 
+| Python-Exercises                              | [Click Here](https://github.com/zhiwehu/Python-programming-exercises)                              |  
+| Python Reference                              | [Click Here](https://github.com/rasbt/python_reference)                                            |
 
 ---
 
