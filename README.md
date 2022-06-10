@@ -56,13 +56,15 @@ automation, etc.
 ---
 
 ## Top Twitter Creators
+
 | Info                                   | Link                                                                                                     |
 | -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Scientific Python | [Click Here](https://twitter.com/SciPyTip) |
-| Rodrigo | [Click Here](https://twitter.com/mathsppblog) |
-| Mike Driscoll | [Click Here](https://twitter.com/driscollis) |
-| Matt Harrison | [Click Here](https://twitter.com/__mharrison__) |
-| Aditya Tiwari | [Click Here](https://twitter.com/thegeekyb0y) |
+| Scientific Python                      | [Click Here](https://twitter.com/SciPyTip)                                                               |
+| Rodrigo                                | [Click Here](https://twitter.com/mathsppblog)                                                            |
+| Mike Driscoll                          | [Click Here](https://twitter.com/driscollis)                                                             | 
+| Matt Harrison                          | [Click Here](https://twitter.com/__mharrison__)                                                          |
+| Aditya Tiwari                          | [Click Here](https://twitter.com/thegeekyb0y)                                                            |
+| Real Python                            | [Click Here](https://twitter.com/realpython)                                                             |
 
 ## Top Blogs 
 
