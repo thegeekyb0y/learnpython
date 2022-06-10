@@ -58,7 +58,7 @@ automation, etc.
 ## Top Twitter Creators
 | Info                                   | Link                                                                                                     |
 | -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-
+| Scientific Python | [Click Here](https://twitter.com/SciPyTip)
 
 ## Top Blogs 
 
