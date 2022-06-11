@@ -21,11 +21,11 @@ automation, etc.
 
 ## Basic Resources 🔗
 
-| Info                               | Link                                                                                                          |
-| ---------------------------------  | ------------------------------------------------------------------------------------------------------------- |
-| **Basic Roadmap**                  | <a href='./roadmap.md' target="_blank">Click Here</a>                                                         |
-| **Complete Notes**                 | [Python Notes](https://github.com/thegeekyb0y/learnpython/blob/main/Python%20Notes%20(goalkicker).pdf)        |   
-| **Python Libraries & Frameworks**  | [Awesome Python](https://github.com/vinta/awesome-python)                                                     |
+| Info                                   | Link                                                                                                     |
+| -------------------------------------  | ---------------------------------------------------------------------------------------------------------|
+| **Basic Roadmap**                      | <a href='./roadmap.md' target="_blank">Click Here</a>                                                    |
+| **Complete Notes**                     | [Python Notes](https://github.com/thegeekyb0y/learnpython/blob/main/Python%20Notes%20(goalkicker).       |   
+| **Python Libraries & Frameworks**      | [Awesome Python](https://github.com/vinta/awesome-python)                                                |
 
 ---
 
@@ -98,13 +98,13 @@ automation, etc.
 ## Top Podcasts
 
 | Info                                          | Link                                                                                               |
-| --------------------------------------        | -------------------------------------------------------------------------------------------------- |
-| Real Python Podcast | [Click Here](https://realpython.com/podcasts/rpp/) |
-| Talk Python Podcast | [Click Here](https://talkpython.fm/) |
-| Python Bites Podcast | [Click Here](https://pythonbytes.fm/) |
-| Podcast __init__ | [Click Here](https://www.pythonpodcast.com/) |
-| Test and Code | [Click Here](https://testandcode.com/) |
-| Teaching Python | [Click Here](https://www.teachingpython.fm/) |
+| --------------------------------------------  | -------------------------------------------------------------------------------------------------- |
+| Real Python Podcast                           | [Click Here](https://realpython.com/podcasts/rpp/)                                                 |
+| Talk Python Podcast                           | [Click Here](https://talkpython.fm/)                                                               |
+| Python Bites Podcast                          | [Click Here](https://pythonbytes.fm/)                                                              |
+| Podcast __init__                              | [Click Here](https://www.pythonpodcast.com/)                                                       |
+| Test and Code                                 | [Click Here](https://testandcode.com/)                                                             |
+| Teaching Python                               | [Click Here](https://www.teachingpython.fm/)                                                       |
 
 
 ---
