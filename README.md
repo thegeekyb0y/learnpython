@@ -55,18 +55,6 @@ automation, etc.
 
 ---
 
-## Top Twitter Creators
-
-| Info                                   | Link                                                                                                     |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Scientific Python                      | [Click Here](https://twitter.com/SciPyTip)                                                               |
-| Rodrigo                                | [Click Here](https://twitter.com/mathsppblog)                                                            |
-| Mike Driscoll                          | [Click Here](https://twitter.com/driscollis)                                                             | 
-| Matt Harrison                          | [Click Here](https://twitter.com/__mharrison__)                                                          |
-| Aditya Tiwari                          | [Click Here](https://twitter.com/thegeekyb0y)                                                            |
-| Real Python                            | [Click Here](https://twitter.com/realpython)                                                             |
-| Trey Hunner                            | [Click Here](https://twitter.com/treyhunner)                                                             |
-
 ## Top Blogs 
 
 | Info                                   | Link                                                                                                     |
@@ -92,6 +80,20 @@ automation, etc.
 | Mosh's Python Cheatsheet                     | [Click here](https://programmingwithmosh.com/wp-content/uploads/2019/02/Python-Cheat-Sheet.pdf)     |
 | Finxter Python Cheatsheet                    | [Click Here](https://blog.finxter.com/python-cheat-sheets/)                                         |
 | Python Cheatsheet by Websitesetup            | [Click Here](https://websitesetup.org/wp-content/uploads/2021/04/Python-cheat-sheet-April-2021.pdf) |
+
+---
+
+## Top Twitter Creators
+
+| Info                                   | Link                                                                                                     |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Scientific Python                      | [Click Here](https://twitter.com/SciPyTip)                                                               |
+| Rodrigo                                | [Click Here](https://twitter.com/mathsppblog)                                                            |
+| Mike Driscoll                          | [Click Here](https://twitter.com/driscollis)                                                             | 
+| Matt Harrison                          | [Click Here](https://twitter.com/__mharrison__)                                                          |
+| Aditya Tiwari                          | [Click Here](https://twitter.com/thegeekyb0y)                                                            |
+| Real Python                            | [Click Here](https://twitter.com/realpython)                                                             |
+| Trey Hunner                            | [Click Here](https://twitter.com/treyhunner)                                                             |
 
 ---
 
