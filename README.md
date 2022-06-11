@@ -97,6 +97,11 @@ automation, etc.
 
 ## Top Podcasts
 
+| Info                                          | Link                                                                                               |
+| --------------------------------------        | -------------------------------------------------------------------------------------------------- |
+| Real Python Podcast | [Click Here](https://realpython.com/podcasts/rpp/) |
+| Talk Python Podcast | [Click Here](https://talkpython.fm/) |
+| Python Bites Podcast | [Click Here](https://pythonbytes.fm/)
 
 
 ---
