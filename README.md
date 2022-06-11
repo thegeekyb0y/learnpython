@@ -101,7 +101,10 @@ automation, etc.
 | --------------------------------------        | -------------------------------------------------------------------------------------------------- |
 | Real Python Podcast | [Click Here](https://realpython.com/podcasts/rpp/) |
 | Talk Python Podcast | [Click Here](https://talkpython.fm/) |
-| Python Bites Podcast | [Click Here](https://pythonbytes.fm/)
+| Python Bites Podcast | [Click Here](https://pythonbytes.fm/) |
+| Podcast __init__ | [Click Here](https://www.pythonpodcast.com/) |
+| Test and Code | [Click Here](https://testandcode.com/) |
+| Teaching Python | [Click Here](https://www.teachingpython.fm/) |
 
 
 ---
