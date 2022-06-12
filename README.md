@@ -95,6 +95,8 @@ automation, etc.
 | Real Python                            | [Click Here](https://twitter.com/realpython)                                                             |
 | Trey Hunner                            | [Click Here](https://twitter.com/treyhunner)                                                             |
 
+---
+
 ## Top Podcasts
 
 | Info                                          | Link                                                                                               |
