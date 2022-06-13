@@ -24,7 +24,7 @@ automation, etc.
 | Info                                   | Link                                                                                                     |
 | -------------------------------------  | ---------------------------------------------------------------------------------------------------------|
 | **Basic Roadmap**                      | <a href='./roadmap.md' target="_blank">Click Here</a>                                                    |
-| **Complete Notes**                     | [Python Notes](https://github.com/thegeekyb0y/learnpython/raw/main/Python%20Notes%20(goalkicker).pdf)       |   
+| **Complete Notes**                     | [Python Notes](https://books.goalkicker.com/PythonBook/)                                                 |   
 | **Python Libraries & Frameworks**      | [Awesome Python](https://github.com/vinta/awesome-python)                                                |
 
 ---
