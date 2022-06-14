@@ -8,7 +8,7 @@ automation, etc.
 ---
 
 ## Table Of Contents
-
+- [Get Started](https://github.com/thegeekyb0y/learnpython#general-)
 
 
 ## General 🔗
