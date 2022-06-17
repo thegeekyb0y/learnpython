@@ -36,6 +36,7 @@ automation, etc.
 | --------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | Data Science Resources                        | [Click Here](https://github.com/r0f1/datascience)                                                  |
 | Machine Learning Resources                    | [Click Here](https://github.com/ujjwalkarn/Machine-Learning-Tutorials)                             |
+| Artificial Intelligence                       | [Click Here](https://github.com/nivu/ai_all_resources)
 
 ---
 
