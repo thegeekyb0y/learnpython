@@ -122,7 +122,7 @@ automation, etc.
 
 ---
 
-## Other Github Repositories
+## Other Useful Github Repositories
 
 | Info                                          | Link                                                                                               |
 | --------------------------------------        | -------------------------------------------------------------------------------------------------- |
