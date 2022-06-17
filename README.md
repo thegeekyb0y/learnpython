@@ -34,7 +34,8 @@ automation, etc.
 ## Python for Different Fields 🔗
 | Info                                          | Link                                                                                               |
 | --------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| Data Science                                  | [Click Here](https://github.com/r0f1/datascience)                                                  |
+| Data Science Resources                        | [Click Here](https://github.com/r0f1/datascience)                                                  |
+| Machine Learning Resources                    | [Click Here](https://github.com/ujjwalkarn/Machine-Learning-Tutorials)                             |
 
 ---
 
