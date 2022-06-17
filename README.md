@@ -124,6 +124,10 @@ automation, etc.
 
 ---
 
+## Python for Different Fields
+| Info                                          | Link                                                                                               |
+| --------------------------------------        | -------------------------------------------------------------------------------------------------- |
+
 ## Contribution 💡
 
 - If you have a suggestion that would make this repository better or want to add more resources, please fork the repo and [create a pull request.](https://github.com/thegeekyb0y/learnpython/edit/main/README.md) 
