@@ -83,6 +83,14 @@ automation, etc.
 
 ---
 
+## Python for Different Fields
+| Info                                          | Link                                                                                               |
+| --------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Data Science Resources                        | [Click Here](https://github.com/r0f1/datascience)                                                  |
+
+---
+
+
 ## Top Twitter Creators
 
 | Info                                   | Link                                                                                                     |
@@ -124,10 +132,7 @@ automation, etc.
 
 ---
 
-## Python for Different Fields
-| Info                                          | Link                                                                                               |
-| --------------------------------------        | -------------------------------------------------------------------------------------------------- |
-| Data Science Resources | [Click Here](https://github.com/r0f1/datascience) |
+
 
 ## Contribution 💡
 
