@@ -27,17 +27,14 @@ automation, etc.
 | **Complete Notes**                     | [Python Notes](https://books.goalkicker.com/PythonBook/)                                                 |   
 | **Python Libraries & Frameworks**      | [Awesome Python](https://github.com/vinta/awesome-python)                                                |
 | **Interactive Beginner Course**        | [futurecoder](https://futurecoder.io/)                                                                   |
+
 ---
 
-## Top Youtube Creators 
-| Channel Name                           | Link                                                                                                     |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Geeky Shows                            | [Click Here](https://www.youtube.com/user/GeekyShow1)                                                    |
-| Code with Harry                        | [Click Here](https://www.youtube.com/c/CodeWithHarry)                                                    |
-| Corey Schafer                          | [Click Here](https://www.youtube.com/c/Coreyms)                                                          |
-| Telusko                                | [Click Here](https://www.youtube.com/c/Telusko)                                                          |
-| Freecodecamp                           | [Click Here](https://www.youtube.com/c/Freecodecamp)                                                     |
-| CS Dojo                                | [Click Here](https://www.youtube.com/c/CSDojo)                                                           |
+
+## Python for Different Fields 🔗
+| Info                                          | Link                                                                                               |
+| --------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Data Science                                  | [Click Here](https://github.com/r0f1/datascience)                                                  |
 
 ---
 
@@ -55,6 +52,18 @@ automation, etc.
 
 ---
 
+## Top Youtube Creators 
+| Channel Name                           | Link                                                                                                     |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Geeky Shows                            | [Click Here](https://www.youtube.com/user/GeekyShow1)                                                    |
+| Code with Harry                        | [Click Here](https://www.youtube.com/c/CodeWithHarry)                                                    |
+| Corey Schafer                          | [Click Here](https://www.youtube.com/c/Coreyms)                                                          |
+| Telusko                                | [Click Here](https://www.youtube.com/c/Telusko)                                                          |
+| Freecodecamp                           | [Click Here](https://www.youtube.com/c/Freecodecamp)                                                     |
+| CS Dojo                                | [Click Here](https://www.youtube.com/c/CSDojo)                                                           |
+
+---
+
 ## Top Blogs 
 
 | Info                                   | Link                                                                                                     |
@@ -67,6 +76,7 @@ automation, etc.
 | Python Programming Tutorials           | [Click Here](https://pythonprogramming.net/)                                                             |
 
 ---
+
 ## Cheatsheets 🗒️
 
 |Info                                          | Link                                                                                                |
@@ -80,13 +90,6 @@ automation, etc.
 | Mosh's Python Cheatsheet                     | [Click here](https://programmingwithmosh.com/wp-content/uploads/2019/02/Python-Cheat-Sheet.pdf)     |
 | Finxter Python Cheatsheet                    | [Click Here](https://blog.finxter.com/python-cheat-sheets/)                                         |
 | Python Cheatsheet by Websitesetup            | [Click Here](https://websitesetup.org/wp-content/uploads/2021/04/Python-cheat-sheet-April-2021.pdf) |
-
----
-
-## Python for Different Fields
-| Info                                          | Link                                                                                               |
-| --------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| Data Science Resources                        | [Click Here](https://github.com/r0f1/datascience)                                                  |
 
 ---
 
