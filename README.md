@@ -30,16 +30,6 @@ automation, etc.
 
 ---
 
-
-## Python for Different Fields 🔗
-| Info                                          | Link                                                                                               |
-| --------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| Data Science Resources                        | [Click Here](https://github.com/r0f1/datascience)                                                  |
-| Machine Learning Resources                    | [Click Here](https://github.com/ujjwalkarn/Machine-Learning-Tutorials)                             |
-| Artificial Intelligence                       | [Click Here](https://github.com/nivu/ai_all_resources)
-
----
-
 ## Python Playlists on Youtube 
 
 | Info                                   | Link                                                                                                     |
@@ -121,6 +111,14 @@ automation, etc.
 | Test and Code                                 | [Click Here](https://testandcode.com/)                                                             |
 | Teaching Python                               | [Click Here](https://www.teachingpython.fm/)                                                       |
 
+---
+
+## Python for Different Fields 🔗
+| Info                                          | Link                                                                                               |
+| --------------------------------------------- | -------------------------------------------------------------------------------------------------- |
+| Data Science Resources                        | [Click Here](https://github.com/r0f1/datascience)                                                  |
+| Machine Learning Resources                    | [Click Here](https://github.com/ujjwalkarn/Machine-Learning-Tutorials)                             |
+| Artificial Intelligence                       | [Click Here](https://github.com/nivu/ai_all_resources)
 
 ---
 
