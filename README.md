@@ -132,10 +132,9 @@ automation, etc.
 | Project Based Learning                        | [Click Here](https://github.com/tuvtran/project-based-learning#python)                             | 
 | Python-Exercises                              | [Click Here](https://github.com/zhiwehu/Python-programming-exercises)                              |  
 | Python Reference                              | [Click Here](https://github.com/rasbt/python_reference)                                            |
-| Python Projects | [Click Here](https://github.com/thegeekyb0y/learnpython)|
+| Python Projects                               | [Click Here](https://github.com/thegeekyb0y/learnpython)                                           |
+
 ---
-
-
 
 ## Contribution 💡
 
