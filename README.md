@@ -80,6 +80,8 @@ automation, etc.
 | Python Cheat Sheet for All                   | [Click Here](https://sinxloud.com/python-cheat-sheet-beginner-advanced/)                            |
 | Gto76 Python Cheatsheet                      | [Click here](https://www.pythoncheatsheet.org/)                                                     |
 | Mosh's Python Cheatsheet                     | [Click here](https://programmingwithmosh.com/wp-content/uploads/2019/02/Python-Cheat-Sheet.pdf)     |
+| Finxter Python Cheatsheet                    | [Click Here](https://blog.finxter.com/python-cheat-sheets/)                                         |
+| Python Cheatsheet by Websitesetup            | [Click Here](https://websitesetup.org/wp-content/uploads/2021/04/Python-cheat-sheet-April-2021.pdf) |
 
 ---
 
