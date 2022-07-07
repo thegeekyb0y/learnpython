@@ -52,7 +52,6 @@ automation, etc.
 | Corey Schafer                          | [Click Here](https://www.youtube.com/c/Coreyms)                                                          |
 | Telusko                                | [Click Here](https://www.youtube.com/c/Telusko)                                                          |
 | Freecodecamp                           | [Click Here](https://www.youtube.com/c/Freecodecamp)                                                     |
-| CS Dojo                                | [Click Here](https://www.youtube.com/c/CSDojo)                                                           |
 
 ---
 
