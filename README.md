@@ -139,7 +139,7 @@ automation, etc.
 ## Contribution 💡
 
 - If you have a suggestion that would make this repository better or want to add more resources, please fork the repo and [create a pull request.](https://github.com/thegeekyb0y/learnpython/edit/main/README.md) 
-- You can also simply open an [issue](https://github.com/thegeekyb0y/learnpython/issues/new) with the tag "enhancement". 
+- You can also simply open an [issue](https://github.com/thegeekyb0y/learnpython/issues/new) 
 - Please read the [Contribution Guidelines](https://github.com/thegeekyb0y/learnpython/blob/main/CONTRIBUTING.md)
 
 ---
