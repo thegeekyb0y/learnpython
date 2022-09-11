@@ -41,6 +41,7 @@ automation, etc.
 | Geeky Shows                            | [Click Here](https://www.youtube.com/playlist?list=PLbGui_ZYuhigZkqrHbI_ZkPBrIr5Rsd5L)                   |
 | Corey Schafer                          | [Click Here](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)                   |
 | Freecodecamp                           | [Click Here](https://www.youtube.com/playlist?list=PLWKjhJtqVAbnqBxcdjVGgT3uVR10bzTEB)                   |
+| Brototype (Malayalam)                  | [Click Here](https://www.youtube.com/playlist?list=PLY-ecO2csVHfbpOmWamlb8Mujjdnl1jks)                   |
 
 ---
 
@@ -53,6 +54,8 @@ automation, etc.
 | Telusko                                | [Click Here](https://www.youtube.com/c/Telusko)                                                          |
 | Freecodecamp                           | [Click Here](https://www.youtube.com/c/Freecodecamp)                                                     |
 | CS DOJO                                | [Click Here](https://www.youtube.com/c/CSDojo)                                                           |
+| Brototype (Malayalam)                  | [Click Here](https://www.youtube.com/c/BrototypeMalayalam)                                                           |
+
 
 ---
 
