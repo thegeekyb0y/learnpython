@@ -54,7 +54,7 @@ automation, etc.
 | Telusko                                | [Click Here](https://www.youtube.com/c/Telusko)                                                          |
 | Freecodecamp                           | [Click Here](https://www.youtube.com/c/Freecodecamp)                                                     |
 | CS DOJO                                | [Click Here](https://www.youtube.com/c/CSDojo)                                                           |
-| Brototype (Malayalam)                  | [Click Here](https://www.youtube.com/c/BrototypeMalayalam)                                                           |
+| Brototype (Malayalam)                  | [Click Here](https://www.youtube.com/c/BrototypeMalayalam)                                               |
 
 
 ---
