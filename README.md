@@ -85,6 +85,7 @@ automation, etc.
 | Mosh's Python Cheatsheet                     | [Click here](https://programmingwithmosh.com/wp-content/uploads/2019/02/Python-Cheat-Sheet.pdf)     |
 | Finxter Python Cheatsheet                    | [Click Here](https://blog.finxter.com/python-cheat-sheets/)                                         |
 | Python Cheatsheet by Websitesetup            | [Click Here](https://websitesetup.org/wp-content/uploads/2021/04/Python-cheat-sheet-April-2021.pdf) |
+| Python Lists Method Cheatsheet               | [Click Here](https://thegeekyboy.gumroad.com/l/python-lists)                                        |
 
 ---
 
