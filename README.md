@@ -55,6 +55,7 @@ automation, etc.
 | Freecodecamp                           | [Click Here](https://www.youtube.com/c/Freecodecamp)                                                     |
 | CS DOJO                                | [Click Here](https://www.youtube.com/c/CSDojo)                                                           |
 | Brototype (Malayalam)                  | [Click Here](https://www.youtube.com/c/BrototypeMalayalam)                                               |
+| MIT                                    | [Click Here](https://www.edx.org/course/introduction-to-computer-science-and-programming-7)              |
 
 
 ---
