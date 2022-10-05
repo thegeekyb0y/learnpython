@@ -27,6 +27,7 @@ automation, etc.
 | **Complete Notes**                     | [Python Notes](https://books.goalkicker.com/PythonBook/)                                                 |   
 | **Python Libraries & Frameworks**      | [Awesome Python](https://github.com/vinta/awesome-python)                                                |
 | **Interactive Beginner Course**        | [futurecoder](https://futurecoder.io/)                                                                   |
+| **Python Tutorials and Exmaples**      | [Ask Python](https://www.askpython.com/)                                                                   |
 
 ---
 
