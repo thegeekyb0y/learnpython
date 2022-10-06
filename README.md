@@ -42,6 +42,7 @@ automation, etc.
 | Corey Schafer                          | [Click Here](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU)                   |
 | Freecodecamp                           | [Click Here](https://www.youtube.com/playlist?list=PLWKjhJtqVAbnqBxcdjVGgT3uVR10bzTEB)                   |
 | Brototype (Malayalam)                  | [Click Here](https://www.youtube.com/playlist?list=PLY-ecO2csVHfbpOmWamlb8Mujjdnl1jks)                   |
+| Krish Naik                             | [Click Here](https://youtube.com/playlist?list=PLZoTAELRMXVNUL99R4bDlVYsncUNvwUBB)                       |
 
 ---
 
