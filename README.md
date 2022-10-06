@@ -70,6 +70,7 @@ automation, etc.
 | Towards Data Science                   | [Click Here](https://towardsdatascience.com/tagged/python)                                               |
 | Python in Plane English                | [Click Here](https://python.plainenglish.io/)                                                            |
 | Python Programming Tutorials           | [Click Here](https://pythonprogramming.net/)                                                             |
+| Python Tutorials and Exmaples          | [Ask Python](https://www.askpython.com/)                                                                 |
 
 ---
 
