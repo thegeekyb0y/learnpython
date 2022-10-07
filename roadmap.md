@@ -102,10 +102,6 @@ A machine learning library for Python, designed to work with numerical libraries
 
 It can handle dynamic computation graphs on the go. It also provides easy to use API.
 
-Source : [Geeks for Geeks](https://www.geeksforgeeks.org/best-way-to-start-learning-python-a-complete-roadmap/)
-
-> [Redirect to Main Page](https://github.com/thegeekyb0y/learnpython)
-
 ## 7. For Web Scraping
 
 ### Beautiful Soup:
@@ -115,4 +111,10 @@ Source : [Geeks for Geeks](https://www.geeksforgeeks.org/best-way-to-start-learn
 ### Scrapy:
 
 [Scrapy](https://doc.scrapy.org/en/1.0/intro/overview.html) is an application framework for crawling websites and extracting structured data for data mining, information processing or historical archival.
+
+
+Source : [Geeks for Geeks](https://www.geeksforgeeks.org/best-way-to-start-learning-python-a-complete-roadmap/)
+
+> [Redirect to Main Page](https://github.com/thegeekyb0y/learnpython)
+
 
