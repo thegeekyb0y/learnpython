@@ -105,3 +105,14 @@ It can handle dynamic computation graphs on the go. It also provides easy to use
 Source : [Geeks for Geeks](https://www.geeksforgeeks.org/best-way-to-start-learning-python-a-complete-roadmap/)
 
 > [Redirect to Main Page](https://github.com/thegeekyb0y/learnpython)
+
+## 7. For Web Scraping
+
+### Beautiful Soup:
+
+[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) is a Python library for pulling data out of HTML and XML files. It works with your favorite parser to provide idiomatic ways of navigating, searching, and modifying the parse tree. It saves hours or days of work for a programmer.
+
+### Scrapy:
+
+[Scrapy](https://doc.scrapy.org/en/1.0/intro/overview.html) is an application framework for crawling websites and extracting structured data for data mining, information processing or historical archival.
+
