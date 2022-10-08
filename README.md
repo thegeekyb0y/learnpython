@@ -71,6 +71,7 @@ automation, etc.
 | Python in Plane English                | [Click Here](https://python.plainenglish.io/)                                                            |
 | Python Programming Tutorials           | [Click Here](https://pythonprogramming.net/)                                                             |
 | Python Tutorials and Exapmles          | [Ask Python](https://www.askpython.com/)                                                                 |
+| Learn Everything About Python          | [Real Python](https://www.realpython.com/)                                                               |
 
 ---
 
