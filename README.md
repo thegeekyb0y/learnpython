@@ -44,6 +44,7 @@ automation, etc.
 | Brototype (Malayalam)                  | [Click Here](https://www.youtube.com/playlist?list=PLY-ecO2csVHfbpOmWamlb8Mujjdnl1jks)                   |
 | Krish Naik                             | [Click Here](https://youtube.com/playlist?list=PLZoTAELRMXVNUL99R4bDlVYsncUNvwUBB)                       |
 | Programming With Mosh                  | [Click Here](https://youtube.com/playlist?list=PLTjRvDozrdlxj5wgH4qkvwSOdHLOCx10f)                       |
+| Clever Programmer                      | [Click Here](https://www.youtube.com/watch?v=B9nFMZIYQl0)                                                |
 
 ---
 
@@ -126,7 +127,8 @@ automation, etc.
 | --------------------------------------------- | -------------------------------------------------------------------------------------------------- |
 | Data Science Resources                        | [Click Here](https://github.com/r0f1/datascience)                                                  |
 | Machine Learning Resources                    | [Click Here](https://github.com/ujjwalkarn/Machine-Learning-Tutorials)                             |
-| Artificial Intelligence                       | [Click Here](https://github.com/nivu/ai_all_resources)
+| Artificial Intelligence                       | [Click Here](https://github.com/nivu/ai_all_resources)                                             |
+| Solidity, Blockchain and Smart Contracts      | [Click Here](https://www.youtube.com/watch?v=M576WGiDBdQ&t=6211s)                                  |
 
 ---
 
