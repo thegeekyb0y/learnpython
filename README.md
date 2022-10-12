@@ -18,6 +18,7 @@ It is a language which many people fall in love with because of its simplicity. 
 | Quick Start guide                  | [Click here](https://www.python.org/about/gettingstarted/)                                                   | 
 | Suggested Code Editor              | [Sublime Text](http://www.sublimetext.com/) or [VS Code](code.visualstudio.com)                              |
 | Suggested IDE                      | [Pycharm](https://www.jetbrains.com/pycharm/) or [Pydev](http://pydev.org/)                                  |
+| Python Dev Roadmap                 | [Roadmap.sh](https://roadmap.sh/python)
 
 ---
 
