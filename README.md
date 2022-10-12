@@ -5,6 +5,8 @@ Python is a high-level, interpreted scripting language, highly used for automati
 People from different disciplines use Python for a variety of different tasks, such as data analysis and visualization, artificial intelligence and Machine Learning, 
 automation, etc.
 
+It is a language which many people fall in love with because of its simplicity. The syntax is simple and the debugging is also much easier in python compared to languages like C++ or C# even though python was made using C++ in 1991 by Guido van Rossum.
+
 ---
 
 ## General 🔗
