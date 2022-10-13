@@ -77,6 +77,7 @@ It is a language which many people fall in love with because of its simplicity. 
 | Python Programming Tutorials           | [Click Here](https://pythonprogramming.net/)                                                             |
 | Python Tutorials and Exapmles          | [Ask Python](https://www.askpython.com/)                                                                 |
 | Learn Everything About Python          | [Real Python](https://www.realpython.com/)                                                               |
+| 60 Python Projects with Source Code    | [Click Here](https://medium.com/coders-camp/60-python-projects-with-source-code-919cd8a6e512)            |
 
 ---
 
