@@ -70,7 +70,8 @@ It is a language which many people fall in love with because of its simplicity. 
 | -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | Learn Python                           | [Click Here](https://learnpython.com/blog/)                                                              |
 | Geeks for Geeks                        | [Click Here](https://www.geeksforgeeks.org/python-programming-language/)                                 |
-| W3schools Documentation                | [Click Here](https://www.w3schools.com/python/)                                                          |
+| W3schools Documentation                | [Click Here](https://www.w3schools.com/python/)     
+| Learn Python Programming               | [Click Here](https://www.scaler.com/topics/python/)                                                      |
 | Towards Data Science                   | [Click Here](https://towardsdatascience.com/tagged/python)                                               |
 | Python in Plane English                | [Click Here](https://python.plainenglish.io/)                                                            |
 | Python Programming Tutorials           | [Click Here](https://pythonprogramming.net/)                                                             |
