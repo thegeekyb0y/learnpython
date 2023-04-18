@@ -105,6 +105,11 @@ A machine learning library for Python, designed to work with numerical libraries
 
 It can handle dynamic computation graphs on the go. It also provides easy to use API. [Official Docs](https://pytorch.org/docs/stable/index.html)
 
+
+### Jupyter Notebook
+
+The Jupyter Notebook is an open source web application that you can use to create and share documents that contain live code, equations, visualizations, and text. Jupyter Notebook is maintained by the people at Project Jupyter. [Officaial Docs](https://jupyter.org/)
+
 ## 7. For Web Scraping
 
 ### Beautiful Soup:
