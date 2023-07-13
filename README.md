@@ -50,7 +50,6 @@ It is a language which many people fall in love with because of its simplicity. 
 | Bro Code                               | [Click Here](https://www.youtube.com/watch?v=6VElWbND-zg&list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT)
 | thenewboston                           | [Click Here](https://www.youtube.com/watch?v=HBxCHonP6Ro&list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_)
 | GURUKULA  (Tamil)                      | [Click Here](https://youtube.com/playlist?list=PLA2UBjeRwle3OLO3qmXTbmCvuTlqhHRVb)
-            |
             
 ---
 
@@ -66,8 +65,7 @@ It is a language which many people fall in love with because of its simplicity. 
 | Brototype (Malayalam)                  | [Click Here](https://www.youtube.com/c/BrototypeMalayalam)                                               |
 | thenewboston(Buckey Robert)            | [Click Here](https://www.youtube.com/@thenewboston/)
             |
-| GURUKULA  (English/Tamil)              | [Click Here](https://www.youtube.com/@GURUKULA)
-            |     
+| GURUKULA  (English/Tamil)              | [Click Here](https://www.youtube.com/@GURUKULA)    
 
 ---
 
