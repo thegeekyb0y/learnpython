@@ -127,15 +127,6 @@ It is a language which many people fall in love with because of its simplicity. 
 
 ---
 
-## Python for Different Fields 🔗
-| Info                                          | Link                                                                                               |
-| --------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| Data Science Resources                        | [Click Here](https://github.com/r0f1/datascience)                                                  |
-| Machine Learning Resources                    | [Click Here](https://github.com/ujjwalkarn/Machine-Learning-Tutorials)                             |
-| Artificial Intelligence                       | [Click Here](https://github.com/nivu/ai_all_resources)                                             |
-| Solidity, Blockchain and Smart Contracts      | [Click Here](https://www.youtube.com/watch?v=M576WGiDBdQ&t=6211s)                                  |
-
----
 
 ## Other Useful Github Repositories
 
