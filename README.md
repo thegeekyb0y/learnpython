@@ -49,7 +49,7 @@ It is a language which many people fall in love with because of its simplicity. 
 | Clever Programmer                      | [Click Here](https://www.youtube.com/watch?v=B9nFMZIYQl0)                                                |
 | Bro Code                               | [Click Here](https://www.youtube.com/watch?v=6VElWbND-zg&list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT)
 | thenewboston                           | [Click Here](https://www.youtube.com/watch?v=HBxCHonP6Ro&list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_)
-
+| programming with mosh                  | [Click Here](https://youtube.com/playlist?list=PLTjRvDozrdlxj5wgH4qkvwSOdHLOCx10f&si=2iS88IIUr3SwJ_Q0)                                           |
 ---
 
 ## Top Youtube Creators 
