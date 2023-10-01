@@ -148,7 +148,7 @@ It is a language which many people fall in love with because of its simplicity. 
 | Python-Exercises                              | [Click Here](https://github.com/zhiwehu/Python-programming-exercises)                              |  
 | Python Reference                              | [Click Here](https://github.com/rasbt/python_reference)                                            |
 | Python Projects                               | [Click Here](https://github.com/thegeekyb0y/pythonprojects)                                        |
-
+| pytorch course( deep learning )               | [Click Here](https://github.com/mrdbourke/pytorch-deep-learning/)|
 ---
 
 ## Contribution 💡
