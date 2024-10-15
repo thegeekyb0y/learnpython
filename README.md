@@ -5,7 +5,7 @@ Python is a high-level, interpreted scripting language, highly used for automati
 People from different disciplines use Python for a variety of different tasks, such as data analysis and visualization, artificial intelligence and Machine Learning, 
 automation, etc.
 
-It is a language which many people fall in love with because of its simplicity. The syntax is simple and the debugging is also much easier in python compared to languages like C++ or C# even though python was made using C++ in 1991 by Guido van Rossum.
+It is a language that many people fall in love with because of its simplicity. The syntax is simple and the debugging is also much easier in Python compared to languages like C++ or C# even though Python was made using C++ in 1991 by Guido van Rossum.
 
 ---
 
@@ -49,6 +49,7 @@ It is a language which many people fall in love with because of its simplicity. 
 | Clever Programmer                      | [Click Here](https://www.youtube.com/watch?v=B9nFMZIYQl0)                                                |
 | Bro Code                               | [Click Here](https://www.youtube.com/watch?v=6VElWbND-zg&list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT)
 | thenewboston                           | [Click Here](https://www.youtube.com/watch?v=HBxCHonP6Ro&list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_)
+| CS50                                   | [Click Here](https://www.youtube.com/watch?v=OvKCESUCWII&list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V)
 
 ---
 
@@ -137,7 +138,7 @@ It is a language which many people fall in love with because of its simplicity. 
 
 ---
 
-## Other Useful Github Repositories
+## Other Useful GitHub Repositories
 
 | Info                                          | Link                                                                                               |
 | --------------------------------------        | -------------------------------------------------------------------------------------------------- |
