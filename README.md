@@ -152,6 +152,82 @@ It is a language that many people fall in love with because of its simplicity. T
 
 ---
 
+## AI & Machine Learning with Python 🤖
+
+### Generative AI & Large Language Models
+
+| Resource Name | Description | Link | Difficulty |
+| ------------- | ----------- | ---- | ---------- |
+| OpenAI API Docs | Official documentation for GPT-4 and other OpenAI models with Python examples | [Click Here](https://platform.openai.com/docs) | Beginner |
+| Anthropic Claude API Docs | Official docs for integrating Claude LLM into Python applications | [Click Here](https://docs.anthropic.com) | Beginner |
+| Google Gemini API Docs | Official guide to using Gemini models via Python SDK | [Click Here](https://ai.google.dev/docs) | Beginner |
+| LangChain Documentation | Framework for building LLM-powered applications and chains | [Click Here](https://python.langchain.com/docs) | Intermediate |
+| LlamaIndex Docs | Data framework for connecting LLMs with external data sources | [Click Here](https://docs.llamaindex.ai) | Intermediate |
+| Hugging Face Transformers | Library for using thousands of pretrained NLP and vision models | [Click Here](https://huggingface.co/docs/transformers) | Intermediate |
+| Ollama | Run large language models locally with minimal setup | [Click Here](https://ollama.com) | Beginner |
+
+---
+
+### Modern ML Frameworks
+
+| Resource Name | Description | Link | Difficulty |
+| ------------- | ----------- | ---- | ---------- |
+| PyTorch Official Tutorials | Hands-on tutorials for deep learning using PyTorch 2.x | [Click Here](https://pytorch.org/tutorials) | Intermediate |
+| TensorFlow & Keras Guide | Official guide covering TensorFlow 2.x and Keras 3.0 for building neural networks | [Click Here](https://www.tensorflow.org/guide) | Intermediate |
+| JAX Documentation | High-performance numerical computing and ML research library by Google | [Click Here](https://jax.readthedocs.io) | Advanced |
+| Scikit-learn User Guide | Complete reference for classical ML algorithms in Python | [Click Here](https://scikit-learn.org/stable/user_guide.html) | Beginner |
+| XGBoost Documentation | Optimized gradient boosting library widely used in ML competitions | [Click Here](https://xgboost.readthedocs.io) | Intermediate |
+
+---
+
+### Vector Databases & RAG
+
+| Resource Name | Description | Link | Difficulty |
+| ------------- | ----------- | ---- | ---------- |
+| ChromaDB Docs | Open-source embedding database for building RAG applications | [Click Here](https://docs.trychroma.com) | Beginner |
+| FAISS by Meta | Library for efficient similarity search and dense vector clustering | [Click Here](https://faiss.ai) | Intermediate |
+| Pinecone Docs | Managed vector database for production-scale semantic search | [Click Here](https://docs.pinecone.io) | Intermediate |
+| Qdrant Docs | High-performance vector search engine with filtering support | [Click Here](https://qdrant.tech/documentation) | Intermediate |
+| RAG from Scratch - LangChain | Step-by-step tutorial series on building Retrieval-Augmented Generation pipelines | [Click Here](https://github.com/langchain-ai/rag-from-scratch) | Intermediate |
+
+---
+
+### AI/ML YouTube Playlists
+
+| Resource Name | Description | Link | Difficulty |
+| ------------- | ----------- | ---- | ---------- |
+| Andrej Karpathy - Neural Networks: Zero to Hero | Build neural networks and LLMs from scratch in Python | [Click Here](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) | Intermediate |
+| 3Blue1Brown - Neural Networks | Visually intuitive series explaining how neural networks work | [Click Here](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) | Beginner |
+| Fast.ai Practical Deep Learning | Free course focused on top-down, practical deep learning with Python | [Click Here](https://www.youtube.com/playlist?list=PLfYUBJiXbdtSvpQjSnJJ_PmDQB_VyT5iU) | Intermediate |
+| Sentdex - ML with Python | Hands-on machine learning tutorials using Python and scikit-learn | [Click Here](https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Vasff-As5KJ+ov3x) | Beginner |
+| DeepLearning.AI Short Courses | Short, project-based courses on LLMs, RAG, and AI agents | [Click Here](https://www.youtube.com/@deeplearningai) | Beginner |
+
+---
+
+### Books & Documentation
+
+| Resource Name | Description | Link | Difficulty |
+| ------------- | ----------- | ---- | ---------- |
+| Hands-On Machine Learning (3rd Ed.) | Comprehensive book covering ML and deep learning with Scikit-learn and TensorFlow | [Click Here](https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/) | Intermediate |
+| Deep Learning with Python - Chollet | Written by the creator of Keras; covers deep learning fundamentals and applications | [Click Here](https://www.manning.com/books/deep-learning-with-python-second-edition) | Intermediate |
+| NLP with Transformers | Practical guide to building NLP applications using Hugging Face Transformers | [Click Here](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/) | Intermediate |
+| OpenAI Cookbook | Collection of practical examples and guides for using the OpenAI API | [Click Here](https://cookbook.openai.com) | Beginner |
+| Hugging Face Course (Free) | Free end-to-end course on transformers, fine-tuning, and deployment | [Click Here](https://huggingface.co/learn/nlp-course) | Beginner |
+
+---
+
+### AI/ML Blogs & Communities
+
+| Resource Name | Description | Link | Difficulty |
+| ------------- | ----------- | ---- | ---------- |
+| Towards Data Science | Community blog covering ML, AI, and data science with Python tutorials | [Click Here](https://towardsdatascience.com) | Beginner |
+| Papers with Code | Tracks ML research papers alongside open-source implementations | [Click Here](https://paperswithcode.com) | Advanced |
+| Hugging Face Blog | Updates, tutorials, and research from the Hugging Face team | [Click Here](https://huggingface.co/blog) | Intermediate |
+| Google AI Blog | Research and engineering updates from Google's AI teams | [Click Here](https://ai.googleblog.com) | Advanced |
+| Distill.pub | Beautifully illustrated explanations of ML research concepts | [Click Here](https://distill.pub) | Advanced |
+
+---
+
 ## Contribution 💡
 
 - If you have a suggestion that would make this repository better or want to add more resources or any links are not working, please fork the repo and [create a pull request.](https://github.com/thegeekyb0y/learnpython/edit/main/README.md) 
@@ -165,5 +241,3 @@ It is a language that many people fall in love with because of its simplicity. T
 [Instagram](https://www.instagram.com/thegeekyb0y) | [Twitter](https://www.twitter.com/thegeekyb0y) | [Linkedin](https://www.linkedin.com/in/adityacodes)
 
 ![visitors](https://page-views.glitch.me/badge?page_id=thegeekyb0y/learnpython)
-
-
