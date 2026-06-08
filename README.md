@@ -152,6 +152,80 @@ It is a language that many people fall in love with because of its simplicity. T
 
 ---
 
+## AI & Machine Learning with Python 🤖
+
+### Generative AI & Large Language Models
+
+| Resource Name | Link | Difficulty |
+| ------------- | ---- | ---------- |
+| OpenAI API Docs | [Click Here](https://platform.openai.com/docs) | Beginner |
+| Anthropic Claude API Docs | [Click Here](https://docs.anthropic.com) | Beginner |
+| Google Gemini API Docs | [Click Here](https://ai.google.dev/docs) | Beginner |
+| LangChain Documentation | [Click Here](https://python.langchain.com/docs) | Intermediate |
+| LlamaIndex Docs | [Click Here](https://docs.llamaindex.ai) | Intermediate |
+| Hugging Face Transformers | [Click Here](https://huggingface.co/docs/transformers) | Intermediate |
+| Ollama | [Click Here](https://ollama.com) | Beginner |
+
+---
+
+### Modern ML Frameworks
+
+| Resource Name | Link | Difficulty |
+| ------------- | ---- | ---------- |
+| PyTorch Official Tutorials | [Click Here](https://pytorch.org/tutorials) | Intermediate |
+| TensorFlow & Keras Guide | [Click Here](https://www.tensorflow.org/guide) | Intermediate |
+| JAX Documentation | [Click Here](https://jax.readthedocs.io) | Advanced |
+| Scikit-learn User Guide | [Click Here](https://scikit-learn.org/stable/user_guide.html) | Beginner |
+| XGBoost Documentation | [Click Here](https://xgboost.readthedocs.io) | Intermediate |
+
+---
+
+### Vector Databases & RAG
+
+| Resource Name | Link | Difficulty |
+| ------------- | ---- | ---------- |
+| ChromaDB Docs | [Click Here](https://docs.trychroma.com) | Beginner |
+| FAISS by Meta | [Click Here](https://faiss.ai) | Intermediate |
+| Pinecone Docs | [Click Here](https://docs.pinecone.io) | Intermediate |
+| Qdrant Docs | [Click Here](https://qdrant.tech/documentation) | Intermediate |
+| RAG from Scratch - LangChain | [Click Here](https://github.com/langchain-ai/rag-from-scratch) | Intermediate |
+
+---
+
+### AI/ML YouTube Playlists
+
+| Resource Name | Link | Difficulty |
+| ------------- | ---- | ---------- |
+| Andrej Karpathy - Neural Networks: Zero to Hero | [Click Here](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) | Intermediate |
+| 3Blue1Brown - Neural Networks | [Click Here](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) | Beginner |
+| Fast.ai Practical Deep Learning | [Click Here](https://www.youtube.com/playlist?list=PLfYUBJiXbdtSvpQjSnJJ_PmDQB_VyT5iU) | Intermediate |
+| Sentdex - ML with Python | [Click Here](https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Vasff-As5KJ+ov3x) | Beginner |
+| DeepLearning.AI Short Courses | [Click Here](https://www.youtube.com/@deeplearningai) | Beginner |
+
+---
+
+### Books & Documentation
+
+| Resource Name | Link | Difficulty |
+| ------------- | ---- | ---------- |
+| Hands-On Machine Learning (3rd Ed.) | [Click Here](https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/) | Intermediate |
+| Deep Learning with Python - Chollet | [Click Here](https://www.manning.com/books/deep-learning-with-python-second-edition) | Intermediate |
+| NLP with Transformers | [Click Here](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/) | Intermediate |
+| OpenAI Cookbook | [Click Here](https://cookbook.openai.com) | Beginner |
+| Hugging Face Course (Free) | [Click Here](https://huggingface.co/learn/nlp-course) | Beginner |
+
+---
+
+### AI/ML Blogs & Communities
+
+| Resource Name | Link | Difficulty |
+| ------------- | ---- | ---------- |
+| Towards Data Science | [Click Here](https://towardsdatascience.com) | Beginner |
+| Papers with Code | [Click Here](https://paperswithcode.com) | Advanced |
+| Hugging Face Blog | [Click Here](https://huggingface.co/blog) | Intermediate |
+| Google AI Blog | [Click Here](https://ai.googleblog.com) | Advanced |
+| Distill.pub | [Click Here](https://distill.pub) | Advanced |
+
 ## Contribution 💡
 
 - If you have a suggestion that would make this repository better or want to add more resources or any links are not working, please fork the repo and [create a pull request.](https://github.com/thegeekyb0y/learnpython/edit/main/README.md) 
@@ -163,7 +237,4 @@ It is a language that many people fall in love with because of its simplicity. T
 ## Connect with Me 🤝
 
 [Instagram](https://www.instagram.com/thegeekyb0y) | [Twitter](https://www.twitter.com/thegeekyb0y) | [Linkedin](https://www.linkedin.com/in/adityacodes)
-
-![visitors](https://page-views.glitch.me/badge?page_id=thegeekyb0y/learnpython)
-
 
