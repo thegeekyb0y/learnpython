@@ -36,8 +36,8 @@ It is a language that many people fall in love with because of its simplicity. T
 
 | Info                                   | Link                                                                                                     |
 | -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| Telusko                                | [Click Here](https://youtube.com/playlist?list=PLsyeobzWxl7poL9JTVyndKe62ieoN-MZ3)                       |
-| CS Dojo                                | [Click Here](https://youtube.com/playlist?list=PLBZBJbE_rGRWeh5mIBhD-hhDwSEDxogDg)                       |
+| Telusko                                | [Click Here](https://www.youtube.com/playlist?list=PLfMKTvvq5oWEv2a-c6Ne-mBP_FJalX4R8)                   |
+| Chai aur Code                          | [Click Here](https://www.youtube.com/playlist?list=PLu71SKxNbfoBsMugTFALhdLlZ5VOqCg2s)                   |
 | Edureka                                | [Click Here](https://youtube.com/playlist?list=PL9ooVrP1hQOHY-BeYrKHDrHKphsJOyRyu)                       |
 | Code with Harry                        | [Click Here](https://youtube.com/playlist?list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME)                       |
 | Geeky Shows                            | [Click Here](https://www.youtube.com/playlist?list=PLbGui_ZYuhigZkqrHbI_ZkPBrIr5Rsd5L)                   |
@@ -57,6 +57,7 @@ It is a language that many people fall in love with because of its simplicity. T
 | Channel Name                           | Link                                                                                                     |
 | -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
 | Geeky Shows                            | [Click Here](https://www.youtube.com/user/GeekyShow1)                                                    |
+| Chai aur Code                          | [Click Here](https://www.youtube.com/@chaiaurcode)                                                       |
 | Code with Harry                        | [Click Here](https://www.youtube.com/c/CodeWithHarry)                                                    |
 | Corey Schafer                          | [Click Here](https://www.youtube.com/c/Coreyms)                                                          |
 | Telusko                                | [Click Here](https://www.youtube.com/c/Telusko)                                                          |
@@ -88,7 +89,7 @@ It is a language that many people fall in love with because of its simplicity. T
 
 |Info                                          | Link                                                                                                |
 |--------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| Data Camp Cheat Sheets                       | [Click Here](https://www.datacamp.com/community/data-science-cheatsheets)                           |
+| Data Camp Cheat Sheets                       | [Click Here](https://www.datacamp.com/cheat-sheet)                                                  |
 | Python 3 Cheat Sheet                         | [Click Here](https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-english.pdf)         |
 | Scientific Python Cheat Sheet                | [Click Here](https://ipgp.github.io/scientific_python_cheat_sheet/)                                 |
 | Comprehensive Python Cheatsheet              | [Click Here](https://gto76.github.io/python-cheatsheet/)                                            |
@@ -97,6 +98,7 @@ It is a language that many people fall in love with because of its simplicity. T
 | Finxter Python Cheatsheet                    | [Click Here](https://blog.finxter.com/python-cheat-sheets/)                                         |
 | Python Cheatsheet by Websitesetup            | [Click Here](https://websitesetup.org/wp-content/uploads/2021/04/Python-cheat-sheet-April-2021.pdf) |
 | Python Lists Method Cheatsheet               | [Click Here](https://thegeekyboy.gumroad.com/l/python-lists)                                        |
+| Real Python Cheatsheet                       | [Click Here](https://realpython.com/cheatsheets/python/)                                            |
 
 ---
 
@@ -136,6 +138,7 @@ It is a language that many people fall in love with because of its simplicity. T
 | Artificial Intelligence                       | [Click Here](https://github.com/nivu/ai_all_resources)                                             |
 | Solidity, Blockchain and Smart Contracts      | [Click Here](https://www.youtube.com/watch?v=M576WGiDBdQ&t=6211s)                                  |
 
+
 ---
 
 ## Other Useful GitHub Repositories
@@ -156,76 +159,75 @@ It is a language that many people fall in love with because of its simplicity. T
 
 ### Generative AI & Large Language Models
 
-| Resource Name | Link | Difficulty |
-| ------------- | ---- | ---------- |
-| OpenAI API Docs | [Click Here](https://platform.openai.com/docs) | Beginner |
-| Anthropic Claude API Docs | [Click Here](https://docs.anthropic.com) | Beginner |
-| Google Gemini API Docs | [Click Here](https://ai.google.dev/docs) | Beginner |
-| LangChain Documentation | [Click Here](https://python.langchain.com/docs) | Intermediate |
-| LlamaIndex Docs | [Click Here](https://docs.llamaindex.ai) | Intermediate |
-| Hugging Face Transformers | [Click Here](https://huggingface.co/docs/transformers) | Intermediate |
-| Ollama | [Click Here](https://ollama.com) | Beginner |
+| Resource Name                    | Link                                                       | Difficulty   |
+| -------------------------------- | ---------------------------------------------------------- | ------------ |
+| OpenAI API Docs                  | [Click Here](https://platform.openai.com/docs)             | Beginner     |
+| Anthropic Claude API Docs        | [Click Here](https://docs.anthropic.com)                   | Beginner     |
+| Google Gemini API Docs           | [Click Here](https://ai.google.dev/docs)                   | Beginner     |
+| LangChain Documentation          | [Click Here](https://python.langchain.com/docs)            | Intermediate |
+| LlamaIndex Docs                  | [Click Here](https://docs.llamaindex.ai)                   | Intermediate |
+| Hugging Face Transformers        | [Click Here](https://huggingface.co/docs/transformers)     | Intermediate |
+| Ollama                           | [Click Here](https://ollama.com)                           | Beginner     |
 
 ---
 
 ### Modern ML Frameworks
 
-| Resource Name | Link | Difficulty |
-| ------------- | ---- | ---------- |
-| PyTorch Official Tutorials | [Click Here](https://pytorch.org/tutorials) | Intermediate |
-| TensorFlow & Keras Guide | [Click Here](https://www.tensorflow.org/guide) | Intermediate |
-| JAX Documentation | [Click Here](https://jax.readthedocs.io) | Advanced |
-| Scikit-learn User Guide | [Click Here](https://scikit-learn.org/stable/user_guide.html) | Beginner |
-| XGBoost Documentation | [Click Here](https://xgboost.readthedocs.io) | Intermediate |
+| Resource Name                    | Link                                                           | Difficulty   |
+| -------------------------------- | -------------------------------------------------------------  | ------------ |
+| PyTorch Official Tutorials       | [Click Here](https://pytorch.org/tutorials)                    | Intermediate |
+| TensorFlow & Keras Guide         | [Click Here](https://www.tensorflow.org/guide)                 | Intermediate |
+| JAX Documentation                | [Click Here](https://jax.readthedocs.io)                       | Advanced     |
+| Scikit-learn User Guide          | [Click Here](https://scikit-learn.org/stable/user_guide.html)  | Beginner     |
+| XGBoost Documentation            | [Click Here](https://xgboost.readthedocs.io)                   | Intermediate |
 
 ---
 
 ### Vector Databases & RAG
 
-| Resource Name | Link | Difficulty |
-| ------------- | ---- | ---------- |
-| ChromaDB Docs | [Click Here](https://docs.trychroma.com) | Beginner |
-| FAISS by Meta | [Click Here](https://faiss.ai) | Intermediate |
-| Pinecone Docs | [Click Here](https://docs.pinecone.io) | Intermediate |
-| Qdrant Docs | [Click Here](https://qdrant.tech/documentation) | Intermediate |
-| RAG from Scratch - LangChain | [Click Here](https://github.com/langchain-ai/rag-from-scratch) | Intermediate |
+| Resource Name                    | Link                                                              | Difficulty   |
+| --------------------------------- | ---------------------------------------------------------------- | -------------|
+| ChromaDB Docs                    | [Click Here](https://docs.trychroma.com)                          | Beginner     |
+| FAISS by Meta                    | [Click Here](https://faiss.ai)                                    | Intermediate |
+| Pinecone Docs                    | [Click Here](https://docs.pinecone.io)                            | Intermediate |
+| Qdrant Docs                      | [Click Here](https://qdrant.tech/documentation)                   | Intermediate |
+| RAG from Scratch - LangChain     | [Click Here](https://github.com/langchain-ai/rag-from-scratch)    | Intermediate |
 
 ---
 
 ### AI/ML YouTube Playlists
 
-| Resource Name | Link | Difficulty |
-| ------------- | ---- | ---------- |
-| Andrej Karpathy - Neural Networks: Zero to Hero | [Click Here](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ) | Intermediate |
-| 3Blue1Brown - Neural Networks | [Click Here](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi) | Beginner |
-| Fast.ai Practical Deep Learning | [Click Here](https://www.youtube.com/playlist?list=PLfYUBJiXbdtSvpQjSnJJ_PmDQB_VyT5iU) | Intermediate |
-| Sentdex - ML with Python | [Click Here](https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Vasff-As5KJ+ov3x) | Beginner |
-| DeepLearning.AI Short Courses | [Click Here](https://www.youtube.com/@deeplearningai) | Beginner |
+| Resource Name                                    | Link                                                                                    | Difficulty   |
+| ------------------------------------------------ | --------------------------------------------------------------------------------------- | ------------ |
+| Andrej Karpathy - Neural Networks: Zero to Hero  | [Click Here](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)  | Intermediate |
+| 3Blue1Brown - Neural Networks                    | [Click Here](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi)  | Beginner     |
+| Fast.ai Practical Deep Learning                  | [Click Here](https://www.youtube.com/playlist?list=PLfYUBJiXbdtSvpQjSnJJ_PmDQB_VyT5iU)  | Intermediate |
+| Sentdex - ML with Python                         | [Click Here](https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Vasff-As5KJ+ov3x)  | Beginner     |
+| DeepLearning.AI Short Courses                    | [Click Here](https://www.youtube.com/@deeplearningai)                                   | Beginner     |
 
 ---
 
 ### Books & Documentation
 
-| Resource Name | Link | Difficulty |
-| ------------- | ---- | ---------- |
-| Hands-On Machine Learning (3rd Ed.) | [Click Here](https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/) | Intermediate |
-| Deep Learning with Python - Chollet | [Click Here](https://www.manning.com/books/deep-learning-with-python-second-edition) | Intermediate |
-| NLP with Transformers | [Click Here](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/) | Intermediate |
-| OpenAI Cookbook | [Click Here](https://cookbook.openai.com) | Beginner |
-| Hugging Face Course (Free) | [Click Here](https://huggingface.co/learn/nlp-course) | Beginner |
+| Resource Name                        | Link                                                                                        | Difficulty   |
+| ------------------------------------ | ------------------------------------------------------------------------------------------- | -------------|
+| Hands-On Machine Learning (3rd Ed.)  | [Click Here](https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967/) | Intermediate |
+| Deep Learning with Python - Chollet  | [Click Here](https://www.manning.com/books/deep-learning-with-python-second-edition)        | Intermediate |
+| NLP with Transformers                | [Click Here](https://www.oreilly.com/library/view/natural-language-processing/9781098136789/) | Intermediate |
+| OpenAI Cookbook                      | [Click Here](https://cookbook.openai.com)                                                   | Beginner     |
+| Hugging Face Course (Free)           | [Click Here](https://huggingface.co/learn/nlp-course)                                       | Beginner     |
 
 ---
 
 ### AI/ML Blogs & Communities
 
-| Resource Name | Link | Difficulty |
-| ------------- | ---- | ---------- |
-| Towards Data Science | [Click Here](https://towardsdatascience.com) | Beginner |
-| Papers with Code | [Click Here](https://paperswithcode.com) | Advanced |
-| Hugging Face Blog | [Click Here](https://huggingface.co/blog) | Intermediate |
-| Google AI Blog | [Click Here](https://ai.googleblog.com) | Advanced |
-| Distill.pub | [Click Here](https://distill.pub) | Advanced |
-
+| Resource Name             | Link                                                | Difficulty         |
+| ------------------------- | --------------------------------------------------- | ------------------ |
+| Towards Data Science      | [Click Here](https://towardsdatascience.com)        | Beginner           |
+| Papers with Code          | [Click Here](https://paperswithcode.com)            | Advanced           |
+| Hugging Face Blog         | [Click Here](https://huggingface.co/blog)           | Intermediate       |
+| Google AI Blog            | [Click Here](https://ai.googleblog.com)             | Advanced           | 
+| Distill.pub               | [Click Here](https://distill.pub)                   | Advanced           |
 ## Contribution 💡
 
 - If you have a suggestion that would make this repository better or want to add more resources or any links are not working, please fork the repo and [create a pull request.](https://github.com/thegeekyb0y/learnpython/edit/main/README.md) 
