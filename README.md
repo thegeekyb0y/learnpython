@@ -21,6 +21,35 @@ It is a language that many people fall in love with because of its simplicity. T
 
 ---
 
+## Index 📑
+
+- [General](#general-)
+- [Basic Resources](#basic-resources-)
+- [Python Playlists on Youtube](#python-playlists-on-youtube)
+- [Top Youtube Creators](#top-youtube-creators)
+- [Top Blogs](#top-blogs)
+- [Cheatsheets](#cheatsheets-️)
+- [Top Twitter Creators](#top-twitter-creators)
+- [Top Podcasts](#top-podcasts)
+- [Python for Different Fields](#python-for-different-fields-)
+- [Other Useful GitHub Repositories](#other-useful-github-repositories)
+- [AI & Machine Learning with Python](#ai--machine-learning-with-python-)
+  - [Generative AI & Large Language Models](#generative-ai--large-language-models)
+  - [Modern ML Frameworks](#modern-ml-frameworks)
+  - [Vector Databases & RAG](#vector-databases--rag)
+  - [AI/ML YouTube Playlists](#aiml-youtube-playlists)
+  - [Books & Documentation](#books--documentation)
+  - [AI/ML Blogs & Communities](#aiml-blogs--communities)
+  - [AI Coding Agents for Python Development](#ai-coding-agents-for-python-development-)
+  - [Building AI Agents in Python](#building-ai-agents-in-python-)
+  - [Model Context Protocol (MCP) with Python](#model-context-protocol-mcp-with-python-)
+  - [Evaluating & Testing LLM Apps in Python](#evaluating--testing-llm-apps-in-python-)
+  - [Build an LLM From Scratch in Python](#build-an-llm-from-scratch-in-python-)
+  - [Fine-Tuning LLMs in Python (PEFT, LoRA, QLoRA)](#fine-tuning-llms-in-python-peft-lora-qlora-️)
+- [Contribution](#contribution-)
+
+---
+
 ## Basic Resources 🔗
 
 | Info                                   | Link                                                                                                     |
@@ -228,6 +257,108 @@ It is a language that many people fall in love with because of its simplicity. T
 | Hugging Face Blog         | [Click Here](https://huggingface.co/blog)           | Intermediate       |
 | Google AI Blog            | [Click Here](https://ai.googleblog.com)             | Advanced           | 
 | Distill.pub               | [Click Here](https://distill.pub)                   | Advanced           |
+
+## AI Coding Agents for Python Development 🧑‍💻
+
+| Resource Name           | Link                                                    | Notes                                                    |
+| ------------------------ | ---------------------------------------------------------- | ----------------------------------------------------------- |
+| Claude Code              | [Click Here](https://docs.claude.com/en/docs/claude-code) | Terminal agent, strong at Python codebase understanding & refactors |
+| Cursor                   | [Click Here](https://cursor.com)                          | AI-first VS Code fork, great Python autocomplete + Composer |
+| GitHub Copilot           | [Click Here](https://github.com/features/copilot)         | Python-aware autocomplete & agent mode in most IDEs      |
+| OpenAI Codex CLI         | [Click Here](https://github.com/openai/codex)             | Terminal coding agent, solid for Python scripting tasks   |
+| Cline                    | [Click Here](https://github.com/cline/cline)               | Open-source VS Code agent, writes & runs Python directly  |
+| Aider                    | [Click Here](https://github.com/Aider-AI/aider)            | Git-aware pair programming in the terminal, Python-first UX |
+
+---
+
+## Building AI Agents in Python 🤖
+
+| Resource Name            | Link                                                   | Notes                                                    |
+| -------------------------- | --------------------------------------------------------- | ------------------------------------------------------------ |
+| LangGraph                | [Click Here](https://langchain-ai.github.io/langgraph/) | Python framework for stateful, controllable multi-agent apps |
+| CrewAI                   | [Click Here](https://github.com/crewAIInc/crewAI)       | Pure-Python role-based multi-agent framework                |
+| AG2 (formerly AutoGen)   | [Click Here](https://github.com/ag2ai/ag2)               | Python framework for conversational multi-agent systems     |
+| Semantic Kernel (Python)  | [Click Here](https://github.com/microsoft/semantic-kernel) | Microsoft's agent SDK, first-class Python support         |
+| OpenAI Agents SDK         | [Click Here](https://github.com/openai/openai-agents-python) | Lightweight Python agent + handoff primitives             |
+| Smolagents (Hugging Face) | [Click Here](https://github.com/huggingface/smolagents) | ~1000-line minimal Python agent loop, easy to learn from    |
+| LlamaIndex Workflows      | [Click Here](https://docs.llamaindex.ai/en/stable/module_guides/workflow/) | Python event-driven agent orchestration                 |
+| Pydantic AI               | [Click Here](https://ai.pydantic.dev)                    | Type-safe Python agent framework from the Pydantic team     |
+
+---
+
+## Model Context Protocol (MCP) with Python 🔌
+
+| Resource Name              | Link                                                        | Notes                                              |
+| ---------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------- |
+| MCP Official Docs & Spec   | [Click Here](https://modelcontextprotocol.io)                   | Protocol spec + Python SDK guide                    |
+| Python MCP SDK              | [Click Here](https://github.com/modelcontextprotocol/python-sdk) | Official Python SDK for building MCP servers/clients |
+| MCP Reference Servers        | [Click Here](https://github.com/modelcontextprotocol/servers)   | Official reference servers, many written in Python  |
+| Awesome MCP Servers         | [Click Here](https://github.com/wong2/awesome-mcp-servers)      | Curated directory of MCP servers (filter by Python)  |
+
+---
+
+## Evaluating & Testing LLM Apps in Python 📊
+
+| Resource Name    | Link                                              | Notes                                              |
+| ------------------ | ------------------------------------------------------ | ------------------------------------------------------- |
+| LangSmith         | [Click Here](https://smith.langchain.com)              | Python SDK for tracing, evals, and monitoring LLM apps |
+| Comet Opik        | [Click Here](https://github.com/comet-ml/opik)          | Open-source Python library for LLM observability & evals |
+| Promptfoo         | [Click Here](https://github.com/promptfoo/promptfoo)   | Prompt testing & red-teaming, works with Python pipelines |
+| Weights & Biases Weave | [Click Here](https://wandb.ai/site/weave)          | Python-native tracking & evaluation for LLM apps       |
+
+---
+
+## Running Local & Open-Source LLMs with Python 🖥️
+
+| Resource Name    | Link                                            | Notes                                                    |
+| ------------------ | ---------------------------------------------------- | -------------------------------------------------------------- |
+| Ollama Python Library | [Click Here](https://github.com/ollama/ollama-python) | Official Python client for running local models via Ollama |
+| llama-cpp-python  | [Click Here](https://github.com/abetlen/llama-cpp-python) | Python bindings for llama.cpp, run GGUF models directly    |
+| vLLM              | [Click Here](https://github.com/vllm-project/vllm)     | Python library for high-throughput LLM inference & serving |
+| Hugging Face Transformers | [Click Here](https://huggingface.co/docs/transformers) | The standard Python library for loading & running open models |
+| Hugging Face Hub  | [Click Here](https://huggingface.co/models)             | Browse open models/datasets to load via the Python `huggingface_hub` library |
+
+---
+
+## Build an LLM From Scratch in Python 🔬
+
+For people who want to go past "calling an API" and actually understand what's happening inside the model.
+
+| Resource Name                                     | Link                                                                 | Notes                                                              |
+| ---------------------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Build a Large Language Model (From Scratch) — Raschka | [Click Here](https://github.com/rasbt/LLMs-from-scratch)             | Companion Python/PyTorch repo; builds tokenizer → attention → GPT → training loop by hand |
+| nanoGPT — Karpathy                                 | [Click Here](https://github.com/karpathy/nanoGPT)                     | ~300-line, dependency-light GPT training/inference in pure PyTorch |
+| Neural Networks: Zero to Hero — Karpathy            | [Click Here](https://karpathy.ai/zero-to-hero.html)                   | Video series that codes backprop, a tokenizer, and a GPT from raw Python |
+| Let's Build the GPT Tokenizer — Karpathy            | [Click Here](https://www.youtube.com/watch?v=zduSFxRajkE)             | Builds a BPE tokenizer in Python line by line                      |
+| Annotated Transformer — Harvard NLP                 | [Click Here](https://nlp.seas.harvard.edu/annotated-transformer/)    | "Attention Is All You Need" paper reproduced as runnable PyTorch code |
+| CS231n / CS224n course notes                        | [Click Here](https://cs231n.github.io/)                               | Stanford's deep learning & NLP course notes, Python-based assignments |
+
+---
+
+## Fine-Tuning LLMs in Python (PEFT, LoRA, QLoRA) 🎛️
+
+| Resource Name              | Link                                                       | Notes                                                       |
+| ----------------------------- | ---------------------------------------------------------------- | ------------------------------------------------------------- |
+| Hugging Face PEFT             | [Link](https://github.com/huggingface/peft)               | The standard Python library for LoRA/QLoRA and other efficient fine-tuning methods |
+| Hugging Face PEFT Docs         | [Link](https://huggingface.co/docs/peft/en/index)         | Task-by-task guides (text, vision, speech)                  |
+| TRL (Transformer Reinforcement Learning) | [Link](https://github.com/huggingface/trl)      | Python library for SFT, DPO, and RLHF-style fine-tuning      |
+| bitsandbytes                  | [Link](https://github.com/bitsandbytes-foundation/bitsandbytes) | 4-bit/8-bit quantization used for QLoRA on consumer GPUs     |
+| Unsloth                       | [Link](https://github.com/unslothai/unsloth)               | Faster, lower-memory Python library for fine-tuning open LLMs |
+| Axolotl                       | [Link](https://github.com/axolotl-ai-cloud/axolotl)        | YAML-configured Python fine-tuning framework built on PEFT/TRL |
+
+---
+
+## AI Engineering Books (Python-Heavy) 📚
+
+| Resource Name                                            | Author(s)                                    | Notes                                                        |
+| ------------------------------------------------------------ | ----------------------------------------------- | ----------------------------------------------------------------- |
+| Build a Large Language Model (From Scratch)                | Sebastian Raschka                              | Builds a GPT-style LLM step by step in Python + PyTorch          |
+| AI Engineering                                              | Chip Huyen                                     | Full-stack production LLM apps: evals, prompting, agent architecture |
+| Hands-On Large Language Models                              | Jay Alammar & Maarten Grootendorst              | Practical, visual, code-first intro to using and building with LLMs |
+| Natural Language Processing with Transformers               | Lewis Tunstall, Leandro von Werra, Thomas Wolf | Written by Hugging Face engineers; covers the `transformers` library in depth |
+| Deep Learning with Python (2nd Ed.)                          | François Chollet                               | Keras creator's take on deep learning fundamentals in Python     |
+| Designing Machine Learning Systems                           | Chip Huyen                                     | Production ML systems design, data pipelines, and deployment      |
+
 ## Contribution 💡
 
 - If you have a suggestion that would make this repository better or want to add more resources or any links are not working, please fork the repo and [create a pull request.](https://github.com/thegeekyb0y/learnpython/edit/main/README.md) 
