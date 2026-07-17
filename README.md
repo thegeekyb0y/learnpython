@@ -7,6 +7,8 @@ automation, etc.
 
 It is a language that many people fall in love with because of its simplicity. The syntax is simple and the debugging is also much easier in Python compared to languages like C++ or C# even though Python was made using C++ in 1991 by Guido van Rossum.
 
+[Index](#index-)
+
 ---
 
 ## General 🔗
@@ -326,11 +328,11 @@ For people who want to go past "calling an API" and actually understand what's h
 
 | Resource Name                                     | Link                                                                 | Notes                                                              |
 | ---------------------------------------------------- | ------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
-| Build a Large Language Model (From Scratch) — Raschka | [Click Here](https://github.com/rasbt/LLMs-from-scratch)             | Companion Python/PyTorch repo; builds tokenizer → attention → GPT → training loop by hand |
-| nanoGPT — Karpathy                                 | [Click Here](https://github.com/karpathy/nanoGPT)                     | ~300-line, dependency-light GPT training/inference in pure PyTorch |
-| Neural Networks: Zero to Hero — Karpathy            | [Click Here](https://karpathy.ai/zero-to-hero.html)                   | Video series that codes backprop, a tokenizer, and a GPT from raw Python |
-| Let's Build the GPT Tokenizer — Karpathy            | [Click Here](https://www.youtube.com/watch?v=zduSFxRajkE)             | Builds a BPE tokenizer in Python line by line                      |
-| Annotated Transformer — Harvard NLP                 | [Click Here](https://nlp.seas.harvard.edu/annotated-transformer/)    | "Attention Is All You Need" paper reproduced as runnable PyTorch code |
+| Build a Large Language Model (From Scratch) : Raschka | [Click Here](https://github.com/rasbt/LLMs-from-scratch)             | Companion Python/PyTorch repo; builds tokenizer → attention → GPT → training loop by hand |
+| nanoGPT : Karpathy                                 | [Click Here](https://github.com/karpathy/nanoGPT)                     | ~300-line, dependency-light GPT training/inference in pure PyTorch |
+| Neural Networks: Zero to Hero :Karpathy            | [Click Here](https://karpathy.ai/zero-to-hero.html)                   | Video series that codes backprop, a tokenizer, and a GPT from raw Python |
+| Let's Build the GPT Tokenizer :Karpathy            | [Click Here](https://www.youtube.com/watch?v=zduSFxRajkE)             | Builds a BPE tokenizer in Python line by line                      |
+| Annotated Transformer : Harvard NLP                 | [Click Here](https://nlp.seas.harvard.edu/annotated-transformer/)    | "Attention Is All You Need" paper reproduced as runnable PyTorch code |
 | CS231n / CS224n course notes                        | [Click Here](https://cs231n.github.io/)                               | Stanford's deep learning & NLP course notes, Python-based assignments |
 
 ---
@@ -348,16 +350,6 @@ For people who want to go past "calling an API" and actually understand what's h
 
 ---
 
-## AI Engineering Books (Python-Heavy) 📚
-
-| Resource Name                                            | Author(s)                                    | Notes                                                        |
-| ------------------------------------------------------------ | ----------------------------------------------- | ----------------------------------------------------------------- |
-| Build a Large Language Model (From Scratch)                | Sebastian Raschka                              | Builds a GPT-style LLM step by step in Python + PyTorch          |
-| AI Engineering                                              | Chip Huyen                                     | Full-stack production LLM apps: evals, prompting, agent architecture |
-| Hands-On Large Language Models                              | Jay Alammar & Maarten Grootendorst              | Practical, visual, code-first intro to using and building with LLMs |
-| Natural Language Processing with Transformers               | Lewis Tunstall, Leandro von Werra, Thomas Wolf | Written by Hugging Face engineers; covers the `transformers` library in depth |
-| Deep Learning with Python (2nd Ed.)                          | François Chollet                               | Keras creator's take on deep learning fundamentals in Python     |
-| Designing Machine Learning Systems                           | Chip Huyen                                     | Production ML systems design, data pipelines, and deployment      |
 
 ## Contribution 💡
 
