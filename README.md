@@ -183,7 +183,7 @@ It is a language that many people fall in love with because of its simplicity. T
 | Python-Exercises                              | [Click Here](https://github.com/zhiwehu/Python-programming-exercises)                              |  
 | Python Reference                              | [Click Here](https://github.com/rasbt/python_reference)                                            |
 | Python Projects                               | [Click Here](https://github.com/thegeekyb0y/pythonprojects)                                        |
-| Pythonlings                                   | [Click Here](https://github.com/abhiksark/pythonlings)                                             |
+| Pythonlings [Exercises in TUI]                 | [Click Here](https://github.com/abhiksark/pythonlings)                                             |
 
 ---
 
