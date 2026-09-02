@@ -1,4 +1,11 @@
 # Learn Python
+This is my first contribution to GitHub!
+
+## Goals
+- Practice editing files
+- Learn how commits work
+- Make my first Pull Request
+
 
 ## Introduction 💫
 Python is a high-level, interpreted scripting language, highly used for automation and backend purposes.
@@ -363,4 +370,3 @@ For people who want to go past "calling an API" and actually understand what's h
 ## Connect with Me 🤝
 
 [Instagram](https://www.instagram.com/thegeekyb0y) | [Twitter](https://www.twitter.com/thegeekyb0y) | [Linkedin](https://www.linkedin.com/in/adityacodes)
-
