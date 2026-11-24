@@ -305,6 +305,58 @@
 }
 
 /* ---- Motion ------------------------------------------------------------ */
+@keyframes directory-overlay-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes directory-overlay-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes directory-sheet-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes directory-sheet-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.directory-overlay[data-state="open"] {
+  animation: directory-overlay-in 180ms ease-out;
+}
+
+.directory-overlay[data-state="closed"] {
+  animation: directory-overlay-out 150ms ease-in;
+}
+
+.directory-sheet[data-state="open"] {
+  animation: directory-sheet-in 320ms var(--ease-drawer);
+}
+
+.directory-sheet[data-state="closed"] {
+  animation: directory-sheet-out 240ms ease-in;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
