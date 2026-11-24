@@ -12,10 +12,10 @@
   --chocolate: #d56f3e;
 
   /* ---- Surfaces --------------------------------------------------------- */
-  --canvas: #f8fafc;
+  --canvas: #f4f5f7;
   --surface: #ffffff;
-  --surface-2: #f2f3f4;
-  --surface-3: #e9ebec;
+  --surface-2: #eef0f2;
+  --surface-3: #e5e8eb;
 
   /* ---- Ink ramp --------------------------------------------------------- */
   --ink: var(--ink-black);
@@ -25,8 +25,9 @@
   --ink-5: #8f979e;
 
   /* ---- Lines ------------------------------------------------------------ */
-  --hairline: rgb(22 29 36 / 0.1);
-  --hairline-strong: rgb(22 29 36 / 0.18);
+  --hairline: rgb(22 29 36 / 0.12);
+  --hairline-strong: rgb(22 29 36 / 0.2);
+  --hairline-hover: rgb(60 71 125 / 0.45);
 
   /* ---- Brand ------------------------------------------------------------ */
   --brand: var(--french-blue);
@@ -99,6 +100,7 @@
 
   --color-hairline: var(--hairline);
   --color-hairline-strong: var(--hairline-strong);
+  --color-hairline-hover: var(--hairline-hover);
 
   --color-brand: var(--brand);
   --color-brand-strong: var(--brand-strong);

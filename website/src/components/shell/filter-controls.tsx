@@ -33,9 +33,9 @@ const controlClass =
   "inline-flex h-11 shrink-0 items-center gap-2 rounded-lg border px-3 text-[13px] font-medium outline-none transition-[background-color,border-color,color] duration-150 ease-out-quint focus-visible:ring-[3px] focus-visible:ring-brand-ring sm:h-9";
 
 const activeControlClass =
-  "border-brand-line bg-brand-soft text-ink";
+  "border-brand bg-brand text-white";
 const inactiveControlClass =
-  "border-hairline bg-surface text-ink-3 hover:bg-surface-2 hover:text-ink";
+  "border-hairline bg-surface text-ink-3 hover:border-hairline-hover hover:bg-surface-2 hover:text-ink";
 
 const indicatorTransition = {
   type: "spring",
@@ -87,7 +87,7 @@ export function FilterControls({
             <SlidersHorizontal className="size-3.5" aria-hidden="true" />
             <span>Difficulty</span>
             {levels.length > 0 ? (
-              <span className="type-count text-brand">{levels.length}</span>
+              <span className="type-count text-white/75">{levels.length}</span>
             ) : null}
             <ChevronDown className="size-3.5" aria-hidden="true" />
           </button>
@@ -151,11 +151,7 @@ export function FilterControls({
             onClick={() => onToggleAccess(value)}
             className={cn(
               controlClass,
-              selected
-                ? value === "free"
-                  ? "border-sage-line bg-sage-soft text-ink"
-                  : "border-fern-line bg-fern-soft text-ink"
-                : inactiveControlClass,
+              selected ? activeControlClass : inactiveControlClass,
             )}
           >
             <BadgeDot tone="fern" />
@@ -163,7 +159,7 @@ export function FilterControls({
             <span
               className={cn(
                 "type-count",
-                selected ? "text-ink-3" : "text-ink-4",
+                selected ? "text-white/75" : "text-ink-4",
               )}
             >
               {accessCounts[value]}
@@ -172,7 +168,7 @@ export function FilterControls({
         );
       })}
 
-      <label className="relative inline-flex h-11 shrink-0 items-center gap-2 rounded-lg border border-hairline bg-surface px-3 text-[13px] text-ink-3 outline-none transition-colors focus-within:ring-[3px] focus-within:ring-brand-ring hover:bg-surface-2 sm:h-9">
+      <label className="relative inline-flex h-11 shrink-0 items-center gap-2 rounded-lg border border-hairline bg-surface px-3 text-[13px] text-ink-3 outline-none transition-colors focus-within:ring-[3px] focus-within:ring-brand-ring hover:border-hairline-hover hover:bg-surface-2 sm:h-9">
         <ArrowUpDown className="size-3.5" aria-hidden="true" />
         <span className="whitespace-nowrap">
           Sort: <span className="font-medium text-ink">{sortLabels[sort]}</span>
@@ -207,11 +203,17 @@ export function FilterControls({
           {view === "grid" ? (
             <motion.span
               layoutId="view-toggle-thumb"
-              className="absolute inset-0 rounded-md border border-hairline bg-surface"
+              className="absolute inset-0 rounded-md border border-ink bg-ink"
               transition={indicatorTransition}
             />
           ) : null}
-          <Grid2X2 className="relative z-10 size-4" aria-hidden="true" />
+          <Grid2X2
+            className={cn(
+              "relative z-10 size-4",
+              view === "grid" ? "text-white" : "text-ink-3",
+            )}
+            aria-hidden="true"
+          />
         </button>
         <button
           type="button"
@@ -223,11 +225,17 @@ export function FilterControls({
           {view === "list" ? (
             <motion.span
               layoutId="view-toggle-thumb"
-              className="absolute inset-0 rounded-md border border-hairline bg-surface"
+              className="absolute inset-0 rounded-md border border-ink bg-ink"
               transition={indicatorTransition}
             />
           ) : null}
-          <Rows3 className="relative z-10 size-4" aria-hidden="true" />
+          <Rows3
+            className={cn(
+              "relative z-10 size-4",
+              view === "list" ? "text-white" : "text-ink-3",
+            )}
+            aria-hidden="true"
+          />
         </button>
       </div>
     </div>

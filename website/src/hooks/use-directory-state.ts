@@ -9,6 +9,7 @@ import {
 } from "react";
 
 import { useDirectoryUrl } from "@/hooks/use-directory-url";
+import { collectionFilters } from "@/data/collections";
 import {
   defaultDirectoryFilters,
   filterResources,
@@ -21,6 +22,7 @@ import {
   sortResources,
   type DirectoryAccessFilter,
   type DirectoryFilters,
+  type CollectionId,
   type SortKey,
   type ViewMode,
 } from "@/lib/directory";
@@ -38,6 +40,7 @@ type DirectoryAction =
   | { type: "hydrate"; filters: DirectoryFilters; selectedId: string | null }
   | { type: "setQuery"; query: string }
   | { type: "setCategory"; category: DirectoryFilters["category"] }
+  | { type: "setCollection"; collection: CollectionId }
   | { type: "toggleLevel"; level: Difficulty }
   | { type: "toggleAccess"; access: DirectoryAccessFilter }
   | { type: "setSort"; sort: SortKey }
@@ -59,7 +62,26 @@ function reducer(state: DirectoryState, action: DirectoryAction): DirectoryState
     case "setQuery":
       return { ...state, query: action.query };
     case "setCategory":
-      return { ...state, category: action.category };
+      return { ...state, category: action.category, collection: null };
+    case "setCollection": {
+      if (state.collection === action.collection) {
+        return { ...state, collection: null, category: "all" };
+      }
+
+      const collection = collectionFilters[action.collection];
+
+      return {
+        ...state,
+        collection: action.collection,
+        category:
+          collection.kind === "category"
+            ? (collection.value as DirectoryFilters["category"])
+            : "all",
+        query: "",
+        levels: [],
+        access: [],
+      };
+    }
     case "toggleLevel":
       return {
         ...state,
@@ -108,6 +130,7 @@ export function useDirectoryState(resources: readonly Resource[]) {
       category: state.category,
       levels: state.levels,
       access: state.access,
+      collection: state.collection,
       sort: state.sort,
       view: state.view,
     }),
@@ -116,6 +139,7 @@ export function useDirectoryState(resources: readonly Resource[]) {
       state.category,
       state.levels,
       state.access,
+      state.collection,
       state.sort,
       state.view,
     ],
@@ -163,6 +187,20 @@ export function useDirectoryState(resources: readonly Resource[]) {
   const filteredResources = useMemo(
     () => sortResources(filterResources(resources, filters), filters.sort),
     [filters, resources],
+  );
+
+  const searchFilters = useMemo<DirectoryFilters>(
+    () => ({ ...filters, query: state.query }),
+    [filters, state.query],
+  );
+
+  const searchResults = useMemo(
+    () =>
+      sortResources(
+        filterResources(resources, searchFilters),
+        searchFilters.sort,
+      ),
+    [resources, searchFilters],
   );
 
   const categoryCounts = useMemo(
@@ -224,6 +262,7 @@ export function useDirectoryState(resources: readonly Resource[]) {
     state,
     filters,
     filteredResources,
+    searchResults,
     categoryCounts,
     levelCounts,
     accessCounts,
@@ -233,6 +272,8 @@ export function useDirectoryState(resources: readonly Resource[]) {
     setQuery: (query: string) => dispatch({ type: "setQuery", query }),
     setCategory: (category: DirectoryFilters["category"]) =>
       dispatch({ type: "setCategory", category }),
+    setCollection: (collection: CollectionId) =>
+      dispatch({ type: "setCollection", collection }),
     toggleLevel: (level: Difficulty) =>
       dispatch({ type: "toggleLevel", level }),
     toggleAccess: (access: DirectoryAccessFilter) =>

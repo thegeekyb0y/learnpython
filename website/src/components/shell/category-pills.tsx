@@ -44,13 +44,23 @@ export function CategoryPills({
   ];
 
   useEffect(() => {
-    const active = scrollerRef.current?.querySelector<HTMLElement>(
-      '[data-active="true"]',
-    );
+    const scroller = scrollerRef.current;
+    const active = scroller?.querySelector<HTMLElement>('[data-active="true"]');
 
-    active?.scrollIntoView({
-      block: "nearest",
-      inline: "center",
+    if (!scroller || !active) {
+      return;
+    }
+
+    const scrollerRect = scroller.getBoundingClientRect();
+    const activeRect = active.getBoundingClientRect();
+    const left =
+      scroller.scrollLeft +
+      activeRect.left -
+      scrollerRect.left -
+      (scrollerRect.width - activeRect.width) / 2;
+
+    scroller.scrollTo({
+      left: Math.max(0, left),
       behavior: reducedMotion ? "auto" : "smooth",
     });
   }, [activeCategory, reducedMotion]);
@@ -111,7 +121,7 @@ export function CategoryPills({
               "relative isolate flex h-11 shrink-0 items-center gap-2 overflow-hidden rounded-full border px-4 text-[13px] font-medium outline-none transition-colors duration-150 ease-out-quint focus-visible:ring-[3px] focus-visible:ring-brand-ring sm:h-9",
               active
                 ? "border-ink text-white"
-                : "border-hairline bg-surface text-ink-3 hover:bg-surface-2 hover:text-ink",
+                : "border-hairline bg-surface text-ink-3 hover:border-hairline-hover hover:bg-surface-2 hover:text-ink",
             )}
           >
             {active ? (

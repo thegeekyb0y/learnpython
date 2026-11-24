@@ -1,15 +1,15 @@
 "use client";
 
-import { MotionConfig } from "motion/react";
-import { RotateCcw } from "lucide-react";
+import { MotionConfig, useReducedMotion } from "motion/react";
 
 import { ResourceDrawer } from "@/components/overlay/resource-drawer";
+import { CollectionsBento } from "@/components/shell/collections-bento";
 import { EditorialHeader } from "@/components/shell/editorial-header";
 import { FilterBar } from "@/components/shell/filter-bar";
 import { ResourceLedger } from "@/components/shell/resource-ledger";
-import { Button } from "@/components/ui/button";
-import type { Category } from "@/data/categories";
+import { categoryById, type Category } from "@/data/categories";
 import { useDirectoryState } from "@/hooks/use-directory-state";
+import { getCollectionLabel } from "@/lib/directory";
 import type { Resource } from "@/lib/schema";
 import { repoUrl, submitResourceUrl } from "@/lib/site";
 
@@ -23,12 +23,90 @@ export function DirectoryShell({
   categories,
 }: DirectoryShellProps) {
   const directory = useDirectoryState(resources);
+  const reducedMotion = useReducedMotion();
+  const query = directory.state.query.trim();
+  const resultCount = directory.filteredResources.length;
+  const resultWord = resultCount === 1 ? "result" : "results";
+  const collectionLabel = directory.state.collection
+    ? getCollectionLabel(directory.state.collection)
+    : null;
+  const categoryLabel =
+    directory.state.category !== "all"
+      ? categoryById[directory.state.category].label
+      : null;
+  const hasActiveFilters =
+    directory.hasFilters || query.length > 0 || directory.state.collection !== null;
+
+  let statusLabel = `${directory.totalResources} resources`;
+
+  if (hasActiveFilters) {
+    statusLabel = `Showing ${resultCount} ${resultWord}`;
+
+    if (query) {
+      statusLabel += ` for "${query}"`;
+    }
+
+    const scope = collectionLabel ?? categoryLabel;
+
+    if (scope) {
+      statusLabel += ` in ${scope}`;
+    }
+
+    if (
+      !query &&
+      !scope &&
+      (directory.state.levels.length > 0 || directory.state.access.length > 0)
+    ) {
+      statusLabel += " with active filters";
+    }
+  }
+
+  const clearStatus = () => {
+    if (query) {
+      directory.setQuery("");
+      return;
+    }
+
+    directory.resetFilters();
+  };
+
+  const scrollToLedger = () => {
+    const ledger = document.getElementById("ledger");
+
+    if (!ledger) {
+      return;
+    }
+
+    const stickyOffset = window.matchMedia("(min-width: 1024px)").matches
+      ? 112
+      : 168;
+    const top = ledger.getBoundingClientRect().top + window.scrollY - stickyOffset;
+
+    window.scrollTo({
+      top: Math.max(0, top),
+      behavior: reducedMotion ? "auto" : "smooth",
+    });
+  };
 
   return (
     <MotionConfig reducedMotion="user">
       <EditorialHeader
         query={directory.state.query}
         onQueryChange={directory.setQuery}
+        statusLabel={statusLabel}
+        hasActiveFilters={hasActiveFilters}
+        onClearStatus={clearStatus}
+        activeCollection={directory.state.collection}
+        onToggleCollection={directory.setCollection}
+        suggestions={directory.searchResults}
+        totalMatches={directory.searchResults.length}
+        onOpenResource={directory.openResource}
+        onViewAll={scrollToLedger}
+      />
+
+      <CollectionsBento
+        onSelect={directory.setCollection}
+        onViewAll={scrollToLedger}
       />
 
       <FilterBar
@@ -53,35 +131,14 @@ export function DirectoryShell({
         id="main"
         className="mx-auto w-full max-w-[1440px] px-4 pt-8 pb-20 sm:px-6 sm:pt-10 lg:px-8"
       >
-        <div className="mb-4 flex min-h-11 items-center justify-between gap-4">
-          <p
-            aria-live="polite"
-            className="type-meta text-ink-4"
-          >
-            {directory.filteredResources.length === directory.totalResources
-              ? `${directory.totalResources} resources`
-              : `${directory.filteredResources.length} of ${directory.totalResources} resources`}
-          </p>
-          {directory.hasFilters ? (
-            <Button
-              type="button"
-              variant="ghost"
-              size="sm"
-              className="h-11 shrink-0 gap-1.5 px-2.5 sm:h-8"
-              onClick={directory.resetFilters}
-            >
-              <RotateCcw className="size-3.5" aria-hidden="true" />
-              Reset filters
-            </Button>
-          ) : null}
+        <div id="ledger" className="scroll-mt-40 lg:scroll-mt-28">
+          <ResourceLedger
+            resources={directory.filteredResources}
+            view={directory.state.view}
+            onOpen={directory.openResource}
+            onReset={directory.resetFilters}
+          />
         </div>
-
-        <ResourceLedger
-          resources={directory.filteredResources}
-          view={directory.state.view}
-          onOpen={directory.openResource}
-          onReset={directory.resetFilters}
-        />
       </main>
 
       <footer className="border-t border-hairline py-10">
