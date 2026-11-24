@@ -71,7 +71,7 @@
     "summary": "A broad reference of Python concepts, examples, and interview-style explanations.",
     "description": "Covers syntax, data structures, object-oriented programming, libraries, and common interview questions with short examples. Useful for quick lookups and revision, though articles vary in depth and ads are plentiful.",
     "category": "core-foundations",
-    "tags": ["reference", "interview", "examples"],
+    "tags": ["reference", "interview", "oop", "examples"],
     "difficulty": "beginner",
     "format": "docs",
     "access": "free",

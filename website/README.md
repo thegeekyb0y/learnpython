@@ -2,7 +2,7 @@
 
 The web directory for the [`learn-python`](https://github.com/thegeekyb0y/learnpython) repository.
 
-**Status:** Phase 1 — validated content. The catalog has 56 resources across 7 categories. Filtering, the command palette, and the detail overlay are built in later phases.
+**Status:** Phase 2 — directory shell. The editorial header, search, sticky filters, grid/list feed, empty/loading states, URL sync, and responsive detail drawer are live. The `⌘K` command palette and deeper motion/a11y audit follow in later phases.
 
 ## Content
 
@@ -12,6 +12,15 @@ The web directory for the [`learn-python`](https://github.com/thegeekyb0y/learnp
 - Source/extraction notes: `src/data/README.md`
 
 The page imports the validated catalog, so `next build` fails on a duplicate id, duplicate URL, unknown category, invalid URL, or out-of-range summary/description.
+
+## Directory behavior
+
+- Search filters live and writes a debounced `?q=` URL.
+- Category, difficulty, access, sort, and view state synchronize to the URL.
+- Opening a resource pushes `?r=<id>`; closing returns to the filtered feed.
+- `/` or `⌘K` focuses search; `Esc` clears it.
+- Cards open a slide-over sheet on desktop and a `vaul` drawer on mobile.
+- Empty results and loading states are keyboard accessible.
 
 ## Stack
 

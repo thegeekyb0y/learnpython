@@ -1,0 +1,138 @@
+"use client";
+
+import { useEffect, useRef, type KeyboardEvent } from "react";
+import { motion, useReducedMotion } from "motion/react";
+
+import type { Category, CategoryId } from "@/data/categories";
+import { cn } from "@/lib/utils";
+
+const indicatorTransition = {
+  type: "spring",
+  stiffness: 500,
+  damping: 42,
+  mass: 0.8,
+} as const;
+
+type CategoryPillsProps = {
+  categories: readonly Category[];
+  counts: Record<CategoryId | "all", number>;
+  activeCategory: CategoryId | "all";
+  onSelect: (category: CategoryId | "all") => void;
+};
+
+type Pill = {
+  id: CategoryId | "all";
+  label: string;
+  count: number;
+};
+
+export function CategoryPills({
+  categories,
+  counts,
+  activeCategory,
+  onSelect,
+}: CategoryPillsProps) {
+  const scrollerRef = useRef<HTMLDivElement>(null);
+  const reducedMotion = useReducedMotion();
+  const pills: Pill[] = [
+    { id: "all", label: "All", count: counts.all },
+    ...categories.map((category) => ({
+      id: category.id,
+      label: category.label,
+      count: counts[category.id],
+    })),
+  ];
+
+  useEffect(() => {
+    const active = scrollerRef.current?.querySelector<HTMLElement>(
+      '[data-active="true"]',
+    );
+
+    active?.scrollIntoView({
+      block: "nearest",
+      inline: "center",
+      behavior: reducedMotion ? "auto" : "smooth",
+    });
+  }, [activeCategory, reducedMotion]);
+
+  const handleKeyDown = (event: KeyboardEvent<HTMLDivElement>) => {
+    if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) {
+      return;
+    }
+
+    const buttons = [
+      ...(scrollerRef.current?.querySelectorAll<HTMLButtonElement>(
+        "[data-category-pill]",
+      ) ?? []),
+    ];
+    const currentIndex = buttons.findIndex(
+      (button) => button === document.activeElement,
+    );
+
+    if (currentIndex === -1) {
+      return;
+    }
+
+    event.preventDefault();
+
+    const nextIndex =
+      event.key === "Home"
+        ? 0
+        : event.key === "End"
+          ? buttons.length - 1
+          : event.key === "ArrowRight"
+            ? (currentIndex + 1) % buttons.length
+            : (currentIndex - 1 + buttons.length) % buttons.length;
+
+    buttons[nextIndex]?.focus();
+  };
+
+  return (
+    <motion.div
+      layoutScroll
+      ref={scrollerRef}
+      role="group"
+      aria-label="Filter by category"
+      onKeyDown={handleKeyDown}
+      className="no-scrollbar flex min-w-0 items-center gap-2 overflow-x-auto"
+    >
+      {pills.map((pill) => {
+        const active = pill.id === activeCategory;
+
+        return (
+          <button
+            key={pill.id}
+            type="button"
+            data-category-pill
+            data-active={active}
+            aria-pressed={active}
+            onClick={() => onSelect(pill.id)}
+            className={cn(
+              "relative isolate flex h-11 shrink-0 items-center gap-2 overflow-hidden rounded-full border px-4 text-[13px] font-medium outline-none transition-colors duration-150 ease-out-quint focus-visible:ring-[3px] focus-visible:ring-brand-ring sm:h-9",
+              active
+                ? "border-ink text-white"
+                : "border-hairline bg-surface text-ink-3 hover:bg-surface-2 hover:text-ink",
+            )}
+          >
+            {active ? (
+              <motion.span
+                layoutId="category-pill-indicator"
+                className="absolute inset-0 -z-10 rounded-full bg-ink"
+                transition={indicatorTransition}
+              />
+            ) : null}
+            <span className="relative z-10 whitespace-nowrap">{pill.label}</span>
+            <span
+              className={cn(
+                "type-count relative z-10",
+                active ? "text-white/70" : "text-ink-4",
+              )}
+            >
+              {pill.count}
+            </span>
+          </button>
+        );
+      })}
+    </motion.div>
+  );
+}
