@@ -1,0 +1,80 @@
+[
+  {
+    "id": "python-notes-professionals",
+    "title": "Python Notes for Professionals",
+    "url": "https://books.goalkicker.com/PythonBook",
+    "summary": "A free, example-heavy Python book assembled from practical Q&A and code snippets.",
+    "description": "GoalKicker's Python Notes for Professionals is a dense reference covering the language, standard library, and common patterns. It is best used as a look-up companion rather than a linear tutorial.",
+    "category": "books-guides",
+    "tags": ["book", "reference", "free"],
+    "difficulty": "intermediate",
+    "format": "book",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "think-python",
+    "title": "Think Python",
+    "url": "https://allendowney.github.io/ThinkPython/",
+    "summary": "A free, exercise-rich introduction to programming with Python and computational thinking.",
+    "description": "Allen Downey's Think Python teaches the language through small programs, debugging exercises, and incremental projects. The online edition is free to read and works well for self-study or a first course.",
+    "category": "books-guides",
+    "tags": ["book", "beginner", "exercises"],
+    "difficulty": "beginner",
+    "format": "book",
+    "access": "free",
+    "featured": true
+  },
+  {
+    "id": "python-for-data-analysis",
+    "title": "Python for Data Analysis",
+    "url": "https://wesmckinney.com/book/",
+    "summary": "Wes McKinney's free online guide to data analysis with pandas, NumPy, and Jupyter.",
+    "description": "The third edition of Python for Data Analysis covers data loading, cleaning, joining, time series, and visualization with practical notebooks. The full book is available to read online at no cost.",
+    "category": "books-guides",
+    "tags": ["book", "pandas", "data"],
+    "difficulty": "intermediate",
+    "format": "book",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "hands-on-machine-learning",
+    "title": "Hands-On Machine Learning",
+    "url": "https://www.oreilly.com/library/view/hands-on-machine-learning/9781098125967",
+    "summary": "A project-driven guide to machine learning with scikit-learn, Keras, and TensorFlow.",
+    "description": "Aurélien Géron's book connects machine learning concepts to working code through end-to-end projects: regression, classification, training deep networks, and deploying models. Best for readers who already know Python.",
+    "category": "books-guides",
+    "tags": ["book", "machine-learning", "tensorflow"],
+    "difficulty": "intermediate",
+    "format": "book",
+    "access": "paid",
+    "featured": false
+  },
+  {
+    "id": "deep-learning-with-python",
+    "title": "Deep Learning with Python",
+    "url": "https://www.manning.com/books/deep-learning-with-python-second-edition",
+    "summary": "François Chollet's practical introduction to deep learning with Keras and Python.",
+    "description": "Explains neural networks, computer vision, sequence models, and generative learning through concise Keras examples. The second edition adds modern workflows and is aimed at developers comfortable with Python.",
+    "category": "books-guides",
+    "tags": ["book", "deep-learning", "keras"],
+    "difficulty": "intermediate",
+    "format": "book",
+    "access": "paid",
+    "featured": false
+  },
+  {
+    "id": "nlp-with-transformers",
+    "title": "Natural Language Processing with Transformers",
+    "url": "https://www.oreilly.com/library/view/natural-language-processing/9781098136789",
+    "summary": "A hands-on guide to building NLP systems with Hugging Face Transformers.",
+    "description": "Covers text classification, named entity recognition, generation, and efficient fine-tuning with the Transformers ecosystem. The examples are practical and assume some PyTorch or TensorFlow experience.",
+    "category": "books-guides",
+    "tags": ["book", "nlp", "transformers"],
+    "difficulty": "advanced",
+    "format": "book",
+    "access": "paid",
+    "featured": false
+  }
+]
