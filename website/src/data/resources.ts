@@ -1,10 +1,10 @@
-import automation from "./automation.json";
-import booksGuides from "./books-guides.json";
-import coreFoundations from "./core-foundations.json";
-import dataAi from "./data-ai.json";
-import practice from "./practice.json";
-import toolsCheatsheets from "./tools-cheatsheets.json";
-import webDev from "./web-dev.json";
+import automation from "./catalog/automation.json";
+import booksGuides from "./catalog/books-guides.json";
+import coreFoundations from "./catalog/core-foundations.json";
+import dataAi from "./catalog/data-ai.json";
+import practice from "./catalog/practice.json";
+import toolsCheatsheets from "./catalog/tools-cheatsheets.json";
+import webDev from "./catalog/web-dev.json";
 
 import { categoryIds, type CategoryId } from "@/data/categories";
 import {
@@ -14,7 +14,10 @@ import {
   type Resource,
 } from "@/lib/schema";
 
-const files: ReadonlyArray<{ category: CategoryId; entries: unknown[] }> = [
+const catalogFiles: ReadonlyArray<{
+  category: CategoryId;
+  entries: unknown[];
+}> = [
   { category: "core-foundations", entries: coreFoundations },
   { category: "books-guides", entries: booksGuides },
   { category: "web-dev", entries: webDev },
@@ -27,7 +30,7 @@ const files: ReadonlyArray<{ category: CategoryId; entries: unknown[] }> = [
 const fileIssues: string[] = [];
 const entries: unknown[] = [];
 
-for (const file of files) {
+for (const file of catalogFiles) {
   for (const entry of file.entries) {
     if (
       entry &&

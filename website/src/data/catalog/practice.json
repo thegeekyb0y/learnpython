@@ -32,7 +32,7 @@
     "summary": "A graded set of Python exercises with solutions, from basics to intermediate problems.",
     "description": "The exercises are organized by difficulty and cover strings, loops, data structures, functions, and algorithms. Solutions are included, so the value comes from attempting each problem before reading them.",
     "category": "practice",
-    "tags": ["exercises", "beginner", "solutions"],
+    "tags": ["exercises", "beginner", "solutions", "community"],
     "difficulty": "beginner",
     "format": "practice",
     "access": "open-source",
@@ -71,10 +71,11 @@
     "summary": "A structured practice track with exercises, mentoring, and automatic test feedback.",
     "description": "Exercism combines small exercises with a test runner and optional human mentoring. The Python track moves from basics to more involved problems and is a good weekly practice habit.",
     "category": "practice",
-    "tags": ["exercises", "mentoring", "practice"],
+    "tags": ["exercises", "mentoring", "practice", "community"],
     "difficulty": "beginner",
     "format": "practice",
     "access": "free",
     "featured": false
   }
 ]
+
