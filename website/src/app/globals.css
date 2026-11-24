@@ -1,0 +1,317 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  /* ---- Palette ---------------------------------------------------------- */
+  /* The five brand colours are the source of truth. Neutrals are derived
+     from Ink Black so the whole UI stays in one temperature. */
+  --ink-black: #161d24;
+  --dry-sage: #d0cd94;
+  --french-blue: #3c477d;
+  --bright-fern: #4cb33d;
+  --chocolate: #d56f3e;
+
+  /* ---- Surfaces --------------------------------------------------------- */
+  --canvas: #f8fafc;
+  --surface: #ffffff;
+  --surface-2: #f2f3f4;
+  --surface-3: #e9ebec;
+
+  /* ---- Ink ramp --------------------------------------------------------- */
+  --ink: var(--ink-black);
+  --ink-2: #39434c;
+  --ink-3: #5b656e;
+  --ink-4: #667079;
+  --ink-5: #8f979e;
+
+  /* ---- Lines ------------------------------------------------------------ */
+  --hairline: rgb(22 29 36 / 0.1);
+  --hairline-strong: rgb(22 29 36 / 0.18);
+
+  /* ---- Brand ------------------------------------------------------------ */
+  --brand: var(--french-blue);
+  --brand-strong: #303a68;
+  --brand-soft: color-mix(in oklab, var(--french-blue) 16%, #ffffff);
+  --brand-line: color-mix(in oklab, var(--french-blue) 32%, #ffffff);
+  --brand-ring: rgb(60 71 125 / 0.3);
+
+  /* ---- Dry Sage --------------------------------------------------------- */
+  --sage: var(--dry-sage);
+  --sage-soft: color-mix(in oklab, var(--dry-sage) 40%, #ffffff);
+  --sage-line: color-mix(in oklab, var(--dry-sage) 75%, #ffffff);
+
+  /* ---- Bright Fern ------------------------------------------------------ */
+  --fern: var(--bright-fern);
+  --fern-soft: color-mix(in oklab, var(--bright-fern) 20%, #ffffff);
+  --fern-line: color-mix(in oklab, var(--bright-fern) 40%, #ffffff);
+
+  /* ---- Chocolate -------------------------------------------------------- */
+  --chocolate-soft: color-mix(in oklab, var(--chocolate) 20%, #ffffff);
+  --chocolate-line: color-mix(in oklab, var(--chocolate) 40%, #ffffff);
+
+  /* ---- Functional ------------------------------------------------------- */
+  --danger: #b42318;
+  --selection: rgb(60 71 125 / 0.16);
+
+  /* ---- shadcn semantic tokens ------------------------------------------ */
+  --background: var(--canvas);
+  --foreground: var(--ink);
+  --card: var(--surface);
+  --card-foreground: var(--ink);
+  --popover: var(--surface);
+  --popover-foreground: var(--ink);
+  --primary: var(--brand);
+  --primary-foreground: #ffffff;
+  --secondary: var(--surface-2);
+  --secondary-foreground: var(--ink);
+  --muted: var(--surface-2);
+  --muted-foreground: var(--ink-3);
+  --accent: var(--surface-2);
+  --accent-foreground: var(--ink);
+  --destructive: var(--danger);
+  --destructive-foreground: #ffffff;
+  --border: var(--hairline-strong);
+  --input: var(--hairline-strong);
+  --ring: var(--brand-ring);
+  --radius: 8px;
+
+  --sidebar: var(--surface);
+  --sidebar-foreground: var(--ink);
+  --sidebar-primary: var(--brand);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: var(--surface-2);
+  --sidebar-accent-foreground: var(--ink);
+  --sidebar-border: var(--hairline);
+  --sidebar-ring: var(--brand-ring);
+}
+
+@theme inline {
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
+
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-ink-4: var(--ink-4);
+  --color-ink-5: var(--ink-5);
+
+  --color-hairline: var(--hairline);
+  --color-hairline-strong: var(--hairline-strong);
+
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-line: var(--brand-line);
+  --color-brand-ring: var(--brand-ring);
+
+  --color-sage: var(--sage);
+  --color-sage-soft: var(--sage-soft);
+  --color-sage-line: var(--sage-line);
+
+  --color-fern: var(--fern);
+  --color-fern-soft: var(--fern-soft);
+  --color-fern-line: var(--fern-line);
+
+  --color-chocolate: var(--chocolate);
+  --color-chocolate-soft: var(--chocolate-soft);
+  --color-chocolate-line: var(--chocolate-line);
+
+  --color-danger: var(--danger);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SFMono-Regular", monospace;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+
+  --radius-tag: 4px;
+  --radius-menu: 6px;
+  --radius-control: 8px;
+  --radius-panel: 12px;
+  --radius-sheet: 16px;
+  --radius-pill: 9999px;
+
+  --shadow-pop: 0 12px 32px -16px rgb(22 29 36 / 0.18),
+    0 1px 2px rgb(22 29 36 / 0.04);
+  --shadow-sheet: 0 24px 64px -32px rgb(22 29 36 / 0.24);
+
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    color-scheme: light;
+    scrollbar-gutter: stable;
+  }
+
+  body {
+    @apply min-h-dvh bg-canvas text-ink antialiased;
+    font-family: var(--font-sans);
+    font-feature-settings:
+      "liga" 1,
+      "calt" 1;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--selection);
+    color: var(--ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--brand-ring);
+    outline-offset: 2px;
+  }
+
+  button,
+  [role="button"],
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--hairline-strong) transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border: 3px solid transparent;
+    border-radius: 9999px;
+    background: var(--hairline-strong);
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--ink-5);
+    background-clip: padding-box;
+  }
+}
+
+/* ---- Type utilities ---------------------------------------------------- */
+@utility type-page-title {
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+@utility type-card-title {
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  line-height: 1.375rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+@utility type-body {
+  font-family: var(--font-sans);
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  font-weight: 400;
+}
+
+@utility type-body-sm {
+  font-family: var(--font-sans);
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+@utility type-meta {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+
+@utility type-micro {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  line-height: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+@utility type-count {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+}
+
+@utility no-scrollbar {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ---- Motion ------------------------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,92 @@
+name: Add a resource
+description: Suggest a Python resource for the curated directory.
+title: "Add resource: "
+labels: ["resource"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Resource title
+      description: Use the resource's own title, not "Click Here".
+      placeholder: The Python Tutorial
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      description: A stable, canonical https link.
+      placeholder: https://docs.python.org/3/tutorial/
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Start Here
+        - Core Python
+        - Web & APIs
+        - Data & ML
+        - AI Engineering
+        - Automation & Tooling
+        - Practice & Projects
+        - Watch & Read
+    validations:
+      required: true
+
+  - type: dropdown
+    id: level
+    attributes:
+      label: Difficulty
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+        - All levels
+    validations:
+      required: true
+
+  - type: dropdown
+    id: cost
+    attributes:
+      label: Cost
+      options:
+        - Free
+        - Freemium
+        - Paid
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: open-source
+    attributes:
+      label: Open source
+      options:
+        - label: This resource is open source.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: One-line summary
+      description: 40–140 characters. Explain what it is and who it is for.
+      placeholder: The official, example-driven tour of the language.
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: 2–3 sentences for the detail drawer.
+    validations:
+      required: true
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags
+      description: Optional, comma-separated.
+      placeholder: official, reference, tutorial
