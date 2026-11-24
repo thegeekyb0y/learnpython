@@ -29,6 +29,13 @@ export function ResourceLedger({
     );
   }
 
+  const gridColumns =
+    resources.length === 1
+      ? "grid-cols-1"
+      : resources.length === 2
+        ? "grid-cols-1 md:grid-cols-2"
+        : "grid-cols-1 lg:grid-cols-2 xl:grid-cols-3";
+
   return (
     <section
       data-view={view}
@@ -36,7 +43,7 @@ export function ResourceLedger({
       className="overflow-hidden rounded-xl border border-hairline bg-hairline"
     >
       {view === "grid" ? (
-        <div className="grid grid-cols-1 gap-px lg:grid-cols-2 xl:grid-cols-3">
+        <div className={`grid bg-surface ${gridColumns}`}>
           {resources.map((resource, index) => (
             <ResourceGridCell
               key={resource.id}

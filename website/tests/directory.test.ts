@@ -1,12 +1,15 @@
 import { describe, expect, it } from "vitest";
 
 import { resources } from "@/data/resources";
+import { exploreCollections } from "@/data/collections";
+import { quickNavItems } from "@/data/quick-nav";
 import {
   defaultDirectoryFilters,
   filterResources,
   getAccessFacetCounts,
   getCategoryFacetCounts,
   getLevelFacetCounts,
+  matchesCollectionFilter,
   matchesQuery,
   parseDirectoryParams,
   serializeDirectoryFilters,
@@ -67,6 +70,39 @@ describe("directory filtering", () => {
         matchesQuery(resource, "django postgres"),
       ),
     ).toHaveLength(0);
+  });
+
+  it("maps every quick-nav and bento collection to real resources", () => {
+    expect(quickNavItems).toHaveLength(7);
+    expect(exploreCollections).toHaveLength(5);
+
+    const mappedCollections = [...quickNavItems, ...exploreCollections];
+
+    for (const collection of mappedCollections) {
+      expect(
+        resources.filter((resource) =>
+          matchesCollectionFilter(resource, collection.filter),
+        ).length,
+      ).toBeGreaterThan(0);
+    }
+  });
+
+  it("filters by collection", () => {
+    const youtube = filterResources(resources, {
+      ...defaultDirectoryFilters,
+      collection: "youtube",
+    });
+    const books = filterResources(resources, {
+      ...defaultDirectoryFilters,
+      collection: "books",
+    });
+
+    expect(youtube).toHaveLength(2);
+    expect(youtube.every((resource) => resource.format === "video")).toBe(true);
+    expect(books).toHaveLength(6);
+    expect(books.every((resource) => resource.category === "books-guides")).toBe(
+      true,
+    );
   });
 });
 
@@ -132,7 +168,7 @@ describe("URL state", () => {
   it("parses a complete URL state", () => {
     const parsed = parseDirectoryParams(
       new URLSearchParams(
-        "q=django&cat=web-dev&level=beginner,advanced&access=free&sort=az&view=list&r=django-documentation",
+        "q=django&cat=web-dev&level=beginner,advanced&access=free&quick=books&sort=az&view=list&r=django-documentation",
       ),
       resources,
     );
@@ -141,6 +177,7 @@ describe("URL state", () => {
     expect(parsed.filters.category).toBe("web-dev");
     expect(parsed.filters.levels).toEqual(["beginner", "advanced"]);
     expect(parsed.filters.access).toEqual(["free"]);
+    expect(parsed.filters.collection).toBe("books");
     expect(parsed.filters.sort).toBe("az");
     expect(parsed.filters.view).toBe("list");
     expect(parsed.selectedId).toBe("django-documentation");
@@ -149,7 +186,7 @@ describe("URL state", () => {
   it("ignores invalid categories, levels, access, sort, view, and resource ids", () => {
     const parsed = parseDirectoryParams(
       new URLSearchParams(
-        "cat=unknown&level=expert&access=paid&sort=random&view=table&r=missing",
+        "cat=unknown&level=expert&access=paid&quick=unknown&sort=random&view=table&r=missing",
       ),
       resources,
     );
@@ -166,6 +203,7 @@ describe("URL state", () => {
         category: "web-dev",
         levels: ["beginner"],
         access: ["free"],
+        collection: "books",
         sort: "az",
         view: "list",
       }),
@@ -174,6 +212,7 @@ describe("URL state", () => {
       cat: "web-dev",
       level: ["beginner"],
       access: ["free"],
+      quick: "books",
       sort: "az",
       view: "list",
     });
@@ -183,6 +222,7 @@ describe("URL state", () => {
       cat: undefined,
       level: undefined,
       access: undefined,
+      quick: undefined,
       sort: undefined,
       view: undefined,
     });

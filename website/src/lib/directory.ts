@@ -4,6 +4,11 @@ import {
   categoryIds,
   type CategoryId,
 } from "@/data/categories";
+import {
+  collectionFilters,
+  type CollectionFilter,
+  type CollectionId,
+} from "@/data/collections";
 import type {
   Difficulty,
   Resource,
@@ -12,6 +17,9 @@ import type {
 } from "@/lib/schema";
 import type { DirectoryParams } from "@/lib/url";
 
+export { collectionFilters };
+export type { CollectionFilter, CollectionId };
+
 export type DirectoryAccessFilter = Extract<
   ResourceAccess,
   "free" | "open-source"
@@ -19,11 +27,42 @@ export type DirectoryAccessFilter = Extract<
 export type SortKey = "recommended" | "az" | "level";
 export type ViewMode = "grid" | "list";
 
+export function isCollectionId(value: string): value is CollectionId {
+  return Object.prototype.hasOwnProperty.call(collectionFilters, value);
+}
+
+export function getCollectionLabel(id: CollectionId): string {
+  return collectionFilters[id].label;
+}
+
+export function matchesCollectionFilter(
+  resource: Resource,
+  filter: CollectionFilter,
+): boolean {
+  if (filter.kind === "category") {
+    return resource.category === filter.value;
+  }
+
+  if (filter.kind === "format") {
+    return resource.format === filter.value;
+  }
+
+  return resource.tags.includes(filter.value);
+}
+
+export function matchesCollection(
+  resource: Resource,
+  collectionId: CollectionId,
+): boolean {
+  return matchesCollectionFilter(resource, collectionFilters[collectionId]);
+}
+
 export type DirectoryFilters = {
   query: string;
   category: CategoryId | "all";
   levels: Difficulty[];
   access: DirectoryAccessFilter[];
+  collection: CollectionId | null;
   sort: SortKey;
   view: ViewMode;
 };
@@ -33,6 +72,7 @@ export const defaultDirectoryFilters: DirectoryFilters = {
   category: "all",
   levels: [],
   access: [],
+  collection: null,
   sort: "recommended",
   view: "grid",
 };
@@ -163,6 +203,10 @@ function matchesFilters(
     return false;
   }
 
+  if (filters.collection && !matchesCollection(resource, filters.collection)) {
+    return false;
+  }
+
   return true;
 }
 
@@ -286,7 +330,8 @@ export function hasActiveFilters(filters: DirectoryFilters): boolean {
     filters.query.trim().length > 0 ||
     filters.category !== "all" ||
     filters.levels.length > 0 ||
-    filters.access.length > 0
+    filters.access.length > 0 ||
+    filters.collection !== null
   );
 }
 
@@ -339,6 +384,12 @@ export function parseDirectoryParams(
     ...new Set(parseList(params.get("access")).filter(isAccessFilter)),
   ];
 
+  const quick = params.get("quick");
+
+  if (quick && isCollectionId(quick)) {
+    filters.collection = quick;
+  }
+
   const sort = params.get("sort");
 
   if (sort && isSortKey(sort)) {
@@ -369,6 +420,7 @@ export function serializeDirectoryFilters(
     cat: filters.category === "all" ? undefined : filters.category,
     level: filters.levels.length > 0 ? [...filters.levels] : undefined,
     access: filters.access.length > 0 ? [...filters.access] : undefined,
+    quick: filters.collection ?? undefined,
     sort: filters.sort === "recommended" ? undefined : filters.sort,
     view: filters.view === "grid" ? undefined : filters.view,
   };

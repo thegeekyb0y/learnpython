@@ -54,7 +54,7 @@ export function ResourceGridCell({
         ...entranceTransition,
         delay: Math.min(index, 8) * 0.022,
       }}
-      className="group relative flex min-h-[188px] w-full flex-col bg-surface p-5 text-left transition-colors duration-150 ease-out-quint hover:bg-surface-2 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-inset focus-visible:outline-none"
+      className="group relative flex min-h-[188px] w-full flex-col border-r border-b border-hairline bg-surface p-5 text-left transition-[background-color,border-color] duration-150 ease-out-quint hover:border-hairline-hover hover:bg-surface-2 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-inset focus-visible:outline-none"
     >
       <span aria-hidden="true" className={railClass} />
 

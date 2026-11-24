@@ -58,7 +58,7 @@
     "summary": "Practical tutorials and deep dives across the language, from first scripts to production patterns.",
     "description": "A large library of Python tutorials, video courses, and cheat sheets written for working developers. Many articles are free; a membership unlocks the full course catalog and downloadable resources.",
     "category": "core-foundations",
-    "tags": ["tutorials", "courses", "reference"],
+    "tags": ["tutorials", "courses", "reference", "articles"],
     "difficulty": "beginner",
     "format": "course",
     "access": "free",
@@ -71,7 +71,7 @@
     "summary": "A broad reference of Python concepts, examples, and interview-style explanations.",
     "description": "Covers syntax, data structures, object-oriented programming, libraries, and common interview questions with short examples. Useful for quick lookups and revision, though articles vary in depth and ads are plentiful.",
     "category": "core-foundations",
-    "tags": ["reference", "interview", "oop", "examples"],
+    "tags": ["reference", "interview", "oop", "articles"],
     "difficulty": "beginner",
     "format": "docs",
     "access": "free",
@@ -84,7 +84,7 @@
     "summary": "A quick-reference tutorial with runnable examples and short exercises.",
     "description": "A concise, example-first introduction to Python syntax, data types, functions, and file handling. The built-in editor lets you run snippets immediately, making it a low-friction first pass before deeper material.",
     "category": "core-foundations",
-    "tags": ["beginner", "reference", "exercises"],
+    "tags": ["beginner", "reference", "exercises", "articles"],
     "difficulty": "beginner",
     "format": "docs",
     "access": "free",
@@ -117,3 +117,4 @@
     "featured": true
   }
 ]
+
