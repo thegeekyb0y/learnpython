@@ -24,7 +24,11 @@ Open [http://localhost:3000](http://localhost:3000).
   "summary": "One or two lines that explain what this is and who it is for.",
   "description": "Two or three sentences of detail for the resource drawer. Mention the format, the level it suits, and what makes it worth keeping in this directory.",
   "category": "core-foundations",
-  "tags": ["beginner", "tutorial"],
+  "subcategory": "General",
+  "provider": "Example maintainers",
+  "highlights": ["What the resource covers", "Why it is useful"],
+  "recommendedOrder": 1,
+  "tags": ["official", "reference"],
   "difficulty": "beginner",
   "format": "docs",
   "access": "free",
@@ -35,11 +39,13 @@ Open [http://localhost:3000](http://localhost:3000).
 Allowed values:
 
 - `difficulty`: `beginner`, `intermediate`, `advanced`
-- `format`: `book`, `docs`, `course`, `practice`, `tool`, `video`
+- `format`: `article`, `book`, `community`, `docs`, `course`, `podcast`, `practice`, `tool`, `video`
 - `access`: `free`, `open-source`, `paid`
 - `category`: one of the IDs in `src/data/categories.ts`
+- `subcategory`: required; use the exact heading from the root `README.md`
+- `provider`, `highlights` (max 3), `recommendedOrder`: optional
 
-Resources are validated by `src/lib/schema.ts` when `src/data/resources.ts` is imported. Duplicate IDs, duplicate URLs, unknown categories, non-HTTPS URLs, and out-of-range copy all fail the build.
+Resources are validated by `src/lib/schema.ts` when `src/data/resources.ts` is imported. Duplicate IDs, duplicate URLs, unknown categories, non-HTTPS URLs, and out-of-range copy all fail the build. After editing the catalog, run `npm run sync:readme` so the generated Full Catalog section stays in sync.
 
 ## Collection filters and quick navigation
 
