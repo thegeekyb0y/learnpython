@@ -10,6 +10,7 @@ The web directory for the [`learn-python`](https://github.com/thegeekyb0y/learnp
 - Resource catalog: `src/data/catalog/*.json` (category files with README subcategories)
 - Validated resource export: `src/data/resources.ts`
 - Collection filters: `src/data/collections.ts`
+- Sub-section layout: `src/data/sections.ts`
 - Quick navigation: `src/data/quick-nav.ts`
 - Schema and integrity checks: `src/lib/schema.ts`
 - Generated root catalog tables: root `README.md` via `npm run sync:readme`
@@ -22,6 +23,8 @@ The page imports the validated catalog, so `next build` fails on a duplicate id,
 - Search filters live and writes a debounced `?q=` URL.
 - Category, difficulty, access, collection, sort, and view state synchronize to the URL.
 - Quick navigation maps to real catalog filters.
+- Dense views (YouTube, Official Documentation, Data & AI, Communities & Media, Tools & Automation) render grouped sub-sections with `?section=` pills and Back/Forward support.
+- Search or A–Z sort collapses grouped views into one ranked ledger while keeping the active sub-section filter.
 - The hero stays mounted while searching or filtering; the search panel floats above the page so there is no layout shift.
 - `⌘K` / `Ctrl+K` / `/` focus search and open the instant results panel.
 - The panel supports arrow-key navigation, Enter to open, Esc to close, and a footer that scrolls to the filtered feed.

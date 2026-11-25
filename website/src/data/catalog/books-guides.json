@@ -63,7 +63,7 @@
     "id": "hugging-face-nlp-course",
     "title": "Hugging Face NLP Course",
     "url": "https://huggingface.co/learn/nlp-course",
-    "summary": "A guided Python course from Hugging Face with lessons, exercises, and projects.",
+    "summary": "Hugging Face's free NLP course on transformers, fine-tuning, and deploying models with Python.",
     "description": "Hugging Face NLP Course is a course from Hugging Face, filed under Books & Documentation in the learn-python directory. Beginner. It suits beginner developers and is free to use.",
     "category": "books-guides",
     "subcategory": "Books & Documentation",

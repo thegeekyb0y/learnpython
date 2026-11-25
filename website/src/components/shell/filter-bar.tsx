@@ -4,6 +4,10 @@ import { X } from "lucide-react";
 
 import { CategoryPills } from "@/components/shell/category-pills";
 import { FilterControls } from "@/components/shell/filter-controls";
+import {
+  SectionPills,
+  type SectionPill,
+} from "@/components/shell/section-pills";
 import type { Category, CategoryId } from "@/data/categories";
 import type { CollectionId } from "@/data/collections";
 import type {
@@ -19,6 +23,9 @@ type FilterBarProps = {
   categoryCounts: Record<CategoryId | "all", number>;
   activeCategory: CategoryId | "all";
   activeCollection: CollectionId | null;
+  activeSection: string | null;
+  sectionTotal: number;
+  sectionPills: readonly SectionPill[] | null;
   levels: Difficulty[];
   levelCounts: Record<Difficulty, number>;
   access: DirectoryAccessFilter[];
@@ -27,6 +34,7 @@ type FilterBarProps = {
   view: ViewMode;
   onSelectCategory: (category: CategoryId | "all") => void;
   onClearCollection: () => void;
+  onSelectSection: (section: string | null) => void;
   onToggleLevel: (level: Difficulty) => void;
   onToggleAccess: (access: DirectoryAccessFilter) => void;
   onClearLevels: () => void;
@@ -39,6 +47,9 @@ export function FilterBar({
   categoryCounts,
   activeCategory,
   activeCollection,
+  activeSection,
+  sectionTotal,
+  sectionPills,
   levels,
   levelCounts,
   access,
@@ -47,6 +58,7 @@ export function FilterBar({
   view,
   onSelectCategory,
   onClearCollection,
+  onSelectSection,
   onToggleLevel,
   onToggleAccess,
   onClearLevels,
@@ -65,7 +77,7 @@ export function FilterBar({
             <button
               type="button"
               onClick={onClearCollection}
-              aria-label={`Clear collection filter: ${getCollectionLabel(activeCollection)}`}
+              aria-label={`Collection: ${getCollectionLabel(activeCollection)} - clear filter`}
               className="inline-flex h-11 cursor-pointer items-center gap-2 rounded-full border border-brand-line bg-brand-soft px-3 text-[12px] font-medium text-ink outline-none transition-colors hover:border-brand/40 focus-visible:ring-[3px] focus-visible:ring-brand-ring"
             >
               <span>Collection: {getCollectionLabel(activeCollection)}</span>
@@ -76,12 +88,21 @@ export function FilterBar({
 
         <div className="flex w-full flex-col gap-2 lg:flex-row lg:items-center lg:gap-4">
           <div className="relative min-w-0 flex-1">
-            <CategoryPills
-              categories={categories}
-              counts={categoryCounts}
-              activeCategory={activeCategory}
-              onSelect={onSelectCategory}
-            />
+            {sectionPills ? (
+              <SectionPills
+                total={sectionTotal}
+                pills={sectionPills}
+                activeSection={activeSection}
+                onSelect={onSelectSection}
+              />
+            ) : (
+              <CategoryPills
+                categories={categories}
+                counts={categoryCounts}
+                activeCategory={activeCategory}
+                onSelect={onSelectCategory}
+              />
+            )}
             <span
               aria-hidden="true"
               className="pointer-events-none absolute inset-y-0 right-0 z-10 w-8 bg-gradient-to-l from-surface via-surface/80 to-transparent"

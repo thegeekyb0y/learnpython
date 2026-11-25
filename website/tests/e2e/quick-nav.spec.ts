@@ -13,7 +13,7 @@ test.describe("quick navigation and ledger views", () => {
       .click();
 
     const chip = page.getByRole("button", {
-      name: "Clear collection filter: Official Documentation",
+      name: /Collection: Official Documentation/,
     });
     await expect(chip).toBeVisible();
     await expect(chip).toContainText("Collection: Official Documentation");

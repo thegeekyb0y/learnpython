@@ -45,7 +45,7 @@ export function HeroVisual() {
         {logoFailed ? (
           <span
             data-slot="python-logo-fallback"
-            className="flex h-44 w-44 items-center justify-center rounded-full border border-ink/10 bg-ink font-mono text-4xl font-semibold tracking-tight text-sage shadow-pop"
+            className="flex size-64 items-center justify-center rounded-full border border-ink/10 bg-ink font-mono text-5xl font-semibold tracking-tight text-sage shadow-pop"
           >
             py
           </span>
@@ -60,7 +60,7 @@ export function HeroVisual() {
             onError={() => setLogoFailed(true)}
             ref={imageRef}
             data-slot="python-logo-image"
-            className="h-44 w-44 object-contain"
+            className="size-full object-contain"
           />
         )}
       </div>

@@ -17,6 +17,7 @@ import {
   getCategoryFacetCounts,
   getLevelFacetCounts,
   getRelatedResources,
+  getSectionView,
   hasActiveFilters,
   parseDirectoryParams,
   serializeDirectoryFilters,
@@ -43,6 +44,7 @@ type DirectoryAction =
   | { type: "setCategory"; category: DirectoryFilters["category"] }
   | { type: "setCollection"; collection: CollectionId }
   | { type: "clearCollection" }
+  | { type: "setSection"; section: string | null }
   | { type: "toggleLevel"; level: Difficulty }
   | { type: "toggleAccess"; access: DirectoryAccessFilter }
   | { type: "setSort"; sort: SortKey }
@@ -64,10 +66,10 @@ function reducer(state: DirectoryState, action: DirectoryAction): DirectoryState
     case "setQuery":
       return { ...state, query: action.query };
     case "setCategory":
-      return { ...state, category: action.category, collection: null };
+      return { ...state, category: action.category, collection: null, section: null };
     case "setCollection": {
       if (state.collection === action.collection) {
-        return { ...state, collection: null, category: "all" };
+        return { ...state, collection: null, category: "all", section: null };
       }
 
       const collection = collectionFilters[action.collection];
@@ -79,13 +81,16 @@ function reducer(state: DirectoryState, action: DirectoryAction): DirectoryState
           collection.kind === "category"
             ? (collection.value as DirectoryFilters["category"])
             : "all",
+        section: null,
         query: "",
         levels: [],
         access: [],
       };
     }
     case "clearCollection":
-      return { ...state, collection: null, category: "all" };
+      return { ...state, collection: null, category: "all", section: null };
+    case "setSection":
+      return { ...state, section: action.section };
     case "toggleLevel":
       return {
         ...state,
@@ -143,6 +148,7 @@ export function useDirectoryState(resources: readonly Resource[]) {
       levels: state.levels,
       access: state.access,
       collection: state.collection,
+      section: state.section,
       sort: state.sort,
       view: state.view,
     }),
@@ -152,6 +158,7 @@ export function useDirectoryState(resources: readonly Resource[]) {
       state.levels,
       state.access,
       state.collection,
+      state.section,
       state.sort,
       state.view,
     ],
@@ -235,6 +242,11 @@ export function useDirectoryState(resources: readonly Resource[]) {
     [filters, resources],
   );
 
+  const sectionView = useMemo(
+    () => getSectionView(resources, filters),
+    [filters, resources],
+  );
+
   const selectedResource = useMemo(
     () =>
       state.selectedId
@@ -304,6 +316,21 @@ export function useDirectoryState(resources: readonly Resource[]) {
     );
   };
 
+  const setSection = (section: string | null) => {
+    if (state.section === section) {
+      return;
+    }
+
+    dispatch({ type: "setSection", section });
+    pushDirectoryState(
+      serializeDirectoryFilters({
+        ...filters,
+        query: state.query,
+        section,
+      }),
+    );
+  };
+
   return {
     state,
     filters,
@@ -312,6 +339,7 @@ export function useDirectoryState(resources: readonly Resource[]) {
     categoryCounts,
     levelCounts,
     accessCounts,
+    sectionView,
     selectedResource,
     relatedResources,
     hasFilters: hasActiveFilters(filters),
@@ -322,6 +350,7 @@ export function useDirectoryState(resources: readonly Resource[]) {
     setCollection: (collection: CollectionId) =>
       dispatch({ type: "setCollection", collection }),
     clearCollection: () => dispatch({ type: "clearCollection" }),
+    setSection,
     toggleLevel: (level: Difficulty) =>
       dispatch({ type: "toggleLevel", level }),
     toggleAccess: (access: DirectoryAccessFilter) =>
