@@ -13,6 +13,9 @@
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "serve:out": "node tests/e2e/server.mjs",
+    "generate:og": "node scripts/generate-og.mjs",
     "content:check": "vitest run tests/schema.test.ts tests/resources.test.ts tests/categories.test.ts",
     "check": "npm run typecheck && npm run lint && npm run test"
   },
@@ -34,6 +37,8 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.1",
+    "@playwright/test": "^1.65.1",
     "@tailwindcss/turbopack": "4.3.3",
     "@types/node": "^24.19.2",
     "@types/react": "^19",

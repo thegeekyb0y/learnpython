@@ -52,10 +52,22 @@ If your npm config blocks lifecycle scripts, install with `npm install --ignore-
 ## Checks
 
 ```bash
-npm run check          # typecheck + lint + all tests
+npm run check          # typecheck + lint + Vitest
 npm run content:check  # schema, catalog integrity, category counts
-npm run build          # static export to ./out
+npm run test:e2e       # Playwright E2E + axe against the static export
+npm run build:pages    # static export to ./out with the Pages base path
+npm run generate:og    # regenerate public/og-image.png
 ```
+
+Playwright needs its browser once per machine:
+
+```bash
+npx playwright install chromium
+```
+
+`test:e2e` builds the Pages export, serves it at `/learnpython/`, and exercises
+search, quick navigation, deep links, browser history, axe accessibility, and
+responsive overflow.
 
 ## GitHub Pages
 
@@ -76,6 +88,10 @@ This sets `NEXT_PUBLIC_BASE_PATH=/learnpython` and the production `NEXT_PUBLIC_S
 Set **Settings → Pages → Source** to **GitHub Actions** once; after that, pushes to `main` that touch `website/**` deploy automatically.
 
 `public/.nojekyll` ensures GitHub Pages serves the `_next` directory.
+
+`public/og-image.png` is a committed 1200×630 social card so the static export
+can advertise Open Graph and Twitter images without a server-rendered image
+route. Regenerate it with `npm run generate:og` after changing the brand art.
 
 If the project moves to a custom domain, build with an empty `NEXT_PUBLIC_BASE_PATH` and update `NEXT_PUBLIC_SITE_URL`.
 
