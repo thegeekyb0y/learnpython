@@ -10,20 +10,19 @@ import {
 import { normalizeUrl, resourceSchema } from "@/lib/schema";
 
 const expectedCounts = {
-  "core-foundations": 9,
+  "core-foundations": 7,
   "books-guides": 6,
-  "web-dev": 6,
-  "data-ai": 16,
-  practice: 6,
-  "tools-cheatsheets": 7,
-  automation: 6,
+  "web-dev": 1,
+  "data-ai": 64,
+  "practice-challenges": 6,
+  "tools-automation": 20,
+  "communities-media": 44,
 } as const;
 
 describe("resource catalog", () => {
-  it("ships 50–60 curated resources", () => {
-    expect(resources.length).toBeGreaterThanOrEqual(50);
-    expect(resources.length).toBeLessThanOrEqual(60);
-    expect(resources.length).toBe(56);
+  it("ships the complete README catalog", () => {
+    expect(resources.length).toBeGreaterThanOrEqual(100);
+    expect(resources.length).toBe(148);
   });
 
   it("validates every resource against the schema", () => {
@@ -78,7 +77,54 @@ describe("resource catalog", () => {
   });
 
   it("features a deliberate, small set", () => {
-    expect(featuredResources.length).toBe(12);
+    expect(featuredResources.length).toBe(10);
     expect(featuredResources.length).toBeLessThan(resources.length);
+  });
+
+  it("groups every resource under a non-empty subcategory", () => {
+    for (const resource of resources) {
+      expect(resource.subcategory.length).toBeGreaterThanOrEqual(2);
+    }
+  });
+
+  it("keeps each catalog file sorted by featured, subcategory, then title", () => {
+    for (const category of categories) {
+      const entries = resourcesByCategory[category.id];
+
+      for (let index = 1; index < entries.length; index += 1) {
+        const previous = entries[index - 1];
+        const current = entries[index];
+
+        if (previous.featured !== current.featured) {
+          expect(previous.featured).toBe(true);
+          continue;
+        }
+
+        const subcategory = previous.subcategory.localeCompare(
+          current.subcategory,
+          "en",
+        );
+        expect(subcategory).toBeLessThanOrEqual(0);
+
+        if (subcategory === 0) {
+          expect(
+            previous.title.localeCompare(current.title, "en"),
+          ).toBeLessThanOrEqual(0);
+        }
+      }
+    }
+  });
+
+  it("provides providers and optional highlights where sourced", () => {
+    expect(resources.filter((resource) => resource.provider).length).toBeGreaterThan(
+      100,
+    );
+    expect(resources.filter((resource) => resource.highlights).length).toBeGreaterThan(
+      30,
+    );
+
+    for (const resource of resources) {
+      expect(resource.highlights?.length ?? 0).toBeLessThanOrEqual(3);
+    }
   });
 });

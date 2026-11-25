@@ -1,9 +1,9 @@
-import automation from "./catalog/automation.json";
+import automation from "./catalog/tools-automation.json";
 import booksGuides from "./catalog/books-guides.json";
+import communitiesMedia from "./catalog/communities-media.json";
 import coreFoundations from "./catalog/core-foundations.json";
 import dataAi from "./catalog/data-ai.json";
-import practice from "./catalog/practice.json";
-import toolsCheatsheets from "./catalog/tools-cheatsheets.json";
+import practice from "./catalog/practice-challenges.json";
 import webDev from "./catalog/web-dev.json";
 
 import { categoryIds, type CategoryId } from "@/data/categories";
@@ -22,9 +22,9 @@ const catalogFiles: ReadonlyArray<{
   { category: "books-guides", entries: booksGuides },
   { category: "web-dev", entries: webDev },
   { category: "data-ai", entries: dataAi },
-  { category: "practice", entries: practice },
-  { category: "tools-cheatsheets", entries: toolsCheatsheets },
-  { category: "automation", entries: automation },
+  { category: "practice-challenges", entries: practice },
+  { category: "tools-automation", entries: automation },
+  { category: "communities-media", entries: communitiesMedia },
 ];
 
 const fileIssues: string[] = [];

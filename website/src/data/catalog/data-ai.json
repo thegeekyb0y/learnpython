@@ -1,66 +1,236 @@
 [
   {
-    "id": "scikit-learn-user-guide",
-    "title": "scikit-learn User Guide",
-    "url": "https://scikit-learn.org/stable/user_guide.html",
-    "summary": "The practical guide to classical machine learning with scikit-learn.",
-    "description": "Covers supervised and unsupervised learning, model selection, preprocessing, pipelines, and evaluation with consistent examples. The user guide is the fastest way to move from a dataset to a defensible baseline.",
+    "id": "andrej-karpathy-neural-networks-zero-to-hero",
+    "title": "Andrej Karpathy - Neural Networks: Zero to Hero",
+    "url": "https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ",
+    "summary": "A Andrej Karpathy - Neural Networks: Zero to Hero YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "Andrej Karpathy - Neural Networks: Zero to Hero is a video from Andrej Karpathy - Neural Networks: Zero to Hero, filed under AI/ML YouTube Playlists in the learn-python directory. Intermediate. It suits intermediate developers and is free to use.",
     "category": "data-ai",
-    "tags": ["machine-learning", "scikit-learn", "official"],
+    "subcategory": "AI/ML YouTube Playlists",
+    "provider": "Andrej Karpathy",
+    "recommendedOrder": 1,
+    "tags": [
+      "youtube",
+      "video"
+    ],
     "difficulty": "intermediate",
-    "format": "docs",
-    "access": "open-source",
+    "format": "video",
+    "access": "free",
     "featured": true
   },
   {
-    "id": "pytorch-tutorials",
-    "title": "PyTorch Tutorials",
-    "url": "https://pytorch.org/tutorials",
-    "summary": "Hands-on PyTorch tutorials from tensors and autograd to training and deployment.",
-    "description": "Official tutorials that build models step by step, including vision, text, reinforcement learning, and distributed training. Each lesson is runnable and links to the underlying API docs.",
+    "id": "langchain-docs",
+    "title": "LangChain Documentation",
+    "url": "https://python.langchain.com/docs",
+    "summary": "The Python guide to composing LLM apps, tools, memory, and retrieval chains.",
+    "description": "Covers model integrations, prompt templates, retrievers, agents, and evaluation. The tutorials provide end-to-end examples, while the how-to guides are easier to use as a reference once the basics are clear.",
     "category": "data-ai",
-    "tags": ["pytorch", "deep-learning", "official"],
+    "subcategory": "Generative AI & Large Language Models",
+    "provider": "LangChain",
+    "recommendedOrder": 1,
+    "tags": [
+      "official",
+      "llm",
+      "docs",
+      "agents"
+    ],
     "difficulty": "intermediate",
-    "format": "course",
-    "access": "open-source",
+    "format": "docs",
+    "access": "free",
     "featured": true
   },
   {
-    "id": "tensorflow-guide",
-    "title": "TensorFlow Guides",
-    "url": "https://www.tensorflow.org/guide",
-    "summary": "Official TensorFlow guides for tensors, Keras models, training loops, and deployment.",
-    "description": "A structured path through the TensorFlow ecosystem, from basic tensors and Keras to custom training loops and SavedModel export. Useful when you need the framework's production tooling.",
+    "id": "mcp-official-docs-and-spec",
+    "title": "MCP Official Docs & Spec",
+    "url": "https://modelcontextprotocol.io",
+    "summary": "Official documentation from Model Context Protocol with guides, references, and examples.",
+    "description": "MCP Official Docs & Spec is a documentation from Model Context Protocol, filed under Model Context Protocol (MCP) with Python in the learn-python directory. Protocol spec + Python SDK guide. It suits intermediate developers and is free to use.",
     "category": "data-ai",
-    "tags": ["tensorflow", "deep-learning", "official"],
+    "subcategory": "Model Context Protocol (MCP) with Python",
+    "provider": "Model Context Protocol",
+    "highlights": [
+      "Protocol spec + Python SDK guide"
+    ],
+    "recommendedOrder": 1,
+    "tags": [
+      "official",
+      "agents",
+      "mcp",
+      "docs"
+    ],
     "difficulty": "intermediate",
     "format": "docs",
-    "access": "open-source",
+    "access": "free",
+    "featured": true
+  },
+  {
+    "id": "distill-pub",
+    "title": "Distill.pub",
+    "url": "https://distill.pub",
+    "summary": "Distill publishes Python tutorials, references, and practical walkthroughs.",
+    "description": "Distill.pub is an article from Distill, filed under AI/ML Blogs & Communities in the learn-python directory. Advanced. It suits advanced developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "AI/ML Blogs & Communities",
+    "provider": "Distill",
+    "recommendedOrder": 1,
+    "tags": [
+      "community",
+      "article"
+    ],
+    "difficulty": "advanced",
+    "format": "article",
+    "access": "free",
     "featured": false
   },
   {
-    "id": "hugging-face-transformers",
-    "title": "Hugging Face Transformers",
-    "url": "https://huggingface.co/docs/transformers",
-    "summary": "The reference for pretrained transformer models, tokenizers, pipelines, and fine-tuning.",
-    "description": "Documents the Transformers library across text, vision, audio, and multimodal models. The task guides and model pages make it practical to load a checkpoint, run inference, and adapt it to your data.",
+    "id": "google-ai-blog",
+    "title": "Google AI Blog",
+    "url": "https://ai.googleblog.com",
+    "summary": "Google Research publishes Python tutorials, references, and practical walkthroughs.",
+    "description": "Google AI Blog is an article from Google Research, filed under AI/ML Blogs & Communities in the learn-python directory. Advanced. It suits advanced developers and is free to use.",
     "category": "data-ai",
-    "tags": ["transformers", "nlp", "hugging-face"],
-    "difficulty": "intermediate",
-    "format": "docs",
-    "access": "open-source",
-    "featured": true
+    "subcategory": "AI/ML Blogs & Communities",
+    "provider": "Google Research",
+    "recommendedOrder": 2,
+    "tags": [
+      "community",
+      "article"
+    ],
+    "difficulty": "advanced",
+    "format": "article",
+    "access": "free",
+    "featured": false
   },
   {
-    "id": "hugging-face-llm-course",
-    "title": "Hugging Face LLM Course",
-    "url": "https://huggingface.co/learn/llm-course",
-    "summary": "A free, chapter-by-chapter course on transformers and modern LLM workflows.",
-    "description": "Starts with pipelines and tokenizers, then moves through fine-tuning, sharing models, and task-specific workflows. The notebooks and exercises make it a strong bridge from theory to working code.",
+    "id": "hugging-face-blog",
+    "title": "Hugging Face Blog",
+    "url": "https://huggingface.co/blog",
+    "summary": "Hugging Face publishes Python tutorials, references, and practical walkthroughs.",
+    "description": "Hugging Face Blog is an article from Hugging Face, filed under AI/ML Blogs & Communities in the learn-python directory. Intermediate. It suits intermediate developers and is free to use.",
     "category": "data-ai",
-    "tags": ["course", "llm", "transformers"],
+    "subcategory": "AI/ML Blogs & Communities",
+    "provider": "Hugging Face",
+    "recommendedOrder": 3,
+    "tags": [
+      "community",
+      "article"
+    ],
     "difficulty": "intermediate",
-    "format": "course",
+    "format": "article",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "papers-with-code",
+    "title": "Papers with Code",
+    "url": "https://paperswithcode.com",
+    "summary": "Papers with Code publishes Python tutorials, references, and practical walkthroughs.",
+    "description": "Papers with Code is an article from Papers with Code, filed under AI/ML Blogs & Communities in the learn-python directory. Advanced. It suits advanced developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "AI/ML Blogs & Communities",
+    "provider": "Papers with Code",
+    "recommendedOrder": 4,
+    "tags": [
+      "community",
+      "article"
+    ],
+    "difficulty": "advanced",
+    "format": "article",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "towards-data-science",
+    "title": "Towards Data Science",
+    "url": "https://towardsdatascience.com",
+    "summary": "Towards Data Science publishes Python tutorials, references, and practical walkthroughs.",
+    "description": "Towards Data Science is an article from Towards Data Science, filed under AI/ML Blogs & Communities in the learn-python directory. Beginner. It suits beginner developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "AI/ML Blogs & Communities",
+    "provider": "Towards Data Science",
+    "recommendedOrder": 5,
+    "tags": [
+      "community",
+      "article"
+    ],
+    "difficulty": "beginner",
+    "format": "article",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "3blue1brown-neural-networks",
+    "title": "3Blue1Brown - Neural Networks",
+    "url": "https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi",
+    "summary": "A 3Blue1Brown - Neural Networks YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "3Blue1Brown - Neural Networks is a video from 3Blue1Brown - Neural Networks, filed under AI/ML YouTube Playlists in the learn-python directory. Beginner. It suits beginner developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "AI/ML YouTube Playlists",
+    "provider": "3Blue1Brown",
+    "recommendedOrder": 2,
+    "tags": [
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "deeplearning-ai-short-courses",
+    "title": "DeepLearning.AI Short Courses",
+    "url": "https://www.youtube.com/@deeplearningai",
+    "summary": "A DeepLearning.AI Short Courses YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "DeepLearning.AI Short Courses is a video from DeepLearning.AI Short Courses, filed under AI/ML YouTube Playlists in the learn-python directory. Beginner. It suits beginner developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "AI/ML YouTube Playlists",
+    "provider": "DeepLearning.AI",
+    "recommendedOrder": 3,
+    "tags": [
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "fast-ai-practical-deep-learning",
+    "title": "Fast.ai Practical Deep Learning",
+    "url": "https://www.youtube.com/playlist?list=PLfYUBJiXbdtSvpQjSnJJ_PmDQB_VyT5iU",
+    "summary": "A Fast.ai Practical Deep Learning YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "Fast.ai Practical Deep Learning is a video from Fast.ai Practical Deep Learning, filed under AI/ML YouTube Playlists in the learn-python directory. Intermediate. It suits intermediate developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "AI/ML YouTube Playlists",
+    "provider": "Fast.ai",
+    "recommendedOrder": 4,
+    "tags": [
+      "youtube",
+      "video"
+    ],
+    "difficulty": "intermediate",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "sentdex-ml-with-python",
+    "title": "Sentdex - ML with Python",
+    "url": "https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Vasff-As5KJ+ov3x",
+    "summary": "A Sentdex - ML with Python YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "Sentdex - ML with Python is a video from Sentdex - ML with Python, filed under AI/ML YouTube Playlists in the learn-python directory. Beginner. It suits beginner developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "AI/ML YouTube Playlists",
+    "provider": "Sentdex",
+    "recommendedOrder": 5,
+    "tags": [
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
     "access": "free",
     "featured": false
   },
@@ -71,35 +241,174 @@
     "summary": "Runnable recipes for prompts, embeddings, RAG, agents, and evaluation with OpenAI APIs.",
     "description": "A maintained collection of notebooks and examples that show how to structure real LLM applications. Useful for copying proven patterns for retrieval, tool calling, structured outputs, and evals.",
     "category": "data-ai",
-    "tags": ["llm", "rag", "examples"],
-    "difficulty": "intermediate",
+    "subcategory": "Books & Documentation",
+    "provider": "OpenAI",
+    "recommendedOrder": 1,
+    "tags": [
+      "official",
+      "docs",
+      "llm",
+      "rag"
+    ],
+    "difficulty": "beginner",
     "format": "docs",
     "access": "free",
     "featured": false
   },
   {
-    "id": "langchain-docs",
-    "title": "LangChain Documentation",
-    "url": "https://python.langchain.com/docs",
-    "summary": "The Python guide to composing LLM apps, tools, memory, and retrieval chains.",
-    "description": "Covers model integrations, prompt templates, retrievers, agents, and evaluation. The tutorials provide end-to-end examples, while the how-to guides are easier to use as a reference once the basics are clear.",
+    "id": "annotated-transformer-harvard-nlp",
+    "title": "Annotated Transformer : Harvard NLP",
+    "url": "https://nlp.seas.harvard.edu/annotated-transformer",
+    "summary": "\"Attention Is All You Need\" paper reproduced as runnable PyTorch code.",
+    "description": "Annotated Transformer : Harvard NLP is a documentation from Harvard NLP, filed under Build an LLM From Scratch in Python in the learn-python directory. \"Attention Is All You Need\" paper reproduced as runnable PyTorch code. It suits advanced developers and is free to use.",
     "category": "data-ai",
-    "tags": ["llm", "agents", "rag"],
-    "difficulty": "intermediate",
+    "subcategory": "Build an LLM From Scratch in Python",
+    "provider": "Harvard NLP",
+    "highlights": [
+      "\"Attention Is All You Need\" paper reproduced as runnable PyTorch code"
+    ],
+    "recommendedOrder": 1,
+    "tags": [
+      "from-scratch",
+      "docs"
+    ],
+    "difficulty": "advanced",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "cs231n-course-notes",
+    "title": "CS231n Course Notes",
+    "url": "https://cs231n.github.io",
+    "summary": "Stanford's deep learning & NLP course notes, Python-based assignments.",
+    "description": "CS231n Course Notes is a documentation from Stanford, filed under Build an LLM From Scratch in Python in the learn-python directory. Stanford's deep learning & NLP course notes, Python-based assignments. It suits advanced developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "Build an LLM From Scratch in Python",
+    "provider": "Stanford",
+    "highlights": [
+      "Stanford's deep learning & NLP course notes, Python-based assignments"
+    ],
+    "recommendedOrder": 2,
+    "tags": [
+      "from-scratch",
+      "course",
+      "docs"
+    ],
+    "difficulty": "advanced",
+    "format": "course",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "lets-build-the-gpt-tokenizer",
+    "title": "Let's Build the GPT Tokenizer",
+    "url": "https://www.youtube.com/watch?v=zduSFxRajkE",
+    "summary": "Builds a BPE tokenizer in Python line by line.",
+    "description": "Let's Build the GPT Tokenizer is a video from Let's Build the GPT Tokenizer :Karpathy, filed under Build an LLM From Scratch in Python in the learn-python directory. Builds a BPE tokenizer in Python line by line. It suits advanced developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "Build an LLM From Scratch in Python",
+    "provider": "Let's Build the GPT Tokenizer :Karpathy",
+    "highlights": [
+      "Builds a BPE tokenizer in Python line by line"
+    ],
+    "recommendedOrder": 3,
+    "tags": [
+      "from-scratch",
+      "video"
+    ],
+    "difficulty": "advanced",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "nanogpt",
+    "title": "nanoGPT",
+    "url": "https://github.com/karpathy/nanoGPT",
+    "summary": "~300-line, dependency-light GPT training/inference in pure PyTorch.",
+    "description": "nanoGPT is a documentation from Andrej Karpathy, filed under Build an LLM From Scratch in Python in the learn-python directory. ~300-line, dependency-light GPT training/inference in pure PyTorch. It suits advanced developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Build an LLM From Scratch in Python",
+    "provider": "Andrej Karpathy",
+    "highlights": [
+      "~300-line, dependency-light GPT training/inference in pure PyTorch"
+    ],
+    "recommendedOrder": 4,
+    "tags": [
+      "from-scratch",
+      "docs"
+    ],
+    "difficulty": "advanced",
     "format": "docs",
     "access": "open-source",
     "featured": false
   },
   {
-    "id": "llamaindex-docs",
-    "title": "LlamaIndex Documentation",
-    "url": "https://docs.llamaindex.ai",
-    "summary": "A framework guide for indexing private data and building retrieval-augmented LLM apps.",
-    "description": "Documents loaders, node parsing, indexes, retrievers, query engines, and agent workflows. The examples focus on connecting your own data to an LLM with controllable retrieval and citations.",
+    "id": "karpathy-zero-to-hero",
+    "title": "Neural Networks: Zero to Hero",
+    "url": "https://karpathy.ai/zero-to-hero.html",
+    "summary": "Andrej Karpathy's video series on neural networks, backpropagation, and language models.",
+    "description": "A companion page for the Zero to Hero series, which builds up from micrograd and makemore to a small GPT. The videos are long but reward careful note-taking and hands-on repetition.",
     "category": "data-ai",
-    "tags": ["rag", "llm", "data"],
+    "subcategory": "Build an LLM From Scratch in Python",
+    "provider": "Andrej Karpathy",
+    "highlights": [
+      "Video series that codes backprop, a tokenizer, and a GPT from raw Python"
+    ],
+    "recommendedOrder": 5,
+    "tags": [
+      "from-scratch",
+      "course",
+      "docs",
+      "video"
+    ],
+    "difficulty": "advanced",
+    "format": "course",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "ag2-formerly-autogen",
+    "title": "AG2 (formerly AutoGen)",
+    "url": "https://github.com/ag2ai/ag2",
+    "summary": "Python framework for conversational multi-agent systems.",
+    "description": "AG2 (formerly AutoGen) is a tool from AG2, filed under Building AI Agents in Python in the learn-python directory. Python framework for conversational multi-agent systems. It suits intermediate developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Building AI Agents in Python",
+    "provider": "AG2",
+    "highlights": [
+      "Python framework for conversational multi-agent systems"
+    ],
+    "recommendedOrder": 1,
+    "tags": [
+      "agents",
+      "tool"
+    ],
     "difficulty": "intermediate",
-    "format": "docs",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "crewai",
+    "title": "CrewAI",
+    "url": "https://github.com/crewAIInc/crewAI",
+    "summary": "Pure-Python role-based multi-agent framework.",
+    "description": "CrewAI is a tool from CrewAI, filed under Building AI Agents in Python in the learn-python directory. Pure-Python role-based multi-agent framework. It suits intermediate developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Building AI Agents in Python",
+    "provider": "CrewAI",
+    "highlights": [
+      "Pure-Python role-based multi-agent framework"
+    ],
+    "recommendedOrder": 2,
+    "tags": [
+      "agents",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
     "access": "open-source",
     "featured": false
   },
@@ -110,23 +419,43 @@
     "summary": "Build stateful, multi-step LLM agents as graphs with explicit control flow.",
     "description": "LangGraph documents how to model agents as nodes and edges, persist state, add human review, and handle long-running workflows. It is a better fit than a simple chain when the control flow matters.",
     "category": "data-ai",
-    "tags": ["agents", "llm", "orchestration"],
-    "difficulty": "advanced",
-    "format": "docs",
-    "access": "open-source",
+    "subcategory": "Building AI Agents in Python",
+    "provider": "LangChain",
+    "highlights": [
+      "Python framework for stateful, controllable multi-agent apps"
+    ],
+    "recommendedOrder": 3,
+    "tags": [
+      "agents",
+      "tool",
+      "llm",
+      "orchestration"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "free",
     "featured": false
   },
   {
-    "id": "mcp-python-sdk",
-    "title": "MCP Python SDK",
-    "url": "https://github.com/modelcontextprotocol/python-sdk",
-    "summary": "The official Python SDK for building Model Context Protocol servers and clients.",
-    "description": "Provides the building blocks for exposing tools, resources, and prompts to MCP-compatible clients. The examples cover local servers, transports, and integration with agent frameworks.",
+    "id": "llamaindex-workflows",
+    "title": "LlamaIndex Workflows",
+    "url": "https://docs.llamaindex.ai/en/stable/module_guides/workflow",
+    "summary": "LlamaIndex maintains this Python tool with docs, examples, and community support.",
+    "description": "LlamaIndex Workflows is a tool from LlamaIndex, filed under Building AI Agents in Python in the learn-python directory. Python event-driven agent orchestration. It suits intermediate developers and is free to use.",
     "category": "data-ai",
-    "tags": ["mcp", "agents", "sdk"],
-    "difficulty": "advanced",
+    "subcategory": "Building AI Agents in Python",
+    "provider": "LlamaIndex",
+    "highlights": [
+      "Python event-driven agent orchestration"
+    ],
+    "recommendedOrder": 4,
+    "tags": [
+      "agents",
+      "tool"
+    ],
+    "difficulty": "intermediate",
     "format": "tool",
-    "access": "open-source",
+    "access": "free",
     "featured": false
   },
   {
@@ -136,10 +465,391 @@
     "summary": "A lightweight Python SDK for tool-using agents, handoffs, and traced workflows.",
     "description": "OpenAI's Agents SDK provides primitives for agent loops, function tools, guardrails, sessions, and observability. The examples are compact enough to adapt into a first production prototype.",
     "category": "data-ai",
-    "tags": ["agents", "openai", "sdk"],
+    "subcategory": "Building AI Agents in Python",
+    "provider": "OpenAI",
+    "highlights": [
+      "Lightweight Python agent + handoff primitives"
+    ],
+    "recommendedOrder": 5,
+    "tags": [
+      "agents",
+      "tool",
+      "openai",
+      "sdk"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "pydantic-ai",
+    "title": "Pydantic AI",
+    "url": "https://ai.pydantic.dev",
+    "summary": "Type-safe Python agent framework from the Pydantic team.",
+    "description": "Pydantic AI is a tool from Pydantic, filed under Building AI Agents in Python in the learn-python directory. Type-safe Python agent framework from the Pydantic team. It suits intermediate developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "Building AI Agents in Python",
+    "provider": "Pydantic",
+    "highlights": [
+      "Type-safe Python agent framework from the Pydantic team"
+    ],
+    "recommendedOrder": 6,
+    "tags": [
+      "agents",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "semantic-kernel-python",
+    "title": "Semantic Kernel (Python)",
+    "url": "https://github.com/microsoft/semantic-kernel",
+    "summary": "Microsoft's agent SDK, first-class Python support.",
+    "description": "Semantic Kernel (Python) is a tool from Microsoft, filed under Building AI Agents in Python in the learn-python directory. Microsoft's agent SDK, first-class Python support. It suits intermediate developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Building AI Agents in Python",
+    "provider": "Microsoft",
+    "highlights": [
+      "Microsoft's agent SDK, first-class Python support"
+    ],
+    "recommendedOrder": 7,
+    "tags": [
+      "agents",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "smolagents-hugging-face",
+    "title": "Smolagents (Hugging Face)",
+    "url": "https://github.com/huggingface/smolagents",
+    "summary": "~1000-line minimal Python agent loop, easy to learn from.",
+    "description": "Smolagents (Hugging Face) is a tool from Hugging Face, filed under Building AI Agents in Python in the learn-python directory. ~1000-line minimal Python agent loop, easy to learn from. It suits intermediate developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Building AI Agents in Python",
+    "provider": "Hugging Face",
+    "highlights": [
+      "~1000-line minimal Python agent loop, easy to learn from"
+    ],
+    "recommendedOrder": 8,
+    "tags": [
+      "agents",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "comet-opik",
+    "title": "Comet Opik",
+    "url": "https://github.com/comet-ml/opik",
+    "summary": "Open-source Python library for LLM observability & evals.",
+    "description": "Comet Opik is a tool from Comet, filed under Evaluating & Testing LLM Apps in Python in the learn-python directory. Open-source Python library for LLM observability & evals. It suits intermediate developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Evaluating & Testing LLM Apps in Python",
+    "provider": "Comet",
+    "highlights": [
+      "Open-source Python library for LLM observability & evals"
+    ],
+    "recommendedOrder": 1,
+    "tags": [
+      "testing",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "langsmith",
+    "title": "LangSmith",
+    "url": "https://smith.langchain.com",
+    "summary": "Python SDK for tracing, evals, and monitoring LLM apps.",
+    "description": "LangSmith is a tool from LangChain, filed under Evaluating & Testing LLM Apps in Python in the learn-python directory. Python SDK for tracing, evals, and monitoring LLM apps. It suits intermediate developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "Evaluating & Testing LLM Apps in Python",
+    "provider": "LangChain",
+    "highlights": [
+      "Python SDK for tracing, evals, and monitoring LLM apps"
+    ],
+    "recommendedOrder": 2,
+    "tags": [
+      "testing",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "promptfoo",
+    "title": "Promptfoo",
+    "url": "https://github.com/promptfoo/promptfoo",
+    "summary": "Prompt testing & red-teaming, works with Python pipelines.",
+    "description": "Promptfoo is a tool from Promptfoo, filed under Evaluating & Testing LLM Apps in Python in the learn-python directory. Prompt testing & red-teaming, works with Python pipelines. It suits intermediate developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Evaluating & Testing LLM Apps in Python",
+    "provider": "Promptfoo",
+    "highlights": [
+      "Prompt testing & red-teaming, works with Python pipelines"
+    ],
+    "recommendedOrder": 3,
+    "tags": [
+      "testing",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "weights-and-biases-weave",
+    "title": "Weights & Biases Weave",
+    "url": "https://wandb.ai/site/weave",
+    "summary": "Python-native tracking & evaluation for LLM apps.",
+    "description": "Weights & Biases Weave is a tool from Weights & Biases, filed under Evaluating & Testing LLM Apps in Python in the learn-python directory. Python-native tracking & evaluation for LLM apps. It suits intermediate developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "Evaluating & Testing LLM Apps in Python",
+    "provider": "Weights & Biases",
+    "highlights": [
+      "Python-native tracking & evaluation for LLM apps"
+    ],
+    "recommendedOrder": 4,
+    "tags": [
+      "testing",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "axolotl",
+    "title": "Axolotl",
+    "url": "https://github.com/axolotl-ai-cloud/axolotl",
+    "summary": "YAML-configured Python fine-tuning framework built on PEFT/TRL.",
+    "description": "Axolotl is a tool from Axolotl, filed under Fine-Tuning LLMs in Python (PEFT, LoRA, QLoRA) in the learn-python directory. YAML-configured Python fine-tuning framework built on PEFT/TRL. It suits advanced developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Fine-Tuning LLMs in Python (PEFT, LoRA, QLoRA)",
+    "provider": "Axolotl",
+    "highlights": [
+      "YAML-configured Python fine-tuning framework built on PEFT/TRL"
+    ],
+    "recommendedOrder": 1,
+    "tags": [
+      "fine-tuning",
+      "tool"
+    ],
     "difficulty": "advanced",
     "format": "tool",
     "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "bitsandbytes",
+    "title": "bitsandbytes",
+    "url": "https://github.com/bitsandbytes-foundation/bitsandbytes",
+    "summary": "4-bit/8-bit quantization used for QLoRA on consumer GPUs.",
+    "description": "bitsandbytes is a tool from BitsandBytes, filed under Fine-Tuning LLMs in Python (PEFT, LoRA, QLoRA) in the learn-python directory. 4-bit/8-bit quantization used for QLoRA on consumer GPUs. It suits advanced developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Fine-Tuning LLMs in Python (PEFT, LoRA, QLoRA)",
+    "provider": "BitsandBytes",
+    "highlights": [
+      "4-bit/8-bit quantization used for QLoRA on consumer GPUs"
+    ],
+    "recommendedOrder": 2,
+    "tags": [
+      "fine-tuning",
+      "tool"
+    ],
+    "difficulty": "advanced",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "hugging-face-peft",
+    "title": "Hugging Face PEFT",
+    "url": "https://github.com/huggingface/peft",
+    "summary": "The standard Python library for LoRA/QLoRA and other efficient fine-tuning methods.",
+    "description": "Hugging Face PEFT is a tool from Hugging Face, filed under Fine-Tuning LLMs in Python (PEFT, LoRA, QLoRA) in the learn-python directory. The standard Python library for LoRA/QLoRA and other efficient fine-tuning methods. It suits advanced developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Fine-Tuning LLMs in Python (PEFT, LoRA, QLoRA)",
+    "provider": "Hugging Face",
+    "highlights": [
+      "The standard Python library for LoRA/QLoRA and other efficient fine-tuning methods"
+    ],
+    "recommendedOrder": 3,
+    "tags": [
+      "fine-tuning",
+      "tool"
+    ],
+    "difficulty": "advanced",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "hugging-face-peft-docs",
+    "title": "Hugging Face PEFT Docs",
+    "url": "https://huggingface.co/docs/peft/en/index",
+    "summary": "Task-by-task guides (text, vision, speech).",
+    "description": "Hugging Face PEFT Docs is a tool from Hugging Face, filed under Fine-Tuning LLMs in Python (PEFT, LoRA, QLoRA) in the learn-python directory. Task-by-task guides (text, vision, speech). It suits advanced developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "Fine-Tuning LLMs in Python (PEFT, LoRA, QLoRA)",
+    "provider": "Hugging Face",
+    "highlights": [
+      "Task-by-task guides (text, vision, speech)"
+    ],
+    "recommendedOrder": 4,
+    "tags": [
+      "official",
+      "fine-tuning",
+      "docs",
+      "tool"
+    ],
+    "difficulty": "advanced",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "trl-transformer-reinforcement-learning",
+    "title": "TRL (Transformer Reinforcement Learning)",
+    "url": "https://github.com/huggingface/trl",
+    "summary": "Python library for SFT, DPO, and RLHF-style fine-tuning.",
+    "description": "TRL (Transformer Reinforcement Learning) is a tool from Hugging Face, filed under Fine-Tuning LLMs in Python (PEFT, LoRA, QLoRA) in the learn-python directory. Python library for SFT, DPO, and RLHF-style fine-tuning. It suits advanced developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Fine-Tuning LLMs in Python (PEFT, LoRA, QLoRA)",
+    "provider": "Hugging Face",
+    "highlights": [
+      "Python library for SFT, DPO, and RLHF-style fine-tuning"
+    ],
+    "recommendedOrder": 5,
+    "tags": [
+      "fine-tuning",
+      "tool"
+    ],
+    "difficulty": "advanced",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "unsloth",
+    "title": "Unsloth",
+    "url": "https://github.com/unslothai/unsloth",
+    "summary": "Faster, lower-memory Python library for fine-tuning open LLMs.",
+    "description": "Unsloth is a tool from Unsloth, filed under Fine-Tuning LLMs in Python (PEFT, LoRA, QLoRA) in the learn-python directory. Faster, lower-memory Python library for fine-tuning open LLMs. It suits advanced developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Fine-Tuning LLMs in Python (PEFT, LoRA, QLoRA)",
+    "provider": "Unsloth",
+    "highlights": [
+      "Faster, lower-memory Python library for fine-tuning open LLMs"
+    ],
+    "recommendedOrder": 6,
+    "tags": [
+      "fine-tuning",
+      "tool"
+    ],
+    "difficulty": "advanced",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "anthropic-claude-api-docs",
+    "title": "Anthropic Claude API Docs",
+    "url": "https://docs.anthropic.com",
+    "summary": "Official documentation from Anthropic with guides, references, and examples.",
+    "description": "Anthropic Claude API Docs is a documentation from Anthropic, filed under Generative AI & Large Language Models in the learn-python directory. Beginner. It suits beginner developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "Generative AI & Large Language Models",
+    "provider": "Anthropic",
+    "recommendedOrder": 2,
+    "tags": [
+      "official",
+      "llm",
+      "docs"
+    ],
+    "difficulty": "beginner",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "google-gemini-api-docs",
+    "title": "Google Gemini API Docs",
+    "url": "https://ai.google.dev/docs",
+    "summary": "Official documentation from Google with guides, references, and examples.",
+    "description": "Google Gemini API Docs is a documentation from Google, filed under Generative AI & Large Language Models in the learn-python directory. Beginner. It suits beginner developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "Generative AI & Large Language Models",
+    "provider": "Google",
+    "recommendedOrder": 3,
+    "tags": [
+      "official",
+      "llm",
+      "docs"
+    ],
+    "difficulty": "beginner",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "hugging-face-transformers",
+    "title": "Hugging Face Transformers",
+    "url": "https://huggingface.co/docs/transformers",
+    "summary": "The reference for pretrained transformer models, tokenizers, pipelines, and fine-tuning.",
+    "description": "Documents the Transformers library across text, vision, audio, and multimodal models. The task guides and model pages make it practical to load a checkpoint, run inference, and adapt it to your data.",
+    "category": "data-ai",
+    "subcategory": "Generative AI & Large Language Models",
+    "provider": "Hugging Face",
+    "recommendedOrder": 4,
+    "tags": [
+      "generative-ai-and-large-language-models",
+      "running-local-and-open-source-llms-with-python",
+      "llm",
+      "docs"
+    ],
+    "difficulty": "intermediate",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "llamaindex-docs",
+    "title": "LlamaIndex Docs",
+    "url": "https://docs.llamaindex.ai",
+    "summary": "A framework guide for indexing private data and building retrieval-augmented LLM apps.",
+    "description": "Documents loaders, node parsing, indexes, retrievers, query engines, and agent workflows. The examples focus on connecting your own data to an LLM with controllable retrieval and citations.",
+    "category": "data-ai",
+    "subcategory": "Generative AI & Large Language Models",
+    "provider": "LlamaIndex",
+    "recommendedOrder": 5,
+    "tags": [
+      "official",
+      "llm",
+      "docs",
+      "rag"
+    ],
+    "difficulty": "intermediate",
+    "format": "docs",
+    "access": "free",
     "featured": false
   },
   {
@@ -149,62 +859,496 @@
     "summary": "Run open models locally with a simple CLI and a local API for Python.",
     "description": "Ollama downloads and serves models such as Llama, Qwen, and Mistral on your own machine. The local API and Python examples make it a practical starting point for offline experiments and privacy-sensitive prototypes.",
     "category": "data-ai",
-    "tags": ["local-llm", "tools", "models"],
+    "subcategory": "Generative AI & Large Language Models",
+    "provider": "Ollama",
+    "recommendedOrder": 6,
+    "tags": [
+      "llm",
+      "tool",
+      "docs",
+      "local-llm"
+    ],
     "difficulty": "beginner",
     "format": "tool",
-    "access": "open-source",
+    "access": "free",
     "featured": false
   },
   {
-    "id": "chroma-docs",
-    "title": "Chroma Documentation",
-    "url": "https://docs.trychroma.com",
-    "summary": "An open-source vector database for embeddings, metadata filtering, and RAG.",
-    "description": "Chroma's docs cover collections, embedding functions, queries, and persistence. The Python-first API is small enough to add semantic search to a prototype without operating a separate service.",
+    "id": "openai-api-docs",
+    "title": "OpenAI API Docs",
+    "url": "https://platform.openai.com/docs",
+    "summary": "Official documentation from OpenAI with guides, references, and examples.",
+    "description": "OpenAI API Docs is a documentation from OpenAI, filed under Generative AI & Large Language Models in the learn-python directory. Beginner. It suits beginner developers and is free to use.",
     "category": "data-ai",
-    "tags": ["vector-database", "rag", "embeddings"],
+    "subcategory": "Generative AI & Large Language Models",
+    "provider": "OpenAI",
+    "recommendedOrder": 7,
+    "tags": [
+      "official",
+      "llm",
+      "docs"
+    ],
+    "difficulty": "beginner",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "awesome-mcp-servers",
+    "title": "Awesome MCP Servers",
+    "url": "https://github.com/wong2/awesome-mcp-servers",
+    "summary": "Curated directory of MCP servers (filter by Python).",
+    "description": "Awesome MCP Servers is a documentation from wong2, filed under Model Context Protocol (MCP) with Python in the learn-python directory. Curated directory of MCP servers (filter by Python). It suits intermediate developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Model Context Protocol (MCP) with Python",
+    "provider": "wong2",
+    "highlights": [
+      "Curated directory of MCP servers (filter by Python)"
+    ],
+    "recommendedOrder": 2,
+    "tags": [
+      "agents",
+      "mcp",
+      "docs"
+    ],
     "difficulty": "intermediate",
     "format": "docs",
     "access": "open-source",
     "featured": false
   },
   {
-    "id": "qdrant-documentation",
-    "title": "Qdrant Documentation",
-    "url": "https://qdrant.tech/documentation",
-    "summary": "A production-oriented vector search guide covering collections, filtering, and hybrid search.",
-    "description": "Qdrant documents payload indexes, filtering, quantization, snapshots, and deployment options. Useful once a prototype needs scalable vector search with richer metadata constraints.",
+    "id": "mcp-reference-servers",
+    "title": "MCP Reference Servers",
+    "url": "https://github.com/modelcontextprotocol/servers",
+    "summary": "Official reference servers, many written in Python.",
+    "description": "MCP Reference Servers is a documentation from Model Context Protocol, filed under Model Context Protocol (MCP) with Python in the learn-python directory. Official reference servers, many written in Python. It suits intermediate developers and is open source and free to use.",
     "category": "data-ai",
-    "tags": ["vector-database", "search", "rag"],
-    "difficulty": "advanced",
+    "subcategory": "Model Context Protocol (MCP) with Python",
+    "provider": "Model Context Protocol",
+    "highlights": [
+      "Official reference servers, many written in Python"
+    ],
+    "recommendedOrder": 3,
+    "tags": [
+      "agents",
+      "mcp",
+      "tool",
+      "docs"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "mcp-python-sdk",
+    "title": "Python MCP SDK",
+    "url": "https://github.com/modelcontextprotocol/python-sdk",
+    "summary": "The official Python SDK for building Model Context Protocol servers and clients.",
+    "description": "Provides the building blocks for exposing tools, resources, and prompts to MCP-compatible clients. The examples cover local servers, transports, and integration with agent frameworks.",
+    "category": "data-ai",
+    "subcategory": "Model Context Protocol (MCP) with Python",
+    "provider": "Model Context Protocol",
+    "highlights": [
+      "Official Python SDK for building MCP servers/clients"
+    ],
+    "recommendedOrder": 4,
+    "tags": [
+      "agents",
+      "mcp",
+      "docs",
+      "sdk"
+    ],
+    "difficulty": "intermediate",
     "format": "docs",
     "access": "open-source",
     "featured": false
   },
   {
-    "id": "llms-from-scratch",
-    "title": "LLMs from Scratch",
-    "url": "https://github.com/rasbt/LLMs-from-scratch",
-    "summary": "Build a GPT-style language model from first principles, one chapter at a time.",
-    "description": "Sebastian Raschka's book code walks through tokenization, attention, training, fine-tuning, and evaluation in PyTorch. The notebook-first structure makes the internals concrete without hiding the math.",
+    "id": "jax-documentation",
+    "title": "JAX Documentation",
+    "url": "https://jax.readthedocs.io",
+    "summary": "Official documentation from Google with guides, references, and examples.",
+    "description": "JAX Documentation is a documentation from Google, filed under Modern ML Frameworks in the learn-python directory. Advanced. It suits advanced developers and is free to use.",
     "category": "data-ai",
-    "tags": ["llm", "pytorch", "book"],
+    "subcategory": "Modern ML Frameworks",
+    "provider": "Google",
+    "recommendedOrder": 1,
+    "tags": [
+      "official",
+      "docs"
+    ],
     "difficulty": "advanced",
-    "format": "practice",
-    "access": "open-source",
-    "featured": true
+    "format": "docs",
+    "access": "free",
+    "featured": false
   },
   {
-    "id": "karpathy-zero-to-hero",
-    "title": "Neural Networks: Zero to Hero",
-    "url": "https://karpathy.ai/zero-to-hero.html",
-    "summary": "Andrej Karpathy's video series on neural networks, backpropagation, and language models.",
-    "description": "A companion page for the Zero to Hero series, which builds up from micrograd and makemore to a small GPT. The videos are long but reward careful note-taking and hands-on repetition.",
+    "id": "pytorch-tutorials",
+    "title": "PyTorch Official Tutorials",
+    "url": "https://pytorch.org/tutorials",
+    "summary": "Hands-on PyTorch tutorials from tensors and autograd to training and deployment.",
+    "description": "Official tutorials that build models step by step, including vision, text, reinforcement learning, and distributed training. Each lesson is runnable and links to the underlying API docs.",
     "category": "data-ai",
-    "tags": ["video", "deep-learning", "llm"],
-    "difficulty": "advanced",
-    "format": "video",
+    "subcategory": "Modern ML Frameworks",
+    "provider": "PyTorch Foundation",
+    "recommendedOrder": 2,
+    "tags": [
+      "official",
+      "docs",
+      "pytorch",
+      "deep-learning"
+    ],
+    "difficulty": "intermediate",
+    "format": "docs",
     "access": "free",
+    "featured": false
+  },
+  {
+    "id": "scikit-learn-user-guide",
+    "title": "Scikit-learn User Guide",
+    "url": "https://scikit-learn.org/stable/user_guide.html",
+    "summary": "The practical guide to classical machine learning with scikit-learn.",
+    "description": "Covers supervised and unsupervised learning, model selection, preprocessing, pipelines, and evaluation with consistent examples. The user guide is the fastest way to move from a dataset to a defensible baseline.",
+    "category": "data-ai",
+    "subcategory": "Modern ML Frameworks",
+    "provider": "scikit-learn",
+    "recommendedOrder": 3,
+    "tags": [
+      "official",
+      "docs",
+      "machine-learning",
+      "scikit-learn"
+    ],
+    "difficulty": "beginner",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "tensorflow-guide",
+    "title": "TensorFlow & Keras Guide",
+    "url": "https://www.tensorflow.org/guide",
+    "summary": "Official TensorFlow guides for tensors, Keras models, training loops, and deployment.",
+    "description": "A structured path through the TensorFlow ecosystem, from basic tensors and Keras to custom training loops and SavedModel export. Useful when you need the framework's production tooling.",
+    "category": "data-ai",
+    "subcategory": "Modern ML Frameworks",
+    "provider": "Google",
+    "recommendedOrder": 4,
+    "tags": [
+      "official",
+      "docs",
+      "tensorflow",
+      "deep-learning"
+    ],
+    "difficulty": "intermediate",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "xgboost-documentation",
+    "title": "XGBoost Documentation",
+    "url": "https://xgboost.readthedocs.io",
+    "summary": "Official documentation from XGBoost with guides, references, and examples.",
+    "description": "XGBoost Documentation is a documentation from XGBoost, filed under Modern ML Frameworks in the learn-python directory. Intermediate. It suits intermediate developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "Modern ML Frameworks",
+    "provider": "XGBoost",
+    "recommendedOrder": 5,
+    "tags": [
+      "official",
+      "docs"
+    ],
+    "difficulty": "intermediate",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "tensorflow",
+    "title": "TensorFlow",
+    "url": "https://github.com/tensorflow/tensorflow",
+    "summary": "An open-source Python repository from Google for practice and reference.",
+    "description": "TensorFlow is a tool from Google, filed under Other Useful GitHub Repositories in the learn-python directory. The project ships code, documentation, and examples you can adopt today. It suits intermediate developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Other Useful GitHub Repositories",
+    "provider": "Google",
+    "recommendedOrder": 1,
+    "tags": [
+      "open-source",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "artificial-intelligence",
+    "title": "Artificial Intelligence",
+    "url": "https://github.com/nivu/ai_all_resources",
+    "summary": "An open-source Python repository from nivu for practice and reference.",
+    "description": "Artificial Intelligence is a tool from nivu, filed under Python for Different Fields in the learn-python directory. The project ships code, documentation, and examples you can adopt today. It suits intermediate developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Python for Different Fields",
+    "provider": "nivu",
+    "recommendedOrder": 1,
+    "tags": [
+      "open-source",
+      "docs",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "docs",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "data-science-resources",
+    "title": "Data Science Resources",
+    "url": "https://github.com/r0f1/datascience",
+    "summary": "An open-source Python repository from r0f1 for practice and reference.",
+    "description": "Data Science Resources is a tool from r0f1, filed under Python for Different Fields in the learn-python directory. The project ships code, documentation, and examples you can adopt today. It suits intermediate developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Python for Different Fields",
+    "provider": "r0f1",
+    "recommendedOrder": 2,
+    "tags": [
+      "open-source",
+      "docs",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "docs",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "machine-learning-resources",
+    "title": "Machine Learning Resources",
+    "url": "https://github.com/ujjwalkarn/Machine-Learning-Tutorials",
+    "summary": "An open-source Python repository from ujjwalkarn for practice and reference.",
+    "description": "Machine Learning Resources is a tool from ujjwalkarn, filed under Python for Different Fields in the learn-python directory. The project ships code, documentation, and examples you can adopt today. It suits intermediate developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Python for Different Fields",
+    "provider": "ujjwalkarn",
+    "recommendedOrder": 3,
+    "tags": [
+      "open-source",
+      "docs",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "docs",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "solidity-blockchain-and-smart-contracts",
+    "title": "Solidity, Blockchain and Smart Contracts",
+    "url": "https://www.youtube.com/watch?v=M576WGiDBdQ&t=6211s",
+    "summary": "An open-source Python repository from Solidity, Blockchain and Smart Contracts for practice and reference.",
+    "description": "Solidity, Blockchain and Smart Contracts is a tool from Solidity, Blockchain and Smart Contracts, filed under Python for Different Fields in the learn-python directory. The project ships code, documentation, and examples you can adopt today. It suits intermediate developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Python for Different Fields",
+    "provider": "Solidity, Blockchain and Smart Contracts",
+    "recommendedOrder": 4,
+    "tags": [
+      "open-source",
+      "video",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "video",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "hugging-face-hub",
+    "title": "Hugging Face Hub",
+    "url": "https://huggingface.co/models",
+    "summary": "Browse open models/datasets to load via the Python huggingface_hub library.",
+    "description": "Hugging Face Hub is a tool from Hugging Face, filed under Running Local & Open-Source LLMs with Python in the learn-python directory. Browse open models/datasets to load via the Python huggingface_hub library. It suits intermediate developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "Running Local & Open-Source LLMs with Python",
+    "provider": "Hugging Face",
+    "highlights": [
+      "Browse open models/datasets to load via the Python huggingface_hub library"
+    ],
+    "recommendedOrder": 1,
+    "tags": [
+      "local-llms",
+      "docs",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "llama-cpp-python",
+    "title": "llama-cpp-python",
+    "url": "https://github.com/abetlen/llama-cpp-python",
+    "summary": "Python bindings for llama.cpp, run GGUF models directly.",
+    "description": "llama-cpp-python is a tool from abetlen, filed under Running Local & Open-Source LLMs with Python in the learn-python directory. Python bindings for llama.cpp, run GGUF models directly. It suits intermediate developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Running Local & Open-Source LLMs with Python",
+    "provider": "abetlen",
+    "highlights": [
+      "Python bindings for llama.cpp, run GGUF models directly"
+    ],
+    "recommendedOrder": 2,
+    "tags": [
+      "local-llms",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "ollama-python-library",
+    "title": "Ollama Python Library",
+    "url": "https://github.com/ollama/ollama-python",
+    "summary": "Official Python client for running local models via Ollama.",
+    "description": "Ollama Python Library is a tool from Ollama, filed under Running Local & Open-Source LLMs with Python in the learn-python directory. Official Python client for running local models via Ollama. It suits intermediate developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Running Local & Open-Source LLMs with Python",
+    "provider": "Ollama",
+    "highlights": [
+      "Official Python client for running local models via Ollama"
+    ],
+    "recommendedOrder": 3,
+    "tags": [
+      "local-llms",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "vllm",
+    "title": "vLLM",
+    "url": "https://github.com/vllm-project/vllm",
+    "summary": "Python library for high-throughput LLM inference & serving.",
+    "description": "vLLM is a tool from vLLM, filed under Running Local & Open-Source LLMs with Python in the learn-python directory. Python library for high-throughput LLM inference & serving. It suits intermediate developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Running Local & Open-Source LLMs with Python",
+    "provider": "vLLM",
+    "highlights": [
+      "Python library for high-throughput LLM inference & serving"
+    ],
+    "recommendedOrder": 4,
+    "tags": [
+      "local-llms",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "chroma-docs",
+    "title": "ChromaDB Docs",
+    "url": "https://docs.trychroma.com",
+    "summary": "An open-source vector database for embeddings, metadata filtering, and RAG.",
+    "description": "Chroma's docs cover collections, embedding functions, queries, and persistence. The Python-first API is small enough to add semantic search to a prototype without operating a separate service.",
+    "category": "data-ai",
+    "subcategory": "Vector Databases & RAG",
+    "provider": "Chroma",
+    "recommendedOrder": 1,
+    "tags": [
+      "official",
+      "docs",
+      "vector-database",
+      "rag"
+    ],
+    "difficulty": "beginner",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "faiss-by-meta",
+    "title": "FAISS by Meta",
+    "url": "https://faiss.ai",
+    "summary": "Meta documentation and guides for practical Python development.",
+    "description": "FAISS by Meta is a documentation from Meta, filed under Vector Databases & RAG in the learn-python directory. Intermediate. It suits intermediate developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "Vector Databases & RAG",
+    "provider": "Meta",
+    "recommendedOrder": 2,
+    "tags": [
+      "docs"
+    ],
+    "difficulty": "intermediate",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "pinecone-docs",
+    "title": "Pinecone Docs",
+    "url": "https://docs.pinecone.io",
+    "summary": "Official documentation from Pinecone with guides, references, and examples.",
+    "description": "Pinecone Docs is a documentation from Pinecone, filed under Vector Databases & RAG in the learn-python directory. Intermediate. It suits intermediate developers and is free to use.",
+    "category": "data-ai",
+    "subcategory": "Vector Databases & RAG",
+    "provider": "Pinecone",
+    "recommendedOrder": 3,
+    "tags": [
+      "official",
+      "docs"
+    ],
+    "difficulty": "intermediate",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "qdrant-documentation",
+    "title": "Qdrant Docs",
+    "url": "https://qdrant.tech/documentation",
+    "summary": "A production-oriented vector search guide covering collections, filtering, and hybrid search.",
+    "description": "Qdrant documents payload indexes, filtering, quantization, snapshots, and deployment options. Useful once a prototype needs scalable vector search with richer metadata constraints.",
+    "category": "data-ai",
+    "subcategory": "Vector Databases & RAG",
+    "provider": "Qdrant",
+    "recommendedOrder": 4,
+    "tags": [
+      "official",
+      "docs",
+      "vector-database",
+      "search"
+    ],
+    "difficulty": "intermediate",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "rag-from-scratch-langchain",
+    "title": "RAG from Scratch - LangChain",
+    "url": "https://github.com/langchain-ai/rag-from-scratch",
+    "summary": "LangChain documentation and guides for practical Python development.",
+    "description": "RAG from Scratch - LangChain is a documentation from LangChain, filed under Vector Databases & RAG in the learn-python directory. Intermediate. It suits intermediate developers and is open source and free to use.",
+    "category": "data-ai",
+    "subcategory": "Vector Databases & RAG",
+    "provider": "LangChain",
+    "recommendedOrder": 5,
+    "tags": [
+      "course",
+      "docs"
+    ],
+    "difficulty": "intermediate",
+    "format": "course",
+    "access": "open-source",
     "featured": false
   }
 ]

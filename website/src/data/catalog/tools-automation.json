@@ -1,0 +1,409 @@
+[
+  {
+    "id": "claude-code",
+    "title": "Claude Code",
+    "url": "https://docs.claude.com/en/docs/claude-code",
+    "summary": "Terminal agent, strong at Python codebase understanding & refactors.",
+    "description": "Claude Code is a tool from Anthropic, filed under AI Coding Agents for Python Development in the learn-python directory. Terminal agent, strong at Python codebase understanding & refactors. It suits intermediate developers and is free to use.",
+    "category": "tools-automation",
+    "subcategory": "AI Coding Agents for Python Development",
+    "provider": "Anthropic",
+    "highlights": [
+      "Terminal agent, strong at Python codebase understanding & refactors"
+    ],
+    "recommendedOrder": 1,
+    "tags": [
+      "agents",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "free",
+    "featured": true
+  },
+  {
+    "id": "aider",
+    "title": "Aider",
+    "url": "https://github.com/Aider-AI/aider",
+    "summary": "Git-aware pair programming in the terminal, Python-first UX.",
+    "description": "Aider is a tool from Aider, filed under AI Coding Agents for Python Development in the learn-python directory. Git-aware pair programming in the terminal, Python-first UX. It suits intermediate developers and is open source and free to use.",
+    "category": "tools-automation",
+    "subcategory": "AI Coding Agents for Python Development",
+    "provider": "Aider",
+    "highlights": [
+      "Git-aware pair programming in the terminal, Python-first UX"
+    ],
+    "recommendedOrder": 2,
+    "tags": [
+      "agents",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "cline",
+    "title": "Cline",
+    "url": "https://github.com/cline/cline",
+    "summary": "Open-source VS Code agent, writes & runs Python directly.",
+    "description": "Cline is a tool from Cline, filed under AI Coding Agents for Python Development in the learn-python directory. Open-source VS Code agent, writes & runs Python directly. It suits intermediate developers and is open source and free to use.",
+    "category": "tools-automation",
+    "subcategory": "AI Coding Agents for Python Development",
+    "provider": "Cline",
+    "highlights": [
+      "Open-source VS Code agent, writes & runs Python directly"
+    ],
+    "recommendedOrder": 3,
+    "tags": [
+      "agents",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "cursor",
+    "title": "Cursor",
+    "url": "https://cursor.com",
+    "summary": "An AI-first code editor built on VS Code with inline editing and chat.",
+    "description": "Cursor adds model-assisted edits, codebase chat, and agent workflows to a familiar editor. Useful for exploration and refactors, but review generated changes as carefully as any other code.",
+    "category": "tools-automation",
+    "subcategory": "AI Coding Agents for Python Development",
+    "provider": "Anysphere",
+    "highlights": [
+      "AI-first VS Code fork, great Python autocomplete + Composer"
+    ],
+    "recommendedOrder": 4,
+    "tags": [
+      "agents",
+      "tool",
+      "editor",
+      "ai"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "github-copilot",
+    "title": "GitHub Copilot",
+    "url": "https://github.com/features/copilot",
+    "summary": "Python-aware autocomplete & agent mode in most IDEs.",
+    "description": "GitHub Copilot is a tool from features, filed under AI Coding Agents for Python Development in the learn-python directory. Python-aware autocomplete & agent mode in most IDEs. It suits intermediate developers and is a paid resource.",
+    "category": "tools-automation",
+    "subcategory": "AI Coding Agents for Python Development",
+    "provider": "GitHub",
+    "highlights": [
+      "Python-aware autocomplete & agent mode in most IDEs"
+    ],
+    "recommendedOrder": 5,
+    "tags": [
+      "agents",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "paid",
+    "featured": false
+  },
+  {
+    "id": "openai-codex-cli",
+    "title": "OpenAI Codex CLI",
+    "url": "https://github.com/openai/codex",
+    "summary": "Terminal coding agent, solid for Python scripting tasks.",
+    "description": "OpenAI Codex CLI is a tool from OpenAI, filed under AI Coding Agents for Python Development in the learn-python directory. Terminal coding agent, solid for Python scripting tasks. It suits intermediate developers and is open source and free to use.",
+    "category": "tools-automation",
+    "subcategory": "AI Coding Agents for Python Development",
+    "provider": "OpenAI",
+    "highlights": [
+      "Terminal coding agent, solid for Python scripting tasks"
+    ],
+    "recommendedOrder": 6,
+    "tags": [
+      "agents",
+      "tool"
+    ],
+    "difficulty": "intermediate",
+    "format": "tool",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "gto76-python-cheatsheet",
+    "title": "Comprehensive Python Cheatsheet",
+    "url": "https://gto76.github.io/python-cheatsheet",
+    "summary": "A dense single-page reference covering the language, standard library, and idioms.",
+    "description": "A comprehensive cheat sheet for quick lookups: types, comprehensions, formatting, file handling, concurrency, and more. Best for people who already know the basics and want one page to search.",
+    "category": "tools-automation",
+    "subcategory": "Cheatsheets",
+    "provider": "gto76",
+    "recommendedOrder": 1,
+    "tags": [
+      "cheatsheet",
+      "docs",
+      "reference",
+      "stdlib"
+    ],
+    "difficulty": "beginner",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "datacamp-python-cheat-sheets",
+    "title": "DataCamp Python Cheat Sheets",
+    "url": "https://www.datacamp.com/cheat-sheet",
+    "summary": "A compact Python cheat sheet from the Python community for syntax, libraries, and daily reference.",
+    "description": "DataCamp Python Cheat Sheets is a documentation from the Python community, filed under Cheatsheets in the learn-python directory. It gathers guides, references, and worked examples in one place. It suits beginner developers and is free to use.",
+    "category": "tools-automation",
+    "subcategory": "Cheatsheets",
+    "provider": "DataCamp",
+    "recommendedOrder": 2,
+    "tags": [
+      "cheatsheet",
+      "docs"
+    ],
+    "difficulty": "beginner",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "finxter-python-cheatsheets",
+    "title": "Finxter Python Cheatsheet",
+    "url": "https://blog.finxter.com/python-cheat-sheets",
+    "summary": "A large library of printable Python cheat sheets for syntax, libraries, and interview prep.",
+    "description": "Finxter collects compact sheets for beginners and intermediate developers, covering syntax, data structures, pandas, regex, and common interview topics. Useful for printing or keeping open beside an editor.",
+    "category": "tools-automation",
+    "subcategory": "Cheatsheets",
+    "provider": "Finxter",
+    "recommendedOrder": 3,
+    "tags": [
+      "cheatsheet",
+      "docs",
+      "interview",
+      "reference"
+    ],
+    "difficulty": "beginner",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "moshs-python-cheatsheet",
+    "title": "Mosh's Python Cheatsheet",
+    "url": "https://programmingwithmosh.com/wp-content/uploads/2019/02/Python-Cheat-Sheet.pdf",
+    "summary": "A compact Python cheat sheet from Programming with Mosh for syntax, libraries, and daily reference.",
+    "description": "Mosh's Python Cheatsheet is a documentation from Programming with Mosh, filed under Cheatsheets in the learn-python directory. It gathers guides, references, and worked examples in one place. It suits beginner developers and is free to use.",
+    "category": "tools-automation",
+    "subcategory": "Cheatsheets",
+    "provider": "Programming with Mosh",
+    "recommendedOrder": 4,
+    "tags": [
+      "cheatsheet",
+      "docs"
+    ],
+    "difficulty": "beginner",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "python-3-cheat-sheet",
+    "title": "Python 3 Cheat Sheet",
+    "url": "https://perso.limsi.fr/pointal/_media/python:cours:mementopython3-english.pdf",
+    "summary": "A compact Python cheat sheet from Laurent Pointal for syntax, libraries, and daily reference.",
+    "description": "Python 3 Cheat Sheet is a documentation from Laurent Pointal, filed under Cheatsheets in the learn-python directory. It gathers guides, references, and worked examples in one place. It suits beginner developers and is free to use.",
+    "category": "tools-automation",
+    "subcategory": "Cheatsheets",
+    "provider": "Laurent Pointal",
+    "recommendedOrder": 5,
+    "tags": [
+      "cheatsheet",
+      "docs"
+    ],
+    "difficulty": "beginner",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "python-cheatsheet-pythoncheatsheet-org",
+    "title": "Python Cheatsheet (pythoncheatsheet.org)",
+    "url": "https://www.pythoncheatsheet.org",
+    "summary": "A compact Python cheat sheet from the Python community for syntax, libraries, and daily reference.",
+    "description": "Python Cheatsheet (pythoncheatsheet.org) is a documentation from the Python community, filed under Cheatsheets in the learn-python directory. It gathers guides, references, and worked examples in one place. It suits beginner developers and is free to use.",
+    "category": "tools-automation",
+    "subcategory": "Cheatsheets",
+    "provider": "Python Cheatsheet",
+    "recommendedOrder": 6,
+    "tags": [
+      "cheatsheet",
+      "docs"
+    ],
+    "difficulty": "beginner",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "python-cheatsheet-by-websitesetup",
+    "title": "Python Cheatsheet by Websitesetup",
+    "url": "https://websitesetup.org/wp-content/uploads/2021/04/Python-cheat-sheet-April-2021.pdf",
+    "summary": "A compact Python cheat sheet from WebsiteSetup for syntax, libraries, and daily reference.",
+    "description": "Python Cheatsheet by Websitesetup is a documentation from WebsiteSetup, filed under Cheatsheets in the learn-python directory. It gathers guides, references, and worked examples in one place. It suits beginner developers and is free to use.",
+    "category": "tools-automation",
+    "subcategory": "Cheatsheets",
+    "provider": "WebsiteSetup",
+    "recommendedOrder": 7,
+    "tags": [
+      "cheatsheet",
+      "docs"
+    ],
+    "difficulty": "beginner",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "python-lists-method-cheatsheet",
+    "title": "Python Lists Method Cheatsheet",
+    "url": "https://thegeekyboy.gumroad.com/l/python-lists",
+    "summary": "A compact Python cheat sheet from Aditya Tiwari for syntax, libraries, and daily reference.",
+    "description": "Python Lists Method Cheatsheet is a documentation from Aditya Tiwari, filed under Cheatsheets in the learn-python directory. It gathers guides, references, and worked examples in one place. It suits beginner developers and is free to use.",
+    "category": "tools-automation",
+    "subcategory": "Cheatsheets",
+    "provider": "Aditya Tiwari",
+    "recommendedOrder": 8,
+    "tags": [
+      "cheatsheet",
+      "docs"
+    ],
+    "difficulty": "beginner",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "real-python-cheatsheets",
+    "title": "Real Python Cheatsheets",
+    "url": "https://realpython.com/cheatsheets/python",
+    "summary": "Downloadable cheat sheets for Python basics, libraries, and common workflows.",
+    "description": "Real Python's collection covers syntax, regex, pandas, virtual environments, and more. Many sheets are free with an email signup, and the visual format works well for printing.",
+    "category": "tools-automation",
+    "subcategory": "Cheatsheets",
+    "provider": "Real Python",
+    "recommendedOrder": 9,
+    "tags": [
+      "cheatsheet",
+      "docs",
+      "downloads",
+      "reference"
+    ],
+    "difficulty": "beginner",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "scientific-python-cheatsheet",
+    "title": "Scientific Python Cheat Sheet",
+    "url": "https://ipgp.github.io/scientific_python_cheat_sheet",
+    "summary": "A compact reference for NumPy, SciPy, Matplotlib, and scientific Python workflows.",
+    "description": "A printable cheat sheet aimed at scientific computing: arrays, linear algebra, plotting, and common NumPy operations. Useful when moving from pure Python to notebook-based analysis.",
+    "category": "tools-automation",
+    "subcategory": "Cheatsheets",
+    "provider": "IPGP",
+    "recommendedOrder": 10,
+    "tags": [
+      "cheatsheet",
+      "docs",
+      "numpy",
+      "scientific"
+    ],
+    "difficulty": "beginner",
+    "format": "docs",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "pycharm",
+    "title": "PyCharm",
+    "url": "https://www.jetbrains.com/pycharm",
+    "summary": "the Python community maintains this Python tool with docs, examples, and community support.",
+    "description": "PyCharm is a tool from the Python community, filed under General in the learn-python directory. The project ships code, documentation, and examples you can adopt today. It suits beginner developers and is free to use.",
+    "category": "tools-automation",
+    "subcategory": "General",
+    "provider": "JetBrains",
+    "recommendedOrder": 1,
+    "tags": [
+      "tool"
+    ],
+    "difficulty": "beginner",
+    "format": "tool",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "pydev",
+    "title": "PyDev",
+    "url": "https://www.pydev.org",
+    "summary": "the Python community maintains this Python tool with docs, examples, and community support.",
+    "description": "PyDev is a tool from the Python community, filed under General in the learn-python directory. The project ships code, documentation, and examples you can adopt today. It suits beginner developers and is free to use.",
+    "category": "tools-automation",
+    "subcategory": "General",
+    "provider": "Brainwy Software",
+    "recommendedOrder": 2,
+    "tags": [
+      "tool"
+    ],
+    "difficulty": "beginner",
+    "format": "tool",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "sublime-text",
+    "title": "Sublime Text",
+    "url": "https://www.sublimetext.com",
+    "summary": "the Python community maintains this Python tool with docs, examples, and community support.",
+    "description": "Sublime Text is a tool from the Python community, filed under General in the learn-python directory. The project ships code, documentation, and examples you can adopt today. It suits beginner developers and is free to use.",
+    "category": "tools-automation",
+    "subcategory": "General",
+    "provider": "Sublime HQ",
+    "recommendedOrder": 3,
+    "tags": [
+      "tool"
+    ],
+    "difficulty": "beginner",
+    "format": "tool",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "vs-code",
+    "title": "Visual Studio Code",
+    "url": "https://code.visualstudio.com",
+    "summary": "A fast, extensible editor with first-class Python and Jupyter support.",
+    "description": "Visual Studio Code pairs a large extension ecosystem with a solid Python experience: linting, debugging, testing, notebooks, and remote development. A pragmatic default for most Python work.",
+    "category": "tools-automation",
+    "subcategory": "General",
+    "provider": "Microsoft",
+    "recommendedOrder": 4,
+    "tags": [
+      "tool",
+      "editor",
+      "tooling",
+      "jupyter"
+    ],
+    "difficulty": "beginner",
+    "format": "tool",
+    "access": "free",
+    "featured": false
+  }
+]

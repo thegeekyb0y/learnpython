@@ -17,6 +17,7 @@ const validResource = {
   description:
     "This description is deliberately long enough to satisfy the minimum length requirement for detailed drawer copy while remaining easy to read in a test fixture.",
   category: "core-foundations",
+  subcategory: "General",
   tags: ["official", "reference"],
   difficulty: "beginner",
   format: "docs",
@@ -27,6 +28,20 @@ const validResource = {
 describe("resourceSchema", () => {
   it("accepts a valid resource", () => {
     expect(resourceSchema.safeParse(validResource).success).toBe(true);
+  });
+
+  it("accepts provider, highlights, and recommendedOrder", () => {
+    expect(
+      resourceSchema.safeParse({
+        ...validResource,
+        provider: "Python Software Foundation",
+        highlights: [
+          "Official language and standard library reference",
+          "Versioned documentation for every release",
+        ],
+        recommendedOrder: 0,
+      }).success,
+    ).toBe(true);
   });
 
   it("rejects non-https URLs", () => {
@@ -87,7 +102,7 @@ describe("resourceSchema", () => {
 
   it("rejects unknown formats, difficulties, and access values", () => {
     expect(
-      resourceSchema.safeParse({ ...validResource, format: "podcast" }).success,
+      resourceSchema.safeParse({ ...validResource, format: "webinar" }).success,
     ).toBe(false);
     expect(
       resourceSchema.safeParse({
@@ -103,10 +118,41 @@ describe("resourceSchema", () => {
     ).toBe(false);
   });
 
+  it("requires a subcategory and rejects overlong highlights", () => {
+    const withoutSubcategory: Record<string, unknown> = { ...validResource };
+    delete withoutSubcategory.subcategory;
+    expect(resourceSchema.safeParse(withoutSubcategory).success).toBe(false);
+    expect(
+      resourceSchema.safeParse({
+        ...validResource,
+        highlights: [
+          "A first highlight of sensible length",
+          "A second highlight of sensible length",
+          "A third highlight of sensible length",
+          "A fourth highlight of sensible length",
+        ],
+      }).success,
+    ).toBe(false);
+    expect(
+      resourceSchema.safeParse({
+        ...validResource,
+        recommendedOrder: 1.5,
+      }).success,
+    ).toBe(false);
+  });
+
+  it("accepts the extended media formats", () => {
+    for (const format of ["article", "podcast", "community"]) {
+      expect(
+        resourceSchema.safeParse({ ...validResource, format }).success,
+      ).toBe(true);
+    }
+  });
+
   it("rejects extra fields in strict mode", () => {
     const result = resourceSchema.safeParse({
       ...validResource,
-      provider: "Python Software Foundation",
+      unexpectedField: "Python Software Foundation",
     });
     expect(result.success).toBe(false);
   });
@@ -172,7 +218,7 @@ describe("getCategoryCounts", () => {
     expect(counts["core-foundations"]).toBe(1);
     expect(counts["data-ai"]).toBe(1);
     expect(counts["books-guides"]).toBe(0);
-    expect(counts["automation"]).toBe(0);
+    expect(counts["tools-automation"]).toBe(0);
     expect(Object.values(counts).reduce((sum, count) => sum + count, 0)).toBe(2);
   });
 });

@@ -90,9 +90,12 @@ export const difficultyLabels: Record<Difficulty, string> = {
 };
 
 export const formatLabels: Record<ResourceFormat, string> = {
+  article: "Article",
   book: "Book",
+  community: "Community",
   docs: "Docs",
   course: "Course",
+  podcast: "Podcast",
   practice: "Practice",
   tool: "Tool",
   video: "Video",
@@ -150,6 +153,9 @@ export function resourceSearchText(resource: Resource): string {
       resource.description,
       resource.tags.join(" "),
       categoryById[resource.category].label,
+      resource.subcategory,
+      resource.provider ?? "",
+      (resource.highlights ?? []).join(" "),
       resource.format,
       resource.difficulty,
       resource.access,

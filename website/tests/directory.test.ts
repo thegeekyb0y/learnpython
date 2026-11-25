@@ -23,7 +23,7 @@ describe("directory filtering", () => {
       category: "web-dev",
     });
 
-    expect(filtered).toHaveLength(6);
+    expect(filtered).toHaveLength(1);
     expect(filtered.every((resource) => resource.category === "web-dev")).toBe(
       true,
     );
@@ -50,15 +50,23 @@ describe("directory filtering", () => {
       access: ["free", "open-source"],
     });
 
-    expect(filtered).toHaveLength(52);
+    expect(filtered).toHaveLength(144);
     expect(filtered.every((resource) => resource.access !== "paid")).toBe(true);
   });
 
-  it("searches titles, tags, categories, and descriptions", () => {
-    expect(resources.filter((resource) => matchesQuery(resource, "django")))
-      .toHaveLength(1);
-    expect(resources.filter((resource) => matchesQuery(resource, "oop")))
-      .toHaveLength(1);
+  it("searches titles, tags, categories, subcategories, providers, and descriptions", () => {
+    expect(
+      resources.filter((resource) => matchesQuery(resource, "langchain"))
+        .length,
+    ).toBeGreaterThanOrEqual(2);
+    expect(
+      resources.filter((resource) => matchesQuery(resource, "cheatsheets"))
+        .length,
+    ).toBeGreaterThanOrEqual(10);
+    expect(
+      resources.filter((resource) => matchesQuery(resource, "anthropic"))
+        .length,
+    ).toBeGreaterThanOrEqual(2);
     expect(
       resources.filter((resource) => matchesQuery(resource, "books")).length,
     ).toBeGreaterThanOrEqual(6);
@@ -67,7 +75,7 @@ describe("directory filtering", () => {
   it("requires every query token to match", () => {
     expect(
       resources.filter((resource) =>
-        matchesQuery(resource, "django postgres"),
+        matchesQuery(resource, "langchain kubernetes"),
       ),
     ).toHaveLength(0);
   });
@@ -75,12 +83,22 @@ describe("directory filtering", () => {
   it("maps every quick-nav collection to real resources", () => {
     expect(quickNavItems).toHaveLength(7);
 
+    const expectedCounts = {
+      official: 19,
+      books: 6,
+      youtube: 30,
+      agents: 19,
+      tools: 20,
+      communities: 49,
+      practice: 6,
+    } as const;
+
     for (const collection of quickNavItems) {
       expect(
         resources.filter((resource) =>
           matchesCollectionFilter(resource, collection.filter),
         ).length,
-      ).toBeGreaterThan(0);
+      ).toBe(expectedCounts[collection.id]);
     }
   });
 
@@ -94,7 +112,7 @@ describe("directory filtering", () => {
       collection: "books",
     });
 
-    expect(youtube).toHaveLength(2);
+    expect(youtube).toHaveLength(30);
     expect(youtube.every((resource) => resource.format === "video")).toBe(true);
     expect(books).toHaveLength(6);
     expect(books.every((resource) => resource.category === "books-guides")).toBe(
@@ -122,7 +140,7 @@ describe("directory sorting", () => {
     const sorted = sortResources(resources, "recommended");
 
     expect(sorted[0]?.category).toBe("core-foundations");
-    expect(sorted.at(-1)?.category).toBe("automation");
+    expect(sorted.at(-1)?.category).toBe("communities-media");
   });
 });
 
@@ -133,11 +151,11 @@ describe("facet counts", () => {
       defaultDirectoryFilters,
     );
 
-    expect(counts.all).toBe(56);
+    expect(counts.all).toBe(148);
     expect(Object.values(counts).reduce((sum, count) => sum + count, 0)).toBe(
-      56 + 56,
+      148 + 148,
     );
-    expect(counts["data-ai"]).toBe(16);
+    expect(counts["data-ai"]).toBe(64);
   });
 
   it("keeps the category facet at the full catalog size when a category is selected", () => {
@@ -146,8 +164,8 @@ describe("facet counts", () => {
       category: "web-dev",
     });
 
-    expect(counts.all).toBe(56);
-    expect(counts["web-dev"]).toBe(6);
+    expect(counts.all).toBe(148);
+    expect(counts["web-dev"]).toBe(1);
   });
 
   it("returns level and access counts that sum to the eligible catalog", () => {
@@ -155,21 +173,21 @@ describe("facet counts", () => {
     const access = getAccessFacetCounts(resources, defaultDirectoryFilters);
 
     expect(Object.values(levels).reduce((sum, count) => sum + count, 0)).toBe(
-      56,
+      148,
     );
-    expect(access.free + access["open-source"]).toBe(52);
+    expect(access.free + access["open-source"]).toBe(144);
   });
 });
 
 describe("related resources", () => {
   it("returns up to three resources from the same category", () => {
-    const related = getRelatedResources(resources, "django-documentation");
+    const related = getRelatedResources(resources, "langchain-docs");
 
     expect(related).toHaveLength(3);
-    expect(related.every((resource) => resource.category === "web-dev")).toBe(
+    expect(related.every((resource) => resource.category === "data-ai")).toBe(
       true,
     );
-    expect(related.some((resource) => resource.id === "django-documentation")).toBe(
+    expect(related.some((resource) => resource.id === "langchain-docs")).toBe(
       false,
     );
     expect(new Set(related.map((resource) => resource.id)).size).toBe(3);
@@ -192,19 +210,19 @@ describe("URL state", () => {
   it("parses a complete URL state", () => {
     const parsed = parseDirectoryParams(
       new URLSearchParams(
-        "q=django&cat=web-dev&level=beginner,advanced&access=free&quick=books&sort=az&view=list&r=django-documentation",
+        "q=langchain&cat=data-ai&level=beginner,advanced&access=free&quick=books&sort=az&view=list&r=langchain-docs",
       ),
       resources,
     );
 
-    expect(parsed.filters.query).toBe("django");
-    expect(parsed.filters.category).toBe("web-dev");
+    expect(parsed.filters.query).toBe("langchain");
+    expect(parsed.filters.category).toBe("data-ai");
     expect(parsed.filters.levels).toEqual(["beginner", "advanced"]);
     expect(parsed.filters.access).toEqual(["free"]);
     expect(parsed.filters.collection).toBe("books");
     expect(parsed.filters.sort).toBe("az");
     expect(parsed.filters.view).toBe("list");
-    expect(parsed.selectedId).toBe("django-documentation");
+    expect(parsed.selectedId).toBe("langchain-docs");
   });
 
   it("ignores invalid categories, levels, access, sort, view, and resource ids", () => {
