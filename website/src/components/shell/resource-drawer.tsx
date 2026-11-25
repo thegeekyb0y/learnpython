@@ -100,9 +100,17 @@ function ResourceDetail({
   return (
     <div className="flex min-h-0 flex-1 flex-col">
       <header className="relative border-b border-hairline px-6 pt-6 pb-5">
-        <div className="flex items-center gap-2 pr-12 type-micro text-ink-4">
+        <div className="flex flex-wrap items-center gap-2 pr-12 type-micro text-ink-4">
           <span>{categoryById[resource.category].label}</span>
+          <span aria-hidden="true">/</span>
+          <span>{resource.subcategory}</span>
         </div>
+
+        {resource.provider ? (
+          <p className="mt-2 pr-12 type-meta text-ink-4">
+            By {resource.provider}
+          </p>
+        ) : null}
 
         <div className="mt-3 pr-12">{title}</div>
         <div className="mt-2 pr-12">{summary}</div>
@@ -129,6 +137,28 @@ function ResourceDetail({
       </header>
 
       <div className="min-h-0 flex-1 overflow-y-auto px-6 py-6">
+        {resource.highlights && resource.highlights.length > 0 ? (
+          <section className="mb-6" aria-labelledby="resource-highlights">
+            <p id="resource-highlights" className="type-micro text-ink-4">
+              Highlights
+            </p>
+            <ul className="mt-2 space-y-2">
+              {resource.highlights.map((highlight) => (
+                <li
+                  key={highlight}
+                  className="flex gap-2.5 text-[13px] leading-5 text-ink-3"
+                >
+                  <span
+                    aria-hidden="true"
+                    className="mt-[7px] size-1.5 shrink-0 rounded-full bg-brand"
+                  />
+                  {highlight}
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
         <p className="text-[15px] leading-6 text-ink-3">
           {resource.description}
         </p>

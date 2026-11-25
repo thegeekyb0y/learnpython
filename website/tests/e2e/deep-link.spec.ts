@@ -38,4 +38,26 @@ test.describe("deep links and browser history", () => {
     ).toBeVisible();
     await expect(page).toHaveURL(/[?&]r=python-documentation(?:&|$)/);
   });
+
+  test("drawer shows category / subcategory, provider, and highlights", async ({
+    page,
+  }) => {
+    await page.goto(homeUrl("r=claude-code"));
+
+    const drawer = page.getByRole("dialog");
+    await expect(drawer).toBeVisible();
+
+    const header = drawer.locator("header");
+    await expect(header).toContainText("Tools & Automation");
+    await expect(header).toContainText("AI Coding Agents for Python Development");
+    await expect(header).toContainText("By Anthropic");
+
+    await expect(drawer.getByText("Highlights", { exact: true })).toBeVisible();
+    await expect(
+      drawer.getByText(
+        "Terminal agent, strong at Python codebase understanding & refactors",
+        { exact: true },
+      ),
+    ).toBeVisible();
+  });
 });
