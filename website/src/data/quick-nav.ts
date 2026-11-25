@@ -25,15 +25,22 @@ export type QuickNavItem = {
   icon: QuickNavIconKey;
   /** Optional custom asset for contributors who want a branded icon. */
   iconSrc?: string;
+  /** Renders as the wide featured card. */
+  featured?: boolean;
+  title?: string;
+  subtitle?: string;
 };
 
 export const quickNavItems: readonly QuickNavItem[] = [
   {
     id: "official",
     label: "Official",
+    title: "Official Documentation",
+    subtitle: "Official docs, PEPs & standard library",
     filter: collectionFilters.official,
     accent: "brand",
     icon: "badge-check",
+    featured: true,
   },
   {
     id: "books",

@@ -3,24 +3,44 @@
 import { useEffect, useState, type ReactNode } from "react";
 import * as Dialog from "@radix-ui/react-dialog";
 import { Drawer } from "vaul";
-import { ArrowUpRight, Check, Copy, Star, X } from "lucide-react";
+import {
+  ArrowRight,
+  ArrowUpRight,
+  Check,
+  Copy,
+  Star,
+  X,
+} from "lucide-react";
 
 import { AccessBadge } from "@/components/shell/access-badge";
-import { Badge } from "@/components/ui/badge";
+import { Badge, BadgeDot } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { useMediaQuery } from "@/hooks/use-media-query";
 import { categoryById } from "@/data/categories";
+import { useMediaQuery } from "@/hooks/use-media-query";
 import {
-  accessLabels,
   difficultyLabels,
   formatLabels,
 } from "@/lib/directory";
-import type { Resource } from "@/lib/schema";
+import type { Difficulty, Resource } from "@/lib/schema";
+
+const difficultyStyles = {
+  beginner: { variant: "fern", tone: "fern" },
+  intermediate: { variant: "brand", tone: "brand" },
+  advanced: { variant: "chocolate", tone: "chocolate" },
+} as const satisfies Record<
+  Difficulty,
+  {
+    variant: "fern" | "brand" | "chocolate";
+    tone: "fern" | "brand" | "chocolate";
+  }
+>;
 
 type ResourceDrawerProps = {
   resource: Resource | null;
+  relatedResources: readonly Resource[];
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  onSelectRelated: (id: string) => void;
 };
 
 function CloseButton({
@@ -31,7 +51,7 @@ function CloseButton({
     <button
       type="button"
       aria-label="Close details"
-      className="flex size-11 items-center justify-center rounded-lg text-ink-4 outline-none transition-colors hover:bg-surface-2 hover:text-ink focus-visible:ring-[3px] focus-visible:ring-brand-ring"
+      className="flex size-11 cursor-pointer items-center justify-center rounded-lg text-ink-4 outline-none transition-colors hover:bg-surface-2 hover:text-ink focus-visible:ring-[3px] focus-visible:ring-brand-ring"
       {...props}
     >
       {children}
@@ -41,14 +61,18 @@ function CloseButton({
 
 function ResourceDetail({
   resource,
+  relatedResources,
   title,
   summary,
   closeButton,
+  onSelectRelated,
 }: {
   resource: Resource;
+  relatedResources: readonly Resource[];
   title: ReactNode;
   summary: ReactNode;
   closeButton: ReactNode;
+  onSelectRelated: (id: string) => void;
 }) {
   const [copied, setCopied] = useState(false);
 
@@ -64,7 +88,9 @@ function ResourceDetail({
 
   const copyLink = async () => {
     try {
-      await navigator.clipboard.writeText(window.location.href);
+      const url = new URL(window.location.href);
+      url.searchParams.set("r", resource.id);
+      await navigator.clipboard.writeText(url.toString());
       setCopied(true);
     } catch {
       setCopied(false);
@@ -76,42 +102,34 @@ function ResourceDetail({
       <header className="relative border-b border-hairline px-6 pt-6 pb-5">
         <div className="flex items-center gap-2 pr-12 type-micro text-ink-4">
           <span>{categoryById[resource.category].label}</span>
-          <span aria-hidden="true">/</span>
-          <span>{formatLabels[resource.format]}</span>
-          {resource.featured ? (
-            <span className="ml-1 inline-flex items-center">
-              <Star
-                aria-hidden="true"
-                className="size-3 fill-chocolate text-chocolate"
-              />
-              <span className="sr-only">Featured</span>
-            </span>
-          ) : null}
         </div>
 
         <div className="mt-3 pr-12">{title}</div>
         <div className="mt-2 pr-12">{summary}</div>
 
+        <div className="mt-3 flex flex-wrap gap-2 pr-12">
+          <Badge variant={difficultyStyles[resource.difficulty].variant}>
+            <BadgeDot tone={difficultyStyles[resource.difficulty].tone} />
+            {difficultyLabels[resource.difficulty]}
+          </Badge>
+          <Badge variant="tag">{formatLabels[resource.format]}</Badge>
+          <AccessBadge access={resource.access} />
+          {resource.featured ? (
+            <Badge variant="chocolate">
+              <Star
+                aria-hidden="true"
+                className="size-3 fill-chocolate"
+              />
+              Featured
+            </Badge>
+          ) : null}
+        </div>
+
         <div className="absolute top-4 right-4">{closeButton}</div>
       </header>
 
       <div className="min-h-0 flex-1 overflow-y-auto px-6 py-6">
-        <dl className="grid grid-cols-2 gap-px overflow-hidden rounded-lg border border-hairline bg-hairline">
-          <DetailCell label="Difficulty" value={difficultyLabels[resource.difficulty]} />
-          <DetailCell label="Format" value={formatLabels[resource.format]} />
-          <DetailCell
-            label="Category"
-            value={categoryById[resource.category].label}
-          />
-          <div className="bg-surface p-3">
-            <dt className="type-micro text-ink-4">Access</dt>
-            <dd className="mt-2">
-              <AccessBadge access={resource.access} />
-            </dd>
-          </div>
-        </dl>
-
-        <p className="mt-6 text-[15px] leading-6 text-ink-3">
+        <p className="text-[15px] leading-6 text-ink-3">
           {resource.description}
         </p>
 
@@ -125,17 +143,52 @@ function ResourceDetail({
             ))}
           </div>
         </div>
+
+        {relatedResources.length > 0 ? (
+          <section className="mt-8 border-t border-hairline pt-5">
+            <p className="type-micro text-ink-4">
+              More in {categoryById[resource.category].label}
+            </p>
+            <div className="mt-3 space-y-2">
+              {relatedResources.map((related) => (
+                <button
+                  key={related.id}
+                  type="button"
+                  onClick={() => onSelectRelated(related.id)}
+                  className="group flex min-h-11 w-full cursor-pointer items-center gap-3 rounded-lg border border-hairline bg-surface p-3 text-left outline-none transition-colors hover:border-hairline-hover hover:bg-surface-2 focus-visible:ring-[3px] focus-visible:ring-brand-ring"
+                >
+                  <span className="min-w-0 flex-1">
+                    <span className="block truncate text-[13px] font-semibold text-ink">
+                      {related.title}
+                    </span>
+                    <span className="mt-1 block type-meta text-ink-4">
+                      {difficultyLabels[related.difficulty]} ·{" "}
+                      {formatLabels[related.format]}
+                    </span>
+                  </span>
+                  <ArrowRight
+                    aria-hidden="true"
+                    className="size-3.5 shrink-0 text-ink-4 transition-transform duration-150 ease-out-quint group-hover:translate-x-0.5"
+                  />
+                </button>
+              ))}
+            </div>
+          </section>
+        ) : null}
       </div>
 
       <footer className="border-t border-hairline bg-surface px-4 pt-4 pb-[max(1rem,env(safe-area-inset-bottom))] sm:px-5 sm:pt-5 sm:pb-5">
         <div className="flex gap-2">
-          <Button asChild className="h-11 flex-1 sm:h-9 [&_svg]:size-[15px]">
+          <Button
+            asChild
+            className="h-11 flex-1 bg-brand text-white hover:bg-brand-strong [&_svg]:size-[15px]"
+          >
             <a
               href={resource.url}
               target="_blank"
               rel="noopener noreferrer"
             >
-              Open resource
+              Open Resource
               <ArrowUpRight />
             </a>
           </Button>
@@ -143,37 +196,29 @@ function ResourceDetail({
             type="button"
             variant="outline"
             onClick={copyLink}
-            className="h-11 sm:h-9 [&_svg]:size-[15px]"
+            className="h-11 cursor-pointer [&_svg]:size-[15px]"
           >
             {copied ? <Check /> : <Copy />}
-            {copied ? "Copied" : "Copy link"}
+            {copied ? "Copied" : "Copy Link"}
           </Button>
         </div>
-        <p className="mt-2 text-center type-micro text-ink-4">
-          {accessLabels[resource.access]} · {formatLabels[resource.format]}
-        </p>
       </footer>
-    </div>
-  );
-}
-
-function DetailCell({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="bg-surface p-3">
-      <dt className="type-micro text-ink-4">{label}</dt>
-      <dd className="mt-1 text-[13px] text-ink-2">{value}</dd>
     </div>
   );
 }
 
 function DesktopDrawer({
   resource,
+  relatedResources,
   open,
   onOpenChange,
+  onSelectRelated,
 }: {
   resource: Resource;
+  relatedResources: readonly Resource[];
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  onSelectRelated: (id: string) => void;
 }) {
   return (
     <Dialog.Root open={open} onOpenChange={onOpenChange}>
@@ -181,7 +226,9 @@ function DesktopDrawer({
         <Dialog.Overlay className="directory-overlay fixed inset-0 z-40 bg-ink/20 backdrop-blur-[2px]" />
         <Dialog.Content className="directory-sheet fixed top-0 right-0 z-50 flex h-dvh w-full max-w-[480px] flex-col border-l border-hairline bg-surface shadow-sheet outline-none">
           <ResourceDetail
+            key={resource.id}
             resource={resource}
+            relatedResources={relatedResources}
             title={
               <Dialog.Title className="text-[22px] leading-[1.15] font-semibold tracking-[-0.02em] text-ink">
                 {resource.title}
@@ -199,6 +246,7 @@ function DesktopDrawer({
                 </CloseButton>
               </Dialog.Close>
             }
+            onSelectRelated={onSelectRelated}
           />
         </Dialog.Content>
       </Dialog.Portal>
@@ -208,12 +256,16 @@ function DesktopDrawer({
 
 function MobileDrawer({
   resource,
+  relatedResources,
   open,
   onOpenChange,
+  onSelectRelated,
 }: {
   resource: Resource;
+  relatedResources: readonly Resource[];
   open: boolean;
   onOpenChange: (open: boolean) => void;
+  onSelectRelated: (id: string) => void;
 }) {
   return (
     <Drawer.Root
@@ -223,10 +275,12 @@ function MobileDrawer({
     >
       <Drawer.Portal>
         <Drawer.Overlay className="fixed inset-0 z-40 bg-ink/25 backdrop-blur-[2px]" />
-        <Drawer.Content className="fixed inset-x-0 bottom-0 z-50 flex h-[92dvh] flex-col rounded-t-2xl border-t border-hairline bg-surface outline-none">
+        <Drawer.Content className="fixed inset-x-0 bottom-0 z-50 flex h-[88dvh] flex-col rounded-t-2xl border-t border-hairline bg-surface outline-none">
           <div className="mx-auto mt-2 h-1 w-9 shrink-0 rounded-full bg-hairline-strong" />
           <ResourceDetail
+            key={resource.id}
             resource={resource}
+            relatedResources={relatedResources}
             title={
               <Drawer.Title className="text-[22px] leading-[1.15] font-semibold tracking-[-0.02em] text-ink">
                 {resource.title}
@@ -244,6 +298,7 @@ function MobileDrawer({
                 </CloseButton>
               </Drawer.Close>
             }
+            onSelectRelated={onSelectRelated}
           />
         </Drawer.Content>
       </Drawer.Portal>
@@ -253,8 +308,10 @@ function MobileDrawer({
 
 export function ResourceDrawer({
   resource,
+  relatedResources,
   open,
   onOpenChange,
+  onSelectRelated,
 }: ResourceDrawerProps) {
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
@@ -263,8 +320,20 @@ export function ResourceDrawer({
   }
 
   return isDesktop ? (
-    <DesktopDrawer resource={resource} open={open} onOpenChange={onOpenChange} />
+    <DesktopDrawer
+      resource={resource}
+      relatedResources={relatedResources}
+      open={open}
+      onOpenChange={onOpenChange}
+      onSelectRelated={onSelectRelated}
+    />
   ) : (
-    <MobileDrawer resource={resource} open={open} onOpenChange={onOpenChange} />
+    <MobileDrawer
+      resource={resource}
+      relatedResources={relatedResources}
+      open={open}
+      onOpenChange={onOpenChange}
+      onSelectRelated={onSelectRelated}
+    />
   );
 }

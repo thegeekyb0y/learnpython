@@ -46,6 +46,7 @@ export function ResourceGridCell({
     <motion.button
       type="button"
       data-slot="resource-cell"
+      data-resource-id={resource.id}
       aria-label={`Open details for ${resource.title}`}
       onClick={() => onOpen(resource.id)}
       initial={{ opacity: 0, y: 6 }}
@@ -54,7 +55,7 @@ export function ResourceGridCell({
         ...entranceTransition,
         delay: Math.min(index, 8) * 0.022,
       }}
-      className="group relative flex min-h-[188px] w-full flex-col border-r border-b border-hairline bg-surface p-5 text-left transition-[background-color,border-color] duration-150 ease-out-quint hover:border-hairline-hover hover:bg-surface-2 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-inset focus-visible:outline-none"
+      className="group relative flex min-h-[188px] w-full cursor-pointer flex-col border-r border-b border-hairline bg-surface p-5 text-left transition-[background-color,border-color] duration-150 ease-out-quint hover:border-hairline-hover hover:bg-surface-2 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-inset focus-visible:outline-none"
     >
       <span aria-hidden="true" className={railClass} />
 
@@ -97,6 +98,7 @@ export function ResourceListRow({
     <motion.button
       type="button"
       data-slot="resource-row"
+      data-resource-id={resource.id}
       aria-label={`Open details for ${resource.title}`}
       onClick={() => onOpen(resource.id)}
       initial={{ opacity: 0, y: 4 }}
@@ -105,7 +107,7 @@ export function ResourceListRow({
         ...entranceTransition,
         delay: Math.min(index, 8) * 0.018,
       }}
-      className="group relative flex min-h-16 w-full items-center gap-3 bg-surface px-4 py-2 text-left transition-colors duration-150 ease-out-quint hover:bg-surface-2 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-inset focus-visible:outline-none md:px-5"
+      className="group relative flex min-h-16 w-full cursor-pointer items-center gap-3 bg-surface px-4 py-2 text-left transition-colors duration-150 ease-out-quint hover:bg-surface-2 focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-inset focus-visible:outline-none md:px-5"
     >
       <span
         aria-hidden="true"

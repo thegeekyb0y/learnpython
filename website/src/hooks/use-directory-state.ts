@@ -16,6 +16,7 @@ import {
   getAccessFacetCounts,
   getCategoryFacetCounts,
   getLevelFacetCounts,
+  getRelatedResources,
   hasActiveFilters,
   parseDirectoryParams,
   serializeDirectoryFilters,
@@ -41,6 +42,7 @@ type DirectoryAction =
   | { type: "setQuery"; query: string }
   | { type: "setCategory"; category: DirectoryFilters["category"] }
   | { type: "setCollection"; collection: CollectionId }
+  | { type: "clearCollection" }
   | { type: "toggleLevel"; level: Difficulty }
   | { type: "toggleAccess"; access: DirectoryAccessFilter }
   | { type: "setSort"; sort: SortKey }
@@ -82,6 +84,8 @@ function reducer(state: DirectoryState, action: DirectoryAction): DirectoryState
         access: [],
       };
     }
+    case "clearCollection":
+      return { ...state, collection: null, category: "all" };
     case "toggleLevel":
       return {
         ...state,
@@ -117,6 +121,14 @@ function reducer(state: DirectoryState, action: DirectoryAction): DirectoryState
   }
 }
 
+function focusResourceCard(id: string) {
+  window.requestAnimationFrame(() => {
+    document
+      .querySelector<HTMLElement>(`[data-resource-id="${CSS.escape(id)}"]`)
+      ?.focus();
+  });
+}
+
 export function useDirectoryState(resources: readonly Resource[]) {
   const [state, dispatch] = useReducer(reducer, initialState);
   const hydratedRef = useRef(false);
@@ -147,6 +159,7 @@ export function useDirectoryState(resources: readonly Resource[]) {
 
   const hydrateFromUrl = (params: URLSearchParams) => {
     const parsed = parseDirectoryParams(params, resources);
+    const previouslySelected = selectedRef.current;
 
     dispatch({
       type: "hydrate",
@@ -157,6 +170,10 @@ export function useDirectoryState(resources: readonly Resource[]) {
     selectedRef.current = parsed.selectedId;
     pushedSelectionRef.current = false;
     hydratedRef.current = true;
+
+    if (!parsed.selectedId && previouslySelected) {
+      focusResourceCard(previouslySelected);
+    }
   };
 
   useDirectoryUrl(hydrateFromUrl);
@@ -226,6 +243,14 @@ export function useDirectoryState(resources: readonly Resource[]) {
     [resources, state.selectedId],
   );
 
+  const relatedResources = useMemo(
+    () =>
+      selectedResource
+        ? getRelatedResources(resources, selectedResource.id)
+        : [],
+    [resources, selectedResource],
+  );
+
   const openResource = (id: string) => {
     if (!resources.some((resource) => resource.id === id)) {
       return;
@@ -243,9 +268,30 @@ export function useDirectoryState(resources: readonly Resource[]) {
     pushDirectoryState(params);
   };
 
+  const openRelatedResource = (id: string) => {
+    if (!resources.some((resource) => resource.id === id)) {
+      return;
+    }
+
+    dispatch({ type: "select", id });
+    selectedRef.current = id;
+
+    const params = serializeDirectoryFilters({
+      ...filters,
+      query: state.query,
+    });
+    params.r = id;
+    replaceDirectoryState(params);
+  };
+
   const closeResource = () => {
+    const closingId = selectedRef.current;
     dispatch({ type: "closeSelection" });
     selectedRef.current = null;
+
+    if (closingId) {
+      focusResourceCard(closingId);
+    }
 
     if (pushedSelectionRef.current) {
       pushedSelectionRef.current = false;
@@ -267,6 +313,7 @@ export function useDirectoryState(resources: readonly Resource[]) {
     levelCounts,
     accessCounts,
     selectedResource,
+    relatedResources,
     hasFilters: hasActiveFilters(filters),
     totalResources: resources.length,
     setQuery: (query: string) => dispatch({ type: "setQuery", query }),
@@ -274,6 +321,7 @@ export function useDirectoryState(resources: readonly Resource[]) {
       dispatch({ type: "setCategory", category }),
     setCollection: (collection: CollectionId) =>
       dispatch({ type: "setCollection", collection }),
+    clearCollection: () => dispatch({ type: "clearCollection" }),
     toggleLevel: (level: Difficulty) =>
       dispatch({ type: "toggleLevel", level }),
     toggleAccess: (access: DirectoryAccessFilter) =>
@@ -283,6 +331,7 @@ export function useDirectoryState(resources: readonly Resource[]) {
     clearLevels: () => dispatch({ type: "clearLevels" }),
     resetFilters: () => dispatch({ type: "resetFilters" }),
     openResource,
+    openRelatedResource,
     closeResource,
   };
 }

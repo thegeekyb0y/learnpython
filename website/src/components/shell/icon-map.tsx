@@ -2,25 +2,19 @@ import {
   BadgeCheck,
   BookOpen,
   Bot,
-  Database,
-  Newspaper,
   Play,
   Target,
-  Terminal,
   Users,
   Wrench,
 } from "lucide-react";
 
-import type { CollectionIconKey } from "@/data/collections";
 import type { QuickNavIconKey } from "@/data/quick-nav";
-
-type IconKey = QuickNavIconKey | CollectionIconKey;
 
 export function DirectoryIcon({
   name,
   className,
 }: {
-  name: IconKey;
+  name: QuickNavIconKey;
   className?: string;
 }) {
   switch (name) {
@@ -38,11 +32,5 @@ export function DirectoryIcon({
       return <Users className={className} aria-hidden="true" />;
     case "target":
       return <Target className={className} aria-hidden="true" />;
-    case "newspaper":
-      return <Newspaper className={className} aria-hidden="true" />;
-    case "database":
-      return <Database className={className} aria-hidden="true" />;
-    case "terminal":
-      return <Terminal className={className} aria-hidden="true" />;
   }
 }

@@ -264,6 +264,26 @@ export function sortResources(
   });
 }
 
+export function getRelatedResources(
+  resources: readonly Resource[],
+  resourceId: string,
+  limit = 3,
+): Resource[] {
+  const current = resources.find((resource) => resource.id === resourceId);
+
+  if (!current) {
+    return [];
+  }
+
+  return sortResources(
+    resources.filter(
+      (resource) =>
+        resource.id !== resourceId && resource.category === current.category,
+    ),
+    "recommended",
+  ).slice(0, limit);
+}
+
 export function getCategoryFacetCounts(
   resources: readonly Resource[],
   filters: DirectoryFilters,
