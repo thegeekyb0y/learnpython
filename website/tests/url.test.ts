@@ -102,6 +102,23 @@ describe("history writes", () => {
       "/learnpython/?r=python-tutorial",
     );
   });
+
+  it("preserves r through push and removes it on a popstate-style back", () => {
+    const { win, pushState } = createWindow("?q=django");
+
+    pushDirectoryState({ q: "django", r: "django-documentation" }, win);
+
+    const pushedUrl = pushState.mock.calls[0]?.[2];
+    expect(typeof pushedUrl).toBe("string");
+
+    const pushed = new URL(pushedUrl as string, "https://example.com");
+    win.location.search = pushed.search;
+
+    expect(readDirectoryParams(win).get("r")).toBe("django-documentation");
+
+    win.location.search = "?q=django";
+    expect(readDirectoryParams(win).get("r")).toBeNull();
+  });
 });
 
 describe("readDirectoryParams", () => {

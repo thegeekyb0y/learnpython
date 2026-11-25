@@ -4,10 +4,9 @@ The catalog is split into one JSON file per category under `src/data/catalog/`.
 Every file is validated by `src/lib/schema.ts` when `src/data/resources.ts` is
 imported, so `next build` fails on a bad entry.
 
-The visual collections are data-driven too:
+Quick navigation is data-driven too:
 
-- `src/data/collections.ts` — the five Explore Collections cards plus the shared
-  collection filter registry.
+- `src/data/collections.ts` — the shared collection filter registry.
 - `src/data/quick-nav.ts` — the seven Quick Navigation items and their icon keys.
 
 ## Source policy
@@ -49,15 +48,13 @@ Canonicalizations made during extraction:
 - Category must exist in `src/data/categories.ts`
 - `featured` is capped in practice at 12 entries
 
-## Collection tags
+## Quick-nav tags
 
-Quick navigation and Explore Collections rely on these tags in addition to
-category and format filters:
+Quick navigation relies on these tags in addition to category and format filters:
 
 - `official`
 - `agents`
 - `community`
-- `articles`
 
 Run `npm run test` for schema, integrity, and category-count checks. When adding
 or moving resources, update the expected distribution in `tests/resources.test.ts`.

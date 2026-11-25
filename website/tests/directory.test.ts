@@ -1,7 +1,6 @@
 import { describe, expect, it } from "vitest";
 
 import { resources } from "@/data/resources";
-import { exploreCollections } from "@/data/collections";
 import { quickNavItems } from "@/data/quick-nav";
 import {
   defaultDirectoryFilters,
@@ -9,6 +8,7 @@ import {
   getAccessFacetCounts,
   getCategoryFacetCounts,
   getLevelFacetCounts,
+  getRelatedResources,
   matchesCollectionFilter,
   matchesQuery,
   parseDirectoryParams,
@@ -72,13 +72,10 @@ describe("directory filtering", () => {
     ).toHaveLength(0);
   });
 
-  it("maps every quick-nav and bento collection to real resources", () => {
+  it("maps every quick-nav collection to real resources", () => {
     expect(quickNavItems).toHaveLength(7);
-    expect(exploreCollections).toHaveLength(5);
 
-    const mappedCollections = [...quickNavItems, ...exploreCollections];
-
-    for (const collection of mappedCollections) {
+    for (const collection of quickNavItems) {
       expect(
         resources.filter((resource) =>
           matchesCollectionFilter(resource, collection.filter),
@@ -164,7 +161,34 @@ describe("facet counts", () => {
   });
 });
 
+describe("related resources", () => {
+  it("returns up to three resources from the same category", () => {
+    const related = getRelatedResources(resources, "django-documentation");
+
+    expect(related).toHaveLength(3);
+    expect(related.every((resource) => resource.category === "web-dev")).toBe(
+      true,
+    );
+    expect(related.some((resource) => resource.id === "django-documentation")).toBe(
+      false,
+    );
+    expect(new Set(related.map((resource) => resource.id)).size).toBe(3);
+  });
+
+  it("returns no related resources for an unknown id", () => {
+    expect(getRelatedResources(resources, "missing-resource")).toEqual([]);
+  });
+});
+
 describe("URL state", () => {
+  it("hydrates a cold deep link to a valid resource", () => {
+    const parsed = parseDirectoryParams(
+      new URLSearchParams("r=python-documentation"),
+      resources,
+    );
+
+    expect(parsed.selectedId).toBe("python-documentation");
+  });
   it("parses a complete URL state", () => {
     const parsed = parseDirectoryParams(
       new URLSearchParams(

@@ -2,8 +2,7 @@
 
 import { MotionConfig, useReducedMotion } from "motion/react";
 
-import { ResourceDrawer } from "@/components/overlay/resource-drawer";
-import { CollectionsBento } from "@/components/shell/collections-bento";
+import { ResourceDrawer } from "@/components/shell/resource-drawer";
 import { EditorialHeader } from "@/components/shell/editorial-header";
 import { FilterBar } from "@/components/shell/filter-bar";
 import { ResourceLedger } from "@/components/shell/resource-ledger";
@@ -70,22 +69,37 @@ export function DirectoryShell({
     directory.resetFilters();
   };
 
-  const scrollToLedger = () => {
-    const ledger = document.getElementById("ledger");
+  const scrollToFeed = () => {
+    const feed = document.getElementById("directory-feed");
 
-    if (!ledger) {
+    if (!feed) {
       return;
     }
 
-    const stickyOffset = window.matchMedia("(min-width: 1024px)").matches
-      ? 112
-      : 168;
-    const top = ledger.getBoundingClientRect().top + window.scrollY - stickyOffset;
+    // The sticky filter bar grows once the active-collection chip appears,
+    // so measure its height (plus its sticky offset) after the state renders.
+    const filterBar = document.querySelector<HTMLElement>(
+      '[data-slot="filter-bar"]',
+    );
 
-    window.scrollTo({
-      top: Math.max(0, top),
+    if (filterBar) {
+      const stickyTop = Number.parseFloat(getComputedStyle(filterBar).top) || 0;
+      feed.style.scrollMarginTop = `${Math.round(
+        filterBar.offsetHeight + stickyTop + 12,
+      )}px`;
+    }
+
+    feed.scrollIntoView({
       behavior: reducedMotion ? "auto" : "smooth",
+      block: "start",
     });
+  };
+
+  const handleQuickNavToggle = (
+    collection: Parameters<typeof directory.setCollection>[0],
+  ) => {
+    directory.setCollection(collection);
+    window.requestAnimationFrame(() => window.requestAnimationFrame(scrollToFeed));
   };
 
   return (
@@ -97,22 +111,18 @@ export function DirectoryShell({
         hasActiveFilters={hasActiveFilters}
         onClearStatus={clearStatus}
         activeCollection={directory.state.collection}
-        onToggleCollection={directory.setCollection}
+        onToggleCollection={handleQuickNavToggle}
         suggestions={directory.searchResults}
         totalMatches={directory.searchResults.length}
         onOpenResource={directory.openResource}
-        onViewAll={scrollToLedger}
-      />
-
-      <CollectionsBento
-        onSelect={directory.setCollection}
-        onViewAll={scrollToLedger}
+        onViewAll={scrollToFeed}
       />
 
       <FilterBar
         categories={categories}
         categoryCounts={directory.categoryCounts}
         activeCategory={directory.state.category}
+        activeCollection={directory.state.collection}
         levels={directory.state.levels}
         levelCounts={directory.levelCounts}
         access={directory.state.access}
@@ -120,6 +130,7 @@ export function DirectoryShell({
         sort={directory.state.sort}
         view={directory.state.view}
         onSelectCategory={directory.setCategory}
+        onClearCollection={directory.clearCollection}
         onToggleLevel={directory.toggleLevel}
         onToggleAccess={directory.toggleAccess}
         onClearLevels={directory.clearLevels}
@@ -131,7 +142,7 @@ export function DirectoryShell({
         id="main"
         className="mx-auto w-full max-w-[1440px] px-4 pt-8 pb-20 sm:px-6 sm:pt-10 lg:px-8"
       >
-        <div id="ledger" className="scroll-mt-40 lg:scroll-mt-28">
+        <div id="directory-feed" className="scroll-mt-40 lg:scroll-mt-28">
           <ResourceLedger
             resources={directory.filteredResources}
             view={directory.state.view}
@@ -170,12 +181,14 @@ export function DirectoryShell({
 
       <ResourceDrawer
         resource={directory.selectedResource}
+        relatedResources={directory.relatedResources}
         open={Boolean(directory.selectedResource)}
         onOpenChange={(open) => {
           if (!open) {
             directory.closeResource();
           }
         }}
+        onSelectRelated={directory.openRelatedResource}
       />
     </MotionConfig>
   );

@@ -2,14 +2,14 @@
 
 The web directory for the [`learn-python`](https://github.com/thegeekyb0y/learnpython) repository.
 
-**Status:** Phase 2 — directory shell. The editorial hero, data-driven quick navigation, gradient collection bento, instant search dropdown, sticky filters, grid/list feed, empty/loading states, URL sync, and responsive detail drawer are live. A deeper motion/a11y audit follows in a later phase.
+**Status:** Phase 3 — resource detail drawer. The editorial hero, data-driven quick navigation, instant search dropdown, sticky filters, grid/list feed, empty/loading states, URL sync, and responsive detail drawer are live, including `?r=<id>` deep links and browser-history navigation.
 
 ## Content
 
 - Taxonomy: `src/data/categories.ts`
 - Resource catalog: `src/data/catalog/*.json`
 - Validated resource export: `src/data/resources.ts`
-- Bento cards: `src/data/collections.ts`
+- Collection filters: `src/data/collections.ts`
 - Quick navigation: `src/data/quick-nav.ts`
 - Schema and integrity checks: `src/lib/schema.ts`
 - Source/extraction notes: `src/data/README.md`
@@ -20,12 +20,14 @@ The page imports the validated catalog, so `next build` fails on a duplicate id,
 
 - Search filters live and writes a debounced `?q=` URL.
 - Category, difficulty, access, collection, sort, and view state synchronize to the URL.
-- Quick navigation and Explore Collections map to real catalog filters.
-- The hero and bento stay mounted while searching or filtering; the search panel floats above the page so there is no layout shift.
+- Quick navigation maps to real catalog filters.
+- The hero stays mounted while searching or filtering; the search panel floats above the page so there is no layout shift.
 - `⌘K` / `Ctrl+K` / `/` focus search and open the instant results panel.
-- The panel supports arrow-key navigation, Enter to open, Esc to close, and a footer that scrolls to the filtered ledger.
+- The panel supports arrow-key navigation, Enter to open, Esc to close, and a footer that scrolls to the filtered feed.
 - Active search or filters show a live result count with a `Clear` action under the search field.
 - Cards open a slide-over sheet on desktop and a `vaul` drawer on mobile.
+- The open resource is URL-addressable via `?r=<id>`; closing with Esc, the backdrop, the close button, or Back restores focus to the triggering card.
+- Related resources at the bottom of the drawer switch the open resource without adding history entries.
 - Empty results and loading states are keyboard accessible.
 
 ## Stack

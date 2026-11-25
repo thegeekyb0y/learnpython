@@ -352,7 +352,7 @@
 }
 
 .directory-sheet[data-state="open"] {
-  animation: directory-sheet-in 320ms var(--ease-drawer);
+  animation: directory-sheet-in 280ms var(--ease-drawer);
 }
 
 .directory-sheet[data-state="closed"] {

@@ -41,11 +41,11 @@ Allowed values:
 
 Resources are validated by `src/lib/schema.ts` when `src/data/resources.ts` is imported. Duplicate IDs, duplicate URLs, unknown categories, non-HTTPS URLs, and out-of-range copy all fail the build.
 
-## Collections and quick navigation
+## Collection filters and quick navigation
 
-- Bento cards live in `src/data/collections.ts`.
-- Quick-nav items live in `src/data/quick-nav.ts`.
-- Both reference filters in `collectionFilters`. Keep filters pointed at real categories, formats, or tags with at least one matching resource.
+- Shared filter definitions live in `src/data/collections.ts`.
+- Quick-nav items live in `src/data/quick-nav.ts` and reference those filters.
+- Keep filters pointed at real categories, formats, or tags with at least one matching resource.
 - Lucide icons are resolved by key in `src/components/shell/icon-map.ts`. Quick-nav items also accept an optional `iconSrc` for a custom local asset.
 
 ## Before opening a PR
