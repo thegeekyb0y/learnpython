@@ -9,6 +9,11 @@ import {
   type CollectionFilter,
   type CollectionId,
 } from "@/data/collections";
+import {
+  getSectionDefinition,
+  matchesGroupRule,
+  type ResourceGroupDefinition,
+} from "@/data/sections";
 import type {
   Difficulty,
   Resource,
@@ -63,6 +68,7 @@ export type DirectoryFilters = {
   levels: Difficulty[];
   access: DirectoryAccessFilter[];
   collection: CollectionId | null;
+  section: string | null;
   sort: SortKey;
   view: ViewMode;
 };
@@ -73,6 +79,7 @@ export const defaultDirectoryFilters: DirectoryFilters = {
   levels: [],
   access: [],
   collection: null,
+  section: null,
   sort: "recommended",
   view: "grid",
 };
@@ -213,6 +220,17 @@ function matchesFilters(
     return false;
   }
 
+  if (filters.section) {
+    const definition = getSectionDefinition(filters);
+    const group = definition?.groups.find(
+      (candidate) => candidate.id === filters.section,
+    );
+
+    if (!group || !matchesGroupRule(resource, group.rule)) {
+      return false;
+    }
+  }
+
   return true;
 }
 
@@ -225,6 +243,56 @@ export function filterResources(
       matchesQuery(resource, filters.query) &&
       matchesFilters(resource, filters),
   );
+}
+
+export type SectionGroup = ResourceGroupDefinition & {
+  resources: Resource[];
+};
+
+export type SectionView = {
+  key: string;
+  title: string;
+  total: number;
+  groups: SectionGroup[];
+};
+
+/**
+ * Build the sub-section layout for the active collection or category.
+ *
+ * Counts intentionally ignore the active `section` filter so pills keep their
+ * totals while one group is selected. Matching is exclusive and ordered, so a
+ * resource appears in exactly one group.
+ */
+export function getSectionView(
+  resources: readonly Resource[],
+  filters: DirectoryFilters,
+): SectionView | null {
+  const definition = getSectionDefinition(filters);
+
+  if (!definition || definition.groups.length < 2) {
+    return null;
+  }
+
+  const base = filterResources(resources, { ...filters, section: null });
+  const assigned = new Set<string>();
+  const groups: SectionGroup[] = definition.groups.map((group) => {
+    const grouped: Resource[] = [];
+
+    for (const resource of base) {
+      if (assigned.has(resource.id)) {
+        continue;
+      }
+
+      if (matchesGroupRule(resource, group.rule)) {
+        grouped.push(resource);
+        assigned.add(resource.id);
+      }
+    }
+
+    return { ...group, resources: grouped };
+  });
+
+  return { ...definition, total: base.length, groups };
 }
 
 export function sortResources(
@@ -357,7 +425,8 @@ export function hasActiveFilters(filters: DirectoryFilters): boolean {
     filters.category !== "all" ||
     filters.levels.length > 0 ||
     filters.access.length > 0 ||
-    filters.collection !== null
+    filters.collection !== null ||
+    filters.section !== null
   );
 }
 
@@ -428,6 +497,16 @@ export function parseDirectoryParams(
     filters.view = view;
   }
 
+  const section = params.get("section");
+
+  if (section) {
+    const definition = getSectionDefinition(filters);
+
+    if (definition?.groups.some((group) => group.id === section)) {
+      filters.section = section;
+    }
+  }
+
   const requestedResource = params.get("r");
   const selectedId =
     requestedResource &&
@@ -447,6 +526,7 @@ export function serializeDirectoryFilters(
     level: filters.levels.length > 0 ? [...filters.levels] : undefined,
     access: filters.access.length > 0 ? [...filters.access] : undefined,
     quick: filters.collection ?? undefined,
+    section: filters.section ?? undefined,
     sort: filters.sort === "recommended" ? undefined : filters.sort,
     view: filters.view === "grid" ? undefined : filters.view,
   };

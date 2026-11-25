@@ -37,10 +37,12 @@ export function ResourceGridCell({
   resource,
   index,
   onOpen,
+  eyebrow,
 }: {
   resource: Resource;
   index: number;
   onOpen: (id: string) => void;
+  eyebrow?: string;
 }) {
   return (
     <motion.button
@@ -61,7 +63,7 @@ export function ResourceGridCell({
 
       <span className="flex items-start justify-between gap-3">
         <span className="type-micro truncate text-ink-3">
-          {categoryById[resource.category].label} /{" "}
+          {eyebrow ?? categoryById[resource.category].label} ·{" "}
           {formatLabels[resource.format]}
         </span>
         {resource.featured ? <FeaturedMark className="shrink-0" /> : null}

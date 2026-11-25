@@ -26,6 +26,7 @@ Files are sorted deterministically: `featured` first, then `subcategory`, then
 Quick navigation is data-driven too:
 
 - `src/data/collections.ts` — the shared collection filter registry.
+- `src/data/sections.ts` — declarative sub-section grouping for dense views.
 - `src/data/quick-nav.ts` — the seven Quick Navigation items and their icon keys.
 
 ## Source policy

@@ -1,11 +1,15 @@
 "use client";
 
+import { useMemo } from "react";
 import { MotionConfig, useReducedMotion } from "motion/react";
 
 import { ResourceDrawer } from "@/components/shell/resource-drawer";
 import { EditorialHeader } from "@/components/shell/editorial-header";
 import { FilterBar } from "@/components/shell/filter-bar";
-import { ResourceLedger } from "@/components/shell/resource-ledger";
+import {
+  GroupedResourceLedger,
+  ResourceLedger,
+} from "@/components/shell/resource-ledger";
 import { categoryById, type Category } from "@/data/categories";
 import { useDirectoryState } from "@/hooks/use-directory-state";
 import { getCollectionLabel } from "@/lib/directory";
@@ -33,6 +37,44 @@ export function DirectoryShell({
     directory.state.category !== "all"
       ? categoryById[directory.state.category].label
       : null;
+  const sectionView = directory.sectionView;
+  const activeSectionTitle =
+    sectionView?.groups.find((group) => group.id === directory.state.section)
+      ?.title ?? null;
+  const sectionPills = sectionView
+    ? sectionView.groups
+        .filter((group) => group.resources.length > 0)
+        .map((group) => ({
+          id: group.id,
+          label: group.title,
+          count: group.resources.length,
+        }))
+    : null;
+  const eyebrowByResourceId = useMemo(() => {
+    if (!sectionView) {
+      return undefined;
+    }
+
+    const map: Record<string, string> = {};
+
+    for (const group of sectionView.groups) {
+      for (const resource of group.resources) {
+        map[resource.id] = group.eyebrow;
+      }
+    }
+
+    return map;
+  }, [sectionView]);
+  const isGrouped =
+    Boolean(sectionView) &&
+    directory.filters.sort === "recommended" &&
+    query.length === 0;
+  const groupedSections =
+    sectionView?.groups.filter(
+      (group) =>
+        !directory.filters.section ||
+        group.id === directory.filters.section,
+    ) ?? [];
   const hasActiveFilters =
     directory.hasFilters || query.length > 0 || directory.state.collection !== null;
 
@@ -45,7 +87,9 @@ export function DirectoryShell({
       statusLabel += ` for "${query}"`;
     }
 
-    const scope = collectionLabel ?? categoryLabel;
+    const scope = activeSectionTitle
+      ? `${collectionLabel ?? categoryLabel ?? "Directory"} · ${activeSectionTitle}`
+      : (collectionLabel ?? categoryLabel);
 
     if (scope) {
       statusLabel += ` in ${scope}`;
@@ -123,6 +167,9 @@ export function DirectoryShell({
         categoryCounts={directory.categoryCounts}
         activeCategory={directory.state.category}
         activeCollection={directory.state.collection}
+        activeSection={directory.state.section}
+        sectionTotal={sectionView?.total ?? 0}
+        sectionPills={sectionPills}
         levels={directory.state.levels}
         levelCounts={directory.levelCounts}
         access={directory.state.access}
@@ -131,6 +178,7 @@ export function DirectoryShell({
         view={directory.state.view}
         onSelectCategory={directory.setCategory}
         onClearCollection={directory.clearCollection}
+        onSelectSection={directory.setSection}
         onToggleLevel={directory.toggleLevel}
         onToggleAccess={directory.toggleAccess}
         onClearLevels={directory.clearLevels}
@@ -143,12 +191,24 @@ export function DirectoryShell({
         className="mx-auto w-full max-w-[1440px] px-4 pt-8 pb-20 sm:px-6 sm:pt-10 lg:px-8"
       >
         <div id="directory-feed" className="scroll-mt-40 lg:scroll-mt-28">
-          <ResourceLedger
-            resources={directory.filteredResources}
-            view={directory.state.view}
-            onOpen={directory.openResource}
-            onReset={directory.resetFilters}
-          />
+          {isGrouped && sectionView ? (
+            <GroupedResourceLedger
+              groups={groupedSections}
+              view={directory.state.view}
+              sort={directory.filters.sort}
+              onOpen={directory.openResource}
+              onReset={directory.resetFilters}
+              eyebrowByResourceId={eyebrowByResourceId}
+            />
+          ) : (
+            <ResourceLedger
+              resources={directory.filteredResources}
+              view={directory.state.view}
+              onOpen={directory.openResource}
+              onReset={directory.resetFilters}
+              eyebrowByResourceId={eyebrowByResourceId}
+            />
+          )}
         </div>
       </main>
 

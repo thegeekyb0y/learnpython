@@ -9,6 +9,7 @@ import {
   getCategoryFacetCounts,
   getLevelFacetCounts,
   getRelatedResources,
+  getSectionView,
   matchesCollectionFilter,
   matchesQuery,
   parseDirectoryParams,
@@ -179,6 +180,131 @@ describe("facet counts", () => {
   });
 });
 
+describe("sub-section grouping", () => {
+  it("groups the YouTube collection into core, AI, and creator sections", () => {
+    const view = getSectionView(resources, {
+      ...defaultDirectoryFilters,
+      collection: "youtube",
+    });
+
+    expect(view).not.toBeNull();
+    expect(view?.total).toBe(30);
+    expect(
+      view?.groups.map((group) => ({
+        title: group.title,
+        count: group.resources.length,
+      })),
+    ).toEqual([
+      { title: "Core Python Playlists", count: 14 },
+      { title: "AI & ML Playlists", count: 7 },
+      { title: "Top Python Creators", count: 9 },
+    ]);
+  });
+
+  it("groups the Communities collection including AI research blogs", () => {
+    const view = getSectionView(resources, {
+      ...defaultDirectoryFilters,
+      collection: "communities",
+    });
+
+    expect(view?.total).toBe(49);
+    expect(
+      view?.groups.map((group) => ({
+        title: group.title,
+        count: group.resources.length,
+      })),
+    ).toEqual([
+      { title: "YouTube Playlists", count: 14 },
+      { title: "Top YouTube Creators", count: 9 },
+      { title: "Engineering Blogs", count: 13 },
+      { title: "X / Twitter Creators", count: 7 },
+      { title: "Podcasts", count: 6 },
+    ]);
+  });
+
+  it("partitions every grouped view without losing resources", () => {
+    const scopes = [
+      { collection: "youtube" as const, category: "all" as const },
+      { collection: "official" as const, category: "all" as const },
+      { collection: "communities" as const, category: "all" as const },
+      { collection: null, category: "data-ai" as const },
+      { collection: null, category: "communities-media" as const },
+      { collection: null, category: "tools-automation" as const },
+    ];
+
+    for (const scope of scopes) {
+      const view = getSectionView(resources, {
+        ...defaultDirectoryFilters,
+        ...scope,
+      });
+      const groupedTotal =
+        view?.groups.reduce(
+          (total, group) => total + group.resources.length,
+          0,
+        ) ?? 0;
+
+      expect(view).not.toBeNull();
+      expect(groupedTotal).toBe(view?.total);
+    }
+  });
+
+  it("groups Data & AI into domain sections", () => {
+    const view = getSectionView(resources, {
+      ...defaultDirectoryFilters,
+      category: "data-ai",
+    });
+
+    expect(view?.total).toBe(64);
+    expect(view?.groups.map((group) => group.title)).toEqual([
+      "Generative AI & LLMs",
+      "Building AI Agents",
+      "Vector Databases & RAG",
+      "Model Context Protocol (MCP)",
+      "Fine-Tuning LLMs",
+      "Build an LLM From Scratch",
+      "Modern ML Frameworks",
+      "Evaluating & Testing LLM Apps",
+      "Local & Open-Source LLMs",
+      "AI & ML Playlists",
+      "AI Research & Blogs",
+      "Domain Applications",
+    ]);
+  });
+
+  it("filters to one sub-section without changing group counts", () => {
+    const view = getSectionView(resources, {
+      ...defaultDirectoryFilters,
+      collection: "youtube",
+      section: "ai-ml-playlists",
+    });
+    const filtered = filterResources(resources, {
+      ...defaultDirectoryFilters,
+      collection: "youtube",
+      section: "ai-ml-playlists",
+    });
+
+    expect(filtered).toHaveLength(7);
+    expect(
+      view?.groups.reduce((total, group) => total + group.resources.length, 0),
+    ).toBe(30);
+  });
+
+  it("only creates grouped views for the configured collections and categories", () => {
+    expect(
+      getSectionView(resources, {
+        ...defaultDirectoryFilters,
+        collection: "books",
+      }),
+    ).toBeNull();
+    expect(
+      getSectionView(resources, {
+        ...defaultDirectoryFilters,
+        category: "web-dev",
+      }),
+    ).toBeNull();
+  });
+});
+
 describe("related resources", () => {
   it("returns up to three resources from the same category", () => {
     const related = getRelatedResources(resources, "langchain-docs");
@@ -210,7 +336,7 @@ describe("URL state", () => {
   it("parses a complete URL state", () => {
     const parsed = parseDirectoryParams(
       new URLSearchParams(
-        "q=langchain&cat=data-ai&level=beginner,advanced&access=free&quick=books&sort=az&view=list&r=langchain-docs",
+        "q=langchain&cat=data-ai&level=beginner,advanced&access=free&quick=youtube&section=core-python-playlists&sort=az&view=list&r=langchain-docs",
       ),
       resources,
     );
@@ -219,7 +345,8 @@ describe("URL state", () => {
     expect(parsed.filters.category).toBe("data-ai");
     expect(parsed.filters.levels).toEqual(["beginner", "advanced"]);
     expect(parsed.filters.access).toEqual(["free"]);
-    expect(parsed.filters.collection).toBe("books");
+    expect(parsed.filters.collection).toBe("youtube");
+    expect(parsed.filters.section).toBe("core-python-playlists");
     expect(parsed.filters.sort).toBe("az");
     expect(parsed.filters.view).toBe("list");
     expect(parsed.selectedId).toBe("langchain-docs");
@@ -228,7 +355,7 @@ describe("URL state", () => {
   it("ignores invalid categories, levels, access, sort, view, and resource ids", () => {
     const parsed = parseDirectoryParams(
       new URLSearchParams(
-        "cat=unknown&level=expert&access=paid&quick=unknown&sort=random&view=table&r=missing",
+        "cat=unknown&level=expert&access=paid&quick=unknown&section=unknown&sort=random&view=table&r=missing",
       ),
       resources,
     );
@@ -245,7 +372,8 @@ describe("URL state", () => {
         category: "web-dev",
         levels: ["beginner"],
         access: ["free"],
-        collection: "books",
+        collection: "youtube",
+        section: "core-python-playlists",
         sort: "az",
         view: "list",
       }),
@@ -254,7 +382,8 @@ describe("URL state", () => {
       cat: "web-dev",
       level: ["beginner"],
       access: ["free"],
-      quick: "books",
+      quick: "youtube",
+      section: "core-python-playlists",
       sort: "az",
       view: "list",
     });
@@ -265,6 +394,7 @@ describe("URL state", () => {
       level: undefined,
       access: undefined,
       quick: undefined,
+      section: undefined,
       sort: undefined,
       view: undefined,
     });
