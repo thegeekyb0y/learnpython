@@ -43,3 +43,6 @@ next-env.d.ts
 # tests
 /coverage
 .vitest/
+/playwright-report/
+/test-results/
+/blob-report/

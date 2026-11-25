@@ -1,8 +1,27 @@
 # Resource data
 
-The catalog is split into one JSON file per category under `src/data/catalog/`.
+The catalog mirrors every resource link in the repository root `README.md`. The
+150 links that resolve to 148 unique resources (two URLs were listed twice) are
+split into one JSON file per top-level category under `src/data/catalog/`:
+
+- `core-foundations.json`
+- `books-guides.json`
+- `web-dev.json`
+- `data-ai.json`
+- `practice-challenges.json`
+- `tools-automation.json`
+- `communities-media.json`
+
 Every file is validated by `src/lib/schema.ts` when `src/data/resources.ts` is
 imported, so `next build` fails on a bad entry.
+
+Each record keeps the README's heading as `subcategory`, so the UI can show a
+two-level hierarchy without expanding the top-level category taxonomy. Optional
+`provider`, `highlights` (up to three), and `recommendedOrder` fields add
+editorial context.
+
+Files are sorted deterministically: `featured` first, then `subcategory`, then
+`title`. The sync script uses the same order when rendering README tables.
 
 Quick navigation is data-driven too:
 
@@ -11,32 +30,25 @@ Quick navigation is data-driven too:
 
 ## Source policy
 
-- Prefer links that already exist in the repository root `README.md` or `roadmap.md`.
-- Do not add placeholder or guessed URLs. Verify a link in a browser before merging.
+- Every entry comes from the root `README.md`; do not add gap-fill resources.
+- Normalize URLs by stripping trailing slashes and upgrading `http://` to
+  `https://`. Merge exact duplicate URLs into one canonical entry and add both
+  source headings to `tags`.
+- Do not add placeholder or guessed URLs. Verify a link in a browser before
+  merging.
 - Write original summaries and descriptions; do not paste marketing copy.
 
-48 of the 56 initial resources come from the root markdown. Eight deliberate gap
-fills use official or canonical sources:
+## README sync
 
-- Think Python
-- Python for Data Analysis
-- FastAPI
-- Pydantic
-- SQLAlchemy
-- Full Stack Python
-- Exercism Python Track
-- Automate the Boring Stuff with Python
+The generated `## Full Catalog` section in the root `README.md` is delimited by
+`<!-- CATALOG:START -->` and `<!-- CATALOG:END -->`. It lists every resource
+grouped by category and subcategory, linking to both the resource URL and its
+`?r=<id>` deep link.
 
-Canonicalizations made during extraction:
-
-- Django and Flask links point at their current stable docs instead of the older
-  versioned URLs in `roadmap.md`.
-- Hugging Face's NLP course now redirects to the LLM course; the entry uses the
-  current title and URL.
-- `pythoncheatsheet.org` now redirects to a third-party site, so the catalog uses
-  Finxter's Python cheat-sheet collection from the README instead.
-- O'Reilly and Real Python may return `403` to automated link checkers; they are
-  live in a browser.
+```bash
+npm run sync:readme         # rewrite the generated section
+npm run sync:readme:check   # fail if README.md is stale (runs in npm run check)
+```
 
 ## Validation rules
 
@@ -44,9 +56,10 @@ Canonicalizations made during extraction:
 - HTTPS URLs only
 - Summary ≤ 140 characters
 - Description 120–700 characters
-- 1–4 unique lowercase kebab-case tags
+- 1–4 unique lowercase kebab-case tags (each ≤ 48 characters)
+- Required `subcategory`; optional `provider`, `highlights`, `recommendedOrder`
 - Category must exist in `src/data/categories.ts`
-- `featured` is capped in practice at 12 entries
+- `featured` is capped in practice at twelve entries
 
 ## Quick-nav tags
 
@@ -57,4 +70,5 @@ Quick navigation relies on these tags in addition to category and format filters
 - `community`
 
 Run `npm run test` for schema, integrity, and category-count checks. When adding
-or moving resources, update the expected distribution in `tests/resources.test.ts`.
+or moving resources, update the expected distribution and Quick-Nav counts in
+`tests/resources.test.ts` and `tests/directory.test.ts`.

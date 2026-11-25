@@ -1,0 +1,126 @@
+[
+  {
+    "id": "the-algorithms-python",
+    "title": "The Algorithms — Python",
+    "url": "https://github.com/TheAlgorithms/Python",
+    "summary": "A large, readable collection of algorithm implementations in Python.",
+    "description": "Hundreds of implementations for sorting, graphs, dynamic programming, data structures, and more, each with tests and explanations. Useful for comparing approaches and preparing for interviews.",
+    "category": "practice-challenges",
+    "subcategory": "Other Useful GitHub Repositories",
+    "provider": "The Algorithms",
+    "recommendedOrder": 1,
+    "tags": [
+      "open-source",
+      "exercises",
+      "practice",
+      "algorithms"
+    ],
+    "difficulty": "intermediate",
+    "format": "practice",
+    "access": "open-source",
+    "featured": true
+  },
+  {
+    "id": "project-based-learning-python",
+    "title": "Project Based Learning",
+    "url": "https://github.com/tuvtran/project-based-learning#python",
+    "summary": "A curated list of tutorials that teach by building real applications.",
+    "description": "The Python section links to guided builds for web apps, scrapers, games, bots, and data tools. Pick a project slightly beyond your current level and finish it rather than collecting tutorials.",
+    "category": "practice-challenges",
+    "subcategory": "Other Useful GitHub Repositories",
+    "provider": "tuvtran",
+    "recommendedOrder": 2,
+    "tags": [
+      "open-source",
+      "exercises",
+      "practice",
+      "projects"
+    ],
+    "difficulty": "intermediate",
+    "format": "practice",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "python-programming-exercises",
+    "title": "Python Programming Exercises",
+    "url": "https://github.com/zhiwehu/Python-programming-exercises",
+    "summary": "A graded set of Python exercises with solutions, from basics to intermediate problems.",
+    "description": "The exercises are organized by difficulty and cover strings, loops, data structures, functions, and algorithms. Solutions are included, so the value comes from attempting each problem before reading them.",
+    "category": "practice-challenges",
+    "subcategory": "Other Useful GitHub Repositories",
+    "provider": "zhiwehu",
+    "recommendedOrder": 3,
+    "tags": [
+      "open-source",
+      "exercises",
+      "practice",
+      "beginner"
+    ],
+    "difficulty": "intermediate",
+    "format": "practice",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "pythonprojects",
+    "title": "Python Projects",
+    "url": "https://github.com/thegeekyb0y/pythonprojects",
+    "summary": "A growing collection of small, buildable Python project ideas and code.",
+    "description": "A companion project space for the learn-python repository, focused on approachable builds that reinforce the language. Use it when you want a concrete next project rather than another tutorial.",
+    "category": "practice-challenges",
+    "subcategory": "Other Useful GitHub Repositories",
+    "provider": "Aditya Tiwari",
+    "recommendedOrder": 4,
+    "tags": [
+      "open-source",
+      "exercises",
+      "practice",
+      "projects"
+    ],
+    "difficulty": "intermediate",
+    "format": "practice",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "pythonlings",
+    "title": "Pythonlings (TUI Exercises)",
+    "url": "https://github.com/abhiksark/pythonlings",
+    "summary": "A Rustlings-style set of small Python exercises that teach by fixing failing tests.",
+    "description": "Short, focused exercises introduce a concept and then ask you to make the tests pass. The feedback loop is quick, and the repository is small enough for beginners to read end to end.",
+    "category": "practice-challenges",
+    "subcategory": "Other Useful GitHub Repositories",
+    "provider": "abhiksark",
+    "recommendedOrder": 5,
+    "tags": [
+      "open-source",
+      "exercises",
+      "practice",
+      "tests"
+    ],
+    "difficulty": "intermediate",
+    "format": "practice",
+    "access": "open-source",
+    "featured": false
+  },
+  {
+    "id": "60-python-projects-with-source-code",
+    "title": "60 Python Projects with Source Code",
+    "url": "https://medium.com/coders-camp/60-python-projects-with-source-code-919cd8a6e512",
+    "summary": "Coder's Camp documentation and guides for practical Python development.",
+    "description": "60 Python Projects with Source Code is an article from Coder's Camp, filed under Top Blogs in the learn-python directory. Articles mix explanations with runnable examples and next steps. It suits beginner developers and is free to use.",
+    "category": "practice-challenges",
+    "subcategory": "Top Blogs",
+    "provider": "Coder's Camp",
+    "recommendedOrder": 1,
+    "tags": [
+      "exercises",
+      "article"
+    ],
+    "difficulty": "beginner",
+    "format": "article",
+    "access": "free",
+    "featured": false
+  }
+]

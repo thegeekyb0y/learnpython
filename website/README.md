@@ -7,11 +7,12 @@ The web directory for the [`learn-python`](https://github.com/thegeekyb0y/learnp
 ## Content
 
 - Taxonomy: `src/data/categories.ts`
-- Resource catalog: `src/data/catalog/*.json`
+- Resource catalog: `src/data/catalog/*.json` (category files with README subcategories)
 - Validated resource export: `src/data/resources.ts`
 - Collection filters: `src/data/collections.ts`
 - Quick navigation: `src/data/quick-nav.ts`
 - Schema and integrity checks: `src/lib/schema.ts`
+- Generated root catalog tables: root `README.md` via `npm run sync:readme`
 - Source/extraction notes: `src/data/README.md`
 
 The page imports the validated catalog, so `next build` fails on a duplicate id, duplicate URL, unknown category, invalid URL, or out-of-range summary/description.
@@ -26,6 +27,7 @@ The page imports the validated catalog, so `next build` fails on a duplicate id,
 - The panel supports arrow-key navigation, Enter to open, Esc to close, and a footer that scrolls to the filtered feed.
 - Active search or filters show a live result count with a `Clear` action under the search field.
 - Cards open a slide-over sheet on desktop and a `vaul` drawer on mobile.
+- The drawer eyebrow shows `category / subcategory`, with provider and up to three highlights when the catalog supplies them.
 - The open resource is URL-addressable via `?r=<id>`; closing with Esc, the backdrop, the close button, or Back restores focus to the triggering card.
 - Related resources at the bottom of the drawer switch the open resource without adding history entries.
 - Empty results and loading states are keyboard accessible.
@@ -52,10 +54,26 @@ If your npm config blocks lifecycle scripts, install with `npm install --ignore-
 ## Checks
 
 ```bash
-npm run check          # typecheck + lint + all tests
+npm run check          # typecheck + lint + Vitest
 npm run content:check  # schema, catalog integrity, category counts
-npm run build          # static export to ./out
+npm run test:e2e       # Playwright E2E + axe against the static export
+npm run build:pages    # static export to ./out with the Pages base path
+npm run generate:og    # regenerate public/og-image.png
+npm run sync:readme    # regenerate the Full Catalog section in the root README
 ```
+
+`npm run check` also runs `sync:readme:check`, so a stale root `README.md`
+catalog fails CI.
+
+Playwright needs its browser once per machine:
+
+```bash
+npx playwright install chromium
+```
+
+`test:e2e` builds the Pages export, serves it at `/learnpython/`, and exercises
+search, quick navigation, deep links, browser history, axe accessibility, and
+responsive overflow.
 
 ## GitHub Pages
 
@@ -76,6 +94,10 @@ This sets `NEXT_PUBLIC_BASE_PATH=/learnpython` and the production `NEXT_PUBLIC_S
 Set **Settings → Pages → Source** to **GitHub Actions** once; after that, pushes to `main` that touch `website/**` deploy automatically.
 
 `public/.nojekyll` ensures GitHub Pages serves the `_next` directory.
+
+`public/og-image.png` is a committed 1200×630 social card so the static export
+can advertise Open Graph and Twitter images without a server-rendered image
+route. Regenerate it with `npm run generate:og` after changing the brand art.
 
 If the project moves to a custom domain, build with an empty `NEXT_PUBLIC_BASE_PATH` and update `NEXT_PUBLIC_SITE_URL`.
 

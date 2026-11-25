@@ -3,13 +3,16 @@ import type { ReactNode } from "react";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 
-import { repoUrl, siteUrl, withBasePath } from "@/lib/site";
+import { repoUrl, siteUrl, assetPath } from "@/lib/site";
 
 import "./globals.css";
 
 const title = "Curated Python Resources";
 const description =
   "A maintained, editor-curated directory of the best Python courses, documentation, tools, and reads.";
+const socialImage = "og-image.png";
+const socialImageAlt =
+  "Python resources for everyone: a curated directory of official docs, books, videos, and tools.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(`${siteUrl}/`),
@@ -33,22 +36,35 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     type: "website",
     siteName: "learn-python / curated-resources",
     title,
     description,
-    url: siteUrl,
+    url: `${siteUrl}/`,
     locale: "en_US",
+    images: [
+      {
+        url: socialImage,
+        width: 1200,
+        height: 630,
+        alt: socialImageAlt,
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title,
     description,
+    images: [socialImage],
   },
   icons: {
-    icon: withBasePath("/icon.svg"),
-    shortcut: withBasePath("/icon.svg"),
+    icon: assetPath("/icon.svg"),
+    shortcut: assetPath("/icon.svg"),
   },
 };
 

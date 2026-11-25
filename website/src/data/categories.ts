@@ -3,9 +3,9 @@ export const categoryIds = [
   "books-guides",
   "web-dev",
   "data-ai",
-  "practice",
-  "tools-cheatsheets",
-  "automation",
+  "practice-challenges",
+  "tools-automation",
+  "communities-media",
 ] as const;
 
 export type CategoryId = (typeof categoryIds)[number];
@@ -22,7 +22,7 @@ export const categories = [
     id: "core-foundations",
     label: "Core & Foundations",
     description:
-      "The language itself: official docs, tutorials, and the best starting paths.",
+      "The language itself: official docs, starting paths, and general references.",
     order: 1,
   },
   {
@@ -46,24 +46,24 @@ export const categories = [
     order: 4,
   },
   {
-    id: "practice",
+    id: "practice-challenges",
     label: "Practice & Challenges",
     description:
       "Exercises, challenges, and project collections that build fluency.",
     order: 5,
   },
   {
-    id: "tools-cheatsheets",
-    label: "Tools & Cheatsheets",
+    id: "tools-automation",
+    label: "Tools & Automation",
     description:
-      "Editors, references, and compact cheat sheets for daily work.",
+      "Editors, cheat sheets, agents, and utilities for daily work.",
     order: 6,
   },
   {
-    id: "automation",
-    label: "Automation",
+    id: "communities-media",
+    label: "Communities & Media",
     description:
-      "Scripting the boring parts: files, browsers, schedules, and HTTP.",
+      "Creators, newsletters, podcasts, and places to learn with others.",
     order: 7,
   },
 ] as const satisfies readonly Category[];

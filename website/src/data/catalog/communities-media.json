@@ -1,0 +1,868 @@
+[
+  {
+    "id": "real-python",
+    "title": "Real Python",
+    "url": "https://www.realpython.com",
+    "summary": "Practical tutorials and deep dives across the language, from first scripts to production patterns.",
+    "description": "A large library of Python tutorials, video courses, and cheat sheets written for working developers. Many articles are free; a membership unlocks the full course catalog and downloadable resources.",
+    "category": "communities-media",
+    "subcategory": "Top Blogs",
+    "provider": "Real Python",
+    "recommendedOrder": 1,
+    "tags": [
+      "community",
+      "article",
+      "tutorials",
+      "courses"
+    ],
+    "difficulty": "beginner",
+    "format": "article",
+    "access": "free",
+    "featured": true
+  },
+  {
+    "id": "bro-code-python-playlist",
+    "title": "Bro Code — Python Playlist",
+    "url": "https://www.youtube.com/watch?v=6VElWbND-zg&list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT",
+    "summary": "A Bro Code YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "Bro Code — Python Playlist is a video from Bro Code, filed under Python Playlists on Youtube in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Python Playlists on Youtube",
+    "provider": "Bro Code",
+    "recommendedOrder": 1,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "brototype-malayalam-python-playlist",
+    "title": "Brototype (Malayalam) — Python Playlist",
+    "url": "https://www.youtube.com/playlist?list=PLY-ecO2csVHfbpOmWamlb8Mujjdnl1jks",
+    "summary": "A Brototype YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "Brototype (Malayalam) — Python Playlist is a video from Brototype, filed under Python Playlists on Youtube in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Python Playlists on Youtube",
+    "provider": "Brototype (Malayalam)",
+    "recommendedOrder": 2,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "chai-aur-code-python-playlist",
+    "title": "Chai aur Code — Python Playlist",
+    "url": "https://www.youtube.com/playlist?list=PLu71SKxNbfoBsMugTFALhdLlZ5VOqCg2s",
+    "summary": "A Chai aur Code YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "Chai aur Code — Python Playlist is a video from Chai aur Code, filed under Python Playlists on Youtube in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Python Playlists on Youtube",
+    "provider": "Chai aur Code",
+    "recommendedOrder": 3,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "clever-programmer-python-playlist",
+    "title": "Clever Programmer — Python Playlist",
+    "url": "https://www.youtube.com/watch?v=B9nFMZIYQl0",
+    "summary": "A Clever Programmer YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "Clever Programmer — Python Playlist is a video from Clever Programmer, filed under Python Playlists on Youtube in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Python Playlists on Youtube",
+    "provider": "Clever Programmer",
+    "recommendedOrder": 4,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "code-with-harry-python-playlist",
+    "title": "Code with Harry — Python Playlist",
+    "url": "https://youtube.com/playlist?list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME",
+    "summary": "A Code with Harry YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "Code with Harry — Python Playlist is a video from Code with Harry, filed under Python Playlists on Youtube in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Python Playlists on Youtube",
+    "provider": "Code with Harry",
+    "recommendedOrder": 5,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "corey-schafer-python",
+    "title": "Corey Schafer — Python Playlist",
+    "url": "https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU",
+    "summary": "A calm, well-paced video series covering language fundamentals and the standard library.",
+    "description": "Corey Schafer's Python playlist moves from installation and syntax through functions, modules, file I/O, and object-oriented programming. Clear pacing and complete examples make it a strong companion to written docs.",
+    "category": "communities-media",
+    "subcategory": "Python Playlists on Youtube",
+    "provider": "Corey Schafer",
+    "recommendedOrder": 6,
+    "tags": [
+      "community",
+      "youtube",
+      "video",
+      "beginner"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "cs50-python-playlist",
+    "title": "CS50 — Python Playlist",
+    "url": "https://www.youtube.com/watch?v=OvKCESUCWII&list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V",
+    "summary": "A CS50 YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "CS50 — Python Playlist is a video from CS50, filed under Python Playlists on Youtube in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Python Playlists on Youtube",
+    "provider": "CS50",
+    "recommendedOrder": 7,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "edureka-python-playlist",
+    "title": "Edureka — Python Playlist",
+    "url": "https://youtube.com/playlist?list=PL9ooVrP1hQOHY-BeYrKHDrHKphsJOyRyu",
+    "summary": "A Edureka YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "Edureka — Python Playlist is a video from Edureka, filed under Python Playlists on Youtube in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Python Playlists on Youtube",
+    "provider": "Edureka",
+    "recommendedOrder": 8,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "freecodecamp-python-playlist",
+    "title": "Freecodecamp — Python Playlist",
+    "url": "https://www.youtube.com/playlist?list=PLWKjhJtqVAbnqBxcdjVGgT3uVR10bzTEB",
+    "summary": "A Freecodecamp YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "Freecodecamp — Python Playlist is a video from Freecodecamp, filed under Python Playlists on Youtube in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Python Playlists on Youtube",
+    "provider": "Freecodecamp",
+    "recommendedOrder": 9,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "geeky-shows-python-playlist",
+    "title": "Geeky Shows — Python Playlist",
+    "url": "https://www.youtube.com/playlist?list=PLbGui_ZYuhigZkqrHbI_ZkPBrIr5Rsd5L",
+    "summary": "A Geeky Shows YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "Geeky Shows — Python Playlist is a video from Geeky Shows, filed under Python Playlists on Youtube in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Python Playlists on Youtube",
+    "provider": "Geeky Shows",
+    "recommendedOrder": 10,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "krish-naik-python-playlist",
+    "title": "Krish Naik — Python Playlist",
+    "url": "https://youtube.com/playlist?list=PLZoTAELRMXVNUL99R4bDlVYsncUNvwUBB",
+    "summary": "A Krish Naik YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "Krish Naik — Python Playlist is a video from Krish Naik, filed under Python Playlists on Youtube in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Python Playlists on Youtube",
+    "provider": "Krish Naik",
+    "recommendedOrder": 11,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "programming-with-mosh-python-playlist",
+    "title": "Programming With Mosh — Python Playlist",
+    "url": "https://youtube.com/playlist?list=PLTjRvDozrdlxj5wgH4qkvwSOdHLOCx10f",
+    "summary": "A Programming With Mosh YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "Programming With Mosh — Python Playlist is a video from Programming With Mosh, filed under Python Playlists on Youtube in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Python Playlists on Youtube",
+    "provider": "Programming With Mosh",
+    "recommendedOrder": 12,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "telusko-python-playlist",
+    "title": "Telusko — Python Playlist",
+    "url": "https://www.youtube.com/playlist?list=PLfMKTvvq5oWEv2a-c6Ne-mBP_FJalX4R8",
+    "summary": "A Telusko YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "Telusko — Python Playlist is a video from Telusko, filed under Python Playlists on Youtube in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Python Playlists on Youtube",
+    "provider": "Telusko",
+    "recommendedOrder": 13,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "thenewboston-python-playlist",
+    "title": "thenewboston — Python Playlist",
+    "url": "https://www.youtube.com/watch?v=HBxCHonP6Ro&list=PL6gx4Cwl9DGAcbMi1sH6oAMk4JHw91mC_",
+    "summary": "A thenewboston YouTube playlist covering Python fundamentals, tooling, and hands-on projects.",
+    "description": "thenewboston — Python Playlist is a video from thenewboston, filed under Python Playlists on Youtube in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Python Playlists on Youtube",
+    "provider": "thenewboston",
+    "recommendedOrder": 14,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "askpython",
+    "title": "AskPython",
+    "url": "https://www.askpython.com",
+    "summary": "the Python community publishes Python tutorials, references, and practical walkthroughs.",
+    "description": "AskPython is an article from the Python community, filed under Top Blogs in the learn-python directory. Articles mix explanations with runnable examples and next steps. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Blogs",
+    "provider": "AskPython",
+    "recommendedOrder": 2,
+    "tags": [
+      "community",
+      "article"
+    ],
+    "difficulty": "beginner",
+    "format": "article",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "geeksforgeeks-python",
+    "title": "GeeksforGeeks Python",
+    "url": "https://www.geeksforgeeks.org/python-programming-language",
+    "summary": "A broad reference of Python concepts, examples, and interview-style explanations.",
+    "description": "Covers syntax, data structures, object-oriented programming, libraries, and common interview questions with short examples. Useful for quick lookups and revision, though articles vary in depth and ads are plentiful.",
+    "category": "communities-media",
+    "subcategory": "Top Blogs",
+    "provider": "GeeksforGeeks",
+    "recommendedOrder": 3,
+    "tags": [
+      "community",
+      "article",
+      "reference",
+      "interview"
+    ],
+    "difficulty": "beginner",
+    "format": "article",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "learn-python-by-scaler",
+    "title": "Learn Python by Scaler",
+    "url": "https://www.scaler.com/topics/python",
+    "summary": "the Python community publishes Python tutorials, references, and practical walkthroughs.",
+    "description": "Learn Python by Scaler is an article from the Python community, filed under Top Blogs in the learn-python directory. Articles mix explanations with runnable examples and next steps. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Blogs",
+    "provider": "Scaler",
+    "recommendedOrder": 4,
+    "tags": [
+      "community",
+      "article"
+    ],
+    "difficulty": "beginner",
+    "format": "article",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "learnpython-com-blog",
+    "title": "LearnPython.com Blog",
+    "url": "https://learnpython.com/blog",
+    "summary": "LearnPython.com publishes Python tutorials, references, and practical walkthroughs.",
+    "description": "LearnPython.com Blog is an article from LearnPython.com, filed under Top Blogs in the learn-python directory. Articles mix explanations with runnable examples and next steps. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Blogs",
+    "provider": "LearnPython.com",
+    "recommendedOrder": 5,
+    "tags": [
+      "community",
+      "article"
+    ],
+    "difficulty": "beginner",
+    "format": "article",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "python-in-plain-english",
+    "title": "Python in Plain English",
+    "url": "https://python.plainenglish.io",
+    "summary": "Python in Plain English publishes Python tutorials, references, and practical walkthroughs.",
+    "description": "Python in Plain English is an article from Python in Plain English, filed under Top Blogs in the learn-python directory. Articles mix explanations with runnable examples and next steps. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Blogs",
+    "provider": "Python in Plain English",
+    "recommendedOrder": 6,
+    "tags": [
+      "community",
+      "article"
+    ],
+    "difficulty": "beginner",
+    "format": "article",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "towards-data-science-python",
+    "title": "Towards Data Science — Python",
+    "url": "https://towardsdatascience.com/tagged/python",
+    "summary": "Towards Data Science publishes Python tutorials, references, and practical walkthroughs.",
+    "description": "Towards Data Science — Python is an article from Towards Data Science, filed under Top Blogs in the learn-python directory. Articles mix explanations with runnable examples and next steps. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Blogs",
+    "provider": "Towards Data Science",
+    "recommendedOrder": 7,
+    "tags": [
+      "community",
+      "article"
+    ],
+    "difficulty": "beginner",
+    "format": "article",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "w3schools-python",
+    "title": "W3Schools Python",
+    "url": "https://www.w3schools.com/python",
+    "summary": "A quick-reference tutorial with runnable examples and short exercises.",
+    "description": "A concise, example-first introduction to Python syntax, data types, functions, and file handling. The built-in editor lets you run snippets immediately, making it a low-friction first pass before deeper material.",
+    "category": "communities-media",
+    "subcategory": "Top Blogs",
+    "provider": "W3Schools",
+    "recommendedOrder": 8,
+    "tags": [
+      "community",
+      "article",
+      "beginner",
+      "reference"
+    ],
+    "difficulty": "beginner",
+    "format": "article",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "podcast-init",
+    "title": "Podcast __init__",
+    "url": "https://www.pythonpodcast.com",
+    "summary": "Podcast __init__ covers Python news, interviews, and practical engineering stories.",
+    "description": "Podcast __init__ is a podcast from Podcast __init__, filed under Top Podcasts in the learn-python directory. Episodes cover news, interviews, and practical engineering advice. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Podcasts",
+    "provider": "Podcast __init__",
+    "recommendedOrder": 1,
+    "tags": [
+      "community",
+      "podcast"
+    ],
+    "difficulty": "beginner",
+    "format": "podcast",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "python-bytes-podcast",
+    "title": "Python Bytes Podcast",
+    "url": "https://pythonbytes.fm",
+    "summary": "Python Bytes Podcast covers Python news, interviews, and practical engineering stories.",
+    "description": "Python Bytes Podcast is a podcast from Python Bites Podcast, filed under Top Podcasts in the learn-python directory. Episodes cover news, interviews, and practical engineering advice. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Podcasts",
+    "provider": "Python Bytes",
+    "recommendedOrder": 2,
+    "tags": [
+      "community",
+      "podcast"
+    ],
+    "difficulty": "beginner",
+    "format": "podcast",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "real-python-podcast",
+    "title": "Real Python Podcast",
+    "url": "https://realpython.com/podcasts/rpp",
+    "summary": "Real Python Podcast covers Python news, interviews, and practical engineering stories.",
+    "description": "Real Python Podcast is a podcast from Real Python Podcast, filed under Top Podcasts in the learn-python directory. Episodes cover news, interviews, and practical engineering advice. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Podcasts",
+    "provider": "Real Python",
+    "recommendedOrder": 3,
+    "tags": [
+      "community",
+      "podcast"
+    ],
+    "difficulty": "beginner",
+    "format": "podcast",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "talk-python-podcast",
+    "title": "Talk Python Podcast",
+    "url": "https://talkpython.fm",
+    "summary": "Talk Python Podcast covers Python news, interviews, and practical engineering stories.",
+    "description": "Talk Python Podcast is a podcast from Talk Python Podcast, filed under Top Podcasts in the learn-python directory. Episodes cover news, interviews, and practical engineering advice. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Podcasts",
+    "provider": "Talk Python",
+    "recommendedOrder": 4,
+    "tags": [
+      "community",
+      "podcast"
+    ],
+    "difficulty": "beginner",
+    "format": "podcast",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "teaching-python",
+    "title": "Teaching Python",
+    "url": "https://www.teachingpython.fm",
+    "summary": "Teaching Python covers Python news, interviews, and practical engineering stories.",
+    "description": "Teaching Python is a podcast from Teaching Python, filed under Top Podcasts in the learn-python directory. Episodes cover news, interviews, and practical engineering advice. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Podcasts",
+    "provider": "Teaching Python",
+    "recommendedOrder": 5,
+    "tags": [
+      "community",
+      "podcast"
+    ],
+    "difficulty": "beginner",
+    "format": "podcast",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "test-and-code",
+    "title": "Test and Code",
+    "url": "https://testandcode.com",
+    "summary": "Test and Code covers Python news, interviews, and practical engineering stories.",
+    "description": "Test and Code is a podcast from Test and Code, filed under Top Podcasts in the learn-python directory. Episodes cover news, interviews, and practical engineering advice. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Podcasts",
+    "provider": "Test and Code",
+    "recommendedOrder": 6,
+    "tags": [
+      "community",
+      "podcast"
+    ],
+    "difficulty": "beginner",
+    "format": "podcast",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "aditya-tiwari-thegeekyb0y",
+    "title": "Aditya Tiwari (@thegeekyb0y)",
+    "url": "https://twitter.com/thegeekyb0y",
+    "summary": "Follow Aditya Tiwari for Python tips, articles, and community conversation.",
+    "description": "Aditya Tiwari (@thegeekyb0y) is a community account from Aditya Tiwari, filed under Top Twitter Creators in the learn-python directory. The account shares tips, articles, and community discussion. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Twitter Creators",
+    "provider": "Aditya Tiwari",
+    "recommendedOrder": 1,
+    "tags": [
+      "community",
+      "twitter"
+    ],
+    "difficulty": "beginner",
+    "format": "community",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "matt-harrison-mharrison",
+    "title": "Matt Harrison (@__mharrison__)",
+    "url": "https://twitter.com/__mharrison__",
+    "summary": "Follow Matt Harrison for Python tips, articles, and community conversation.",
+    "description": "Matt Harrison (@__mharrison__) is a community account from Matt Harrison, filed under Top Twitter Creators in the learn-python directory. The account shares tips, articles, and community discussion. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Twitter Creators",
+    "provider": "Matt Harrison",
+    "recommendedOrder": 2,
+    "tags": [
+      "community",
+      "twitter"
+    ],
+    "difficulty": "beginner",
+    "format": "community",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "mike-driscoll-driscollis",
+    "title": "Mike Driscoll (@driscollis)",
+    "url": "https://twitter.com/driscollis",
+    "summary": "Follow Mike Driscoll for Python tips, articles, and community conversation.",
+    "description": "Mike Driscoll (@driscollis) is a community account from Mike Driscoll, filed under Top Twitter Creators in the learn-python directory. The account shares tips, articles, and community discussion. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Twitter Creators",
+    "provider": "Mike Driscoll",
+    "recommendedOrder": 3,
+    "tags": [
+      "community",
+      "twitter"
+    ],
+    "difficulty": "beginner",
+    "format": "community",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "real-python-realpython",
+    "title": "Real Python (@realpython)",
+    "url": "https://twitter.com/realpython",
+    "summary": "Follow Real Python for Python tips, articles, and community conversation.",
+    "description": "Real Python (@realpython) is a community account from Real Python, filed under Top Twitter Creators in the learn-python directory. The account shares tips, articles, and community discussion. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Twitter Creators",
+    "provider": "Real Python",
+    "recommendedOrder": 4,
+    "tags": [
+      "community",
+      "twitter"
+    ],
+    "difficulty": "beginner",
+    "format": "community",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "rodrigo-mathsppblog",
+    "title": "Rodrigo (@mathsppblog)",
+    "url": "https://twitter.com/mathsppblog",
+    "summary": "Follow Rodrigo for Python tips, articles, and community conversation.",
+    "description": "Rodrigo (@mathsppblog) is a community account from Rodrigo, filed under Top Twitter Creators in the learn-python directory. The account shares tips, articles, and community discussion. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Twitter Creators",
+    "provider": "Rodrigo",
+    "recommendedOrder": 5,
+    "tags": [
+      "community",
+      "twitter"
+    ],
+    "difficulty": "beginner",
+    "format": "community",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "scientific-python-scipytip",
+    "title": "Scientific Python (@SciPyTip)",
+    "url": "https://twitter.com/SciPyTip",
+    "summary": "Follow Scientific Python for Python tips, articles, and community conversation.",
+    "description": "Scientific Python (@SciPyTip) is a community account from Scientific Python, filed under Top Twitter Creators in the learn-python directory. The account shares tips, articles, and community discussion. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Twitter Creators",
+    "provider": "Scientific Python",
+    "recommendedOrder": 6,
+    "tags": [
+      "community",
+      "twitter"
+    ],
+    "difficulty": "beginner",
+    "format": "community",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "trey-hunner-treyhunner",
+    "title": "Trey Hunner (@treyhunner)",
+    "url": "https://twitter.com/treyhunner",
+    "summary": "Follow Trey Hunner for Python tips, articles, and community conversation.",
+    "description": "Trey Hunner (@treyhunner) is a community account from Trey Hunner, filed under Top Twitter Creators in the learn-python directory. The account shares tips, articles, and community discussion. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Twitter Creators",
+    "provider": "Trey Hunner",
+    "recommendedOrder": 7,
+    "tags": [
+      "community",
+      "twitter"
+    ],
+    "difficulty": "beginner",
+    "format": "community",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "brototype-malayalam-youtube-channel",
+    "title": "Brototype (Malayalam) — YouTube Channel",
+    "url": "https://www.youtube.com/c/BrototypeMalayalam",
+    "summary": "Brototype shares Python tutorials, walkthroughs, and project builds on YouTube.",
+    "description": "Brototype (Malayalam) — YouTube Channel is a video from Brototype, filed under Top Youtube Creators in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Youtube Creators",
+    "provider": "Brototype",
+    "recommendedOrder": 1,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "chai-aur-code-youtube-channel",
+    "title": "Chai aur Code — YouTube Channel",
+    "url": "https://www.youtube.com/@chaiaurcode",
+    "summary": "Chai aur Code shares Python tutorials, walkthroughs, and project builds on YouTube.",
+    "description": "Chai aur Code — YouTube Channel is a video from Chai aur Code, filed under Top Youtube Creators in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Youtube Creators",
+    "provider": "Chai aur Code",
+    "recommendedOrder": 2,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "code-with-harry-youtube-channel",
+    "title": "Code with Harry — YouTube Channel",
+    "url": "https://www.youtube.com/c/CodeWithHarry",
+    "summary": "Code with Harry shares Python tutorials, walkthroughs, and project builds on YouTube.",
+    "description": "Code with Harry — YouTube Channel is a video from Code with Harry, filed under Top Youtube Creators in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Youtube Creators",
+    "provider": "Code with Harry",
+    "recommendedOrder": 3,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "corey-schafer-youtube-channel",
+    "title": "Corey Schafer — YouTube Channel",
+    "url": "https://www.youtube.com/c/Coreyms",
+    "summary": "Corey Schafer shares Python tutorials, walkthroughs, and project builds on YouTube.",
+    "description": "Corey Schafer — YouTube Channel is a video from Corey Schafer, filed under Top Youtube Creators in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Youtube Creators",
+    "provider": "Corey Schafer",
+    "recommendedOrder": 4,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "cs-dojo-youtube-channel",
+    "title": "CS DOJO — YouTube Channel",
+    "url": "https://www.youtube.com/c/CSDojo",
+    "summary": "CS DOJO shares Python tutorials, walkthroughs, and project builds on YouTube.",
+    "description": "CS DOJO — YouTube Channel is a video from CS DOJO, filed under Top Youtube Creators in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Youtube Creators",
+    "provider": "CS DOJO",
+    "recommendedOrder": 5,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "freecodecamp-youtube-channel",
+    "title": "Freecodecamp — YouTube Channel",
+    "url": "https://www.youtube.com/c/Freecodecamp",
+    "summary": "Freecodecamp shares Python tutorials, walkthroughs, and project builds on YouTube.",
+    "description": "Freecodecamp — YouTube Channel is a video from Freecodecamp, filed under Top Youtube Creators in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Youtube Creators",
+    "provider": "Freecodecamp",
+    "recommendedOrder": 6,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "geeky-shows-youtube-channel",
+    "title": "Geeky Shows — YouTube Channel",
+    "url": "https://www.youtube.com/user/GeekyShow1",
+    "summary": "Geeky Shows shares Python tutorials, walkthroughs, and project builds on YouTube.",
+    "description": "Geeky Shows — YouTube Channel is a video from Geeky Shows, filed under Top Youtube Creators in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Youtube Creators",
+    "provider": "Geeky Shows",
+    "recommendedOrder": 7,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "telusko-youtube-channel",
+    "title": "Telusko — YouTube Channel",
+    "url": "https://www.youtube.com/c/Telusko",
+    "summary": "Telusko shares Python tutorials, walkthroughs, and project builds on YouTube.",
+    "description": "Telusko — YouTube Channel is a video from Telusko, filed under Top Youtube Creators in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Youtube Creators",
+    "provider": "Telusko",
+    "recommendedOrder": 8,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  },
+  {
+    "id": "thenewboston-buckey-robert-youtube-channel",
+    "title": "thenewboston(Buckey Robert) — YouTube Channel",
+    "url": "https://www.youtube.com/@thenewboston",
+    "summary": "thenewboston shares Python tutorials, walkthroughs, and project builds on YouTube.",
+    "description": "thenewboston(Buckey Robert) — YouTube Channel is a video from thenewboston, filed under Top Youtube Creators in the learn-python directory. Episodes build from core syntax toward practical projects. It suits beginner developers and is free to use.",
+    "category": "communities-media",
+    "subcategory": "Top Youtube Creators",
+    "provider": "thenewboston",
+    "recommendedOrder": 9,
+    "tags": [
+      "community",
+      "youtube",
+      "video"
+    ],
+    "difficulty": "beginner",
+    "format": "video",
+    "access": "free",
+    "featured": false
+  }
+]

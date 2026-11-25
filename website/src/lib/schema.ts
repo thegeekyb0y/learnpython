@@ -11,9 +11,12 @@ export const difficultySchema = z.enum([
 ]);
 
 export const formatSchema = z.enum([
+  "article",
   "book",
+  "community",
   "docs",
   "course",
+  "podcast",
   "practice",
   "tool",
   "video",
@@ -56,13 +59,36 @@ export const resourceSchema = z
       .min(120, "Description must be at least 120 characters")
       .max(700, "Description must be at most 700 characters"),
     category: z.enum(categoryIds),
+    subcategory: z
+      .string()
+      .trim()
+      .min(2, "Subcategory is required")
+      .max(80, "Subcategory must be at most 80 characters"),
+    provider: z
+      .string()
+      .trim()
+      .min(2, "Provider must be at least 2 characters")
+      .max(80, "Provider must be at most 80 characters")
+      .optional(),
+    highlights: z
+      .array(
+        z
+          .string()
+          .trim()
+          .min(12, "Highlights must be at least 12 characters")
+          .max(160, "Highlights must be at most 160 characters"),
+      )
+      .min(1)
+      .max(3, "Add at most three highlights")
+      .optional(),
+    recommendedOrder: z.number().int().min(0).max(9999).optional(),
     tags: z
       .array(
         z
           .string()
           .trim()
           .min(1)
-          .max(32, "Tags must be at most 32 characters")
+          .max(48, "Tags must be at most 48 characters")
           .regex(kebabCase, "Tags must be lowercase kebab-case"),
       )
       .min(1, "Add at least one tag")

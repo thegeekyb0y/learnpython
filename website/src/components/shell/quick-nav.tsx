@@ -54,7 +54,6 @@ function FeaturedQuickNavCard({
       type="button"
       data-quick-nav={item.id}
       aria-pressed={active}
-      aria-label={`Browse ${title}`}
       onClick={() => onToggle(item.id)}
       className={cn(
         "group col-span-2 flex min-h-[96px] cursor-pointer items-center gap-4 rounded-xl border border-sage bg-gradient-to-r from-sage/[0.45] via-sage/[0.25] to-sage/[0.15] p-4 text-left outline-none transition-[border-color,box-shadow] duration-150 ease-out-quint hover:border-brand focus-visible:ring-[3px] focus-visible:ring-brand-ring",
@@ -98,7 +97,6 @@ function StandardQuickNavCard({
       type="button"
       data-quick-nav={item.id}
       aria-pressed={active}
-      aria-label={`Browse ${item.label}`}
       onClick={() => onToggle(item.id)}
       className={cn(
         "group flex min-h-[96px] cursor-pointer flex-col justify-between rounded-xl border border-hairline bg-surface p-4 text-left outline-none transition-[border-color,box-shadow] duration-150 ease-out-quint hover:border-hairline-hover focus-visible:ring-[3px] focus-visible:ring-brand-ring",

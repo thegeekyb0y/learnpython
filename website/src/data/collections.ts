@@ -14,9 +14,13 @@ export const collectionFilters = {
   books: { label: "Books", kind: "category", value: "books-guides" },
   youtube: { label: "YouTube", kind: "format", value: "video" },
   agents: { label: "AI Agents", kind: "tag", value: "agents" },
-  tools: { label: "Tools", kind: "category", value: "tools-cheatsheets" },
+  tools: { label: "Tools", kind: "category", value: "tools-automation" },
   communities: { label: "Communities", kind: "tag", value: "community" },
-  practice: { label: "Practice", kind: "category", value: "practice" },
+  practice: {
+    label: "Practice",
+    kind: "category",
+    value: "practice-challenges",
+  },
 } as const satisfies Record<
   string,
   CollectionFilter & {
