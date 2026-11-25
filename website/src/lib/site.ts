@@ -12,9 +12,11 @@ export const submitResourceUrl = `${repoUrl}/issues/new?template=resource.yml&ti
  * Prefix a root-relative public asset with the deployment base path.
  *
  * Next's `<Link>` and `_next` assets already respect `basePath`; this helper is
- * for hand-written URLs such as metadata icons and static files.
+ * for hand-written URLs such as the hero logo, metadata icons, and OG images.
+ * The input is expected to be root-relative so the result is never
+ * double-prefixed, even when called with an already-absolute site URL.
  */
-export function withBasePath(path: string) {
+export function assetPath(path: string) {
   if (!path.startsWith("/") || !basePath) {
     return path;
   }

@@ -1,9 +1,10 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion } from "motion/react";
 
-import { withBasePath } from "@/lib/site";
+import { assetPath } from "@/lib/site";
 
 const float = (delay: number, duration: number) => ({
   animate: { y: [0, -5, 0] },
@@ -15,7 +16,22 @@ const float = (delay: number, duration: number) => ({
   },
 });
 
+const logoSrc = assetPath("/assets/python-logo.png");
+
 export function HeroVisual() {
+  const [logoFailed, setLogoFailed] = useState(false);
+  const imageRef = useRef<HTMLImageElement>(null);
+
+  useEffect(() => {
+    const image = imageRef.current;
+
+    // A request that fails before hydration will not replay its error event,
+    // so check the already-loaded element once React takes over.
+    if (image?.complete && image.naturalWidth === 0) {
+      setLogoFailed(true);
+    }
+  }, []);
+
   return (
     <div
       aria-hidden="true"
@@ -26,14 +42,27 @@ export function HeroVisual() {
         data-slot="python-logo"
         className="relative flex size-[300px] items-center justify-center"
       >
-        <Image
-          src={withBasePath("/assets/python-logo.png")}
-          alt="Python logo"
-          width={2048}
-          height={1710}
-          priority
-          className="size-full object-contain"
-        />
+        {logoFailed ? (
+          <span
+            data-slot="python-logo-fallback"
+            className="flex h-44 w-44 items-center justify-center rounded-full border border-ink/10 bg-ink font-mono text-4xl font-semibold tracking-tight text-sage shadow-pop"
+          >
+            py
+          </span>
+        ) : (
+          <Image
+            src={logoSrc}
+            alt=""
+            width={704}
+            height={588}
+            priority
+            decoding="async"
+            onError={() => setLogoFailed(true)}
+            ref={imageRef}
+            data-slot="python-logo-image"
+            className="h-44 w-44 object-contain"
+          />
+        )}
       </div>
 
       <motion.span
